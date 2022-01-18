@@ -4,7 +4,6 @@ body{
 #main{
     width: 80%;
     height: auto;
-    border: 1px solid red;
     margin: auto;
     font-family: sans-serif;
 }
@@ -31,7 +30,6 @@ h1{
 #cartDiv{
     width: 100%;
     min-height: 300px;
-    border: 1px solid #1b1b1b;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,4 +46,45 @@ h1{
 }
 #cartDiv button:hover{
     background-color: rgba(0, 0, 0, 0.658);
+}
+
+
+.slideProducts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.slideProducts>div>h2{
+  color: #1b1b1b;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.imgDiv{
+    width: 100%;
+    height: 65%;
+}
+.imgDiv>img{
+    width: 100%;
+    height: 100%;
+}
+
+.sizeDiv{
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.sizeDiv>h3{
+  font-size: 14px;
+  line-height: 14px;
+  color: #ababab;
+  font-weight: 700;
+}
+#recentlyView{
+    border: 1px solid red;
+    padding-bottom: 70px;
 }
