@@ -197,18 +197,18 @@ const newArrivalObj_6 =[
 const newArrivalObj_7 =[
     {
         image: "https://im.uniqlo.com/global-cms/spa/resdef97f92047f03ca94ebda796a312568fr.jpg",
-        exclusive: "ULTRA LIGHT DOWN COLLECTION",
-        description: "A new essential for your new way of  life.",
+        exclusive: "UNIQLO U | LAUNCHING 18TH BERBUARY",
+        description: "Future LifeWear essetials, designed in pursuit of a simplified, modern wardrobe.",
     },
     {
         image: "https://im.uniqlo.com/global-cms/spa/resa3b0a61ef92c82820124a327ecd34303fr.jpg",
-        exclusive: "FLEECE COLLECTION",
-        description: "Express your personality and stay cozy all seasonlong - just reach for your favorite fleece.",
+        exclusive: "+J | VIEW COLLECTION",
+        description: "Marking the end of chapter 2 with designer Jil Sander wich further develops its signture understatement and quiet distinction.",
     },
     {
         image: "https://im.uniqlo.com/global-cms/spa/res1e5990de62ff4e0a54c912cd13fc1f21fr.jpg",
-        exclusive: "HEATTECH COLLECTION",
-        description: "Wear less, More Warmth. Innovative fabric generates heat from your body moisture.",
+        exclusive: "JW ANDERSON | VIEW COLLECTION",
+        description: "This collection blends an urban wardrobe with the serenity of a peaceful weekend in the country.",
     },
     
   
@@ -216,19 +216,19 @@ const newArrivalObj_7 =[
 
 const newArrivalObj_8 =[
     {
-        image: "https://im.uniqlo.com/global-cms/spa/resdef97f92047f03ca94ebda796a312568fr.jpg",
+        image: "https://im.uniqlo.com/global-cms/spa/rescf9d98a70918ee030b6b49fa785e1b84fr.jpg",
         exclusive: "ULTRA LIGHT DOWN COLLECTION",
-        description: "A new essential for your new way of  life.",
+        description: "A new essential for your new way of  life",
     },
     {
-        image: "https://im.uniqlo.com/global-cms/spa/resa3b0a61ef92c82820124a327ecd34303fr.jpg",
-        exclusive: "FLEECE COLLECTION",
-        description: "Express your personality and stay cozy all seasonlong - just reach for your favorite fleece.",
+        image: "https://im.uniqlo.com/global-cms/spa/res3d5e692f7ec139c6bb5bcf85096c616dfr.jpg",
+        exclusive: "LOVE & FLEECE",
+        description: "Celebrating 25 years of UNIQLO Fleece",
     },
     {
-        image: "https://im.uniqlo.com/global-cms/spa/res1e5990de62ff4e0a54c912cd13fc1f21fr.jpg",
-        exclusive: "HEATTECH COLLECTION",
-        description: "Wear less, More Warmth. Innovative fabric generates heat from your body moisture.",
+        image: "https://im.uniqlo.com/global-cms/spa/res44226c4ae7b5b23918c6e7d1a8531fccfr.jpg",
+        exclusive: "GOODBYE BULKY WINTER CLOTHING",
+        description: "Turn up the heat with HEATTECHI",
     },
     
   
@@ -401,8 +401,8 @@ function displayProducts_6(data){
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv4");
-        let desc = document.createElement("h2");
-        let exclus = document.createElement("h3");
+        let exclus = document.createElement("h2");
+        let desc = document.createElement("h3");
 
         let img = document.createElement("img");
     
@@ -414,7 +414,7 @@ function displayProducts_6(data){
 
         imgDiv.append(img);
   
-        mainDiv.append(imgDiv,desc,exclus);
+        mainDiv.append(imgDiv,exclus,desc);
 
         document.querySelector(".slideProducts6").append(mainDiv);
     });
@@ -427,8 +427,8 @@ function displayProducts_7(data){
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv4");
-        let desc = document.createElement("h2");
-        let exclus = document.createElement("h3");
+        let exclus = document.createElement("h2");
+        let desc = document.createElement("h3");
 
         let img = document.createElement("img");
     
@@ -440,7 +440,7 @@ function displayProducts_7(data){
 
         imgDiv.append(img);
   
-        mainDiv.append(imgDiv,desc,exclus);
+        mainDiv.append(imgDiv,exclus,desc);
 
         document.querySelector(".slideProducts7").append(mainDiv);
     });
@@ -453,8 +453,8 @@ function displayProducts_8(data){
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv4");
-        let desc = document.createElement("h2");
-        let exclus = document.createElement("h3");
+        let exclus = document.createElement("h2");
+        let desc = document.createElement("h3");
 
         let img = document.createElement("img");
     
@@ -466,7 +466,7 @@ function displayProducts_8(data){
 
         imgDiv.append(img);
   
-        mainDiv.append(imgDiv,desc,exclus);
+        mainDiv.append(imgDiv,exclus,desc);
 
         document.querySelector(".slideProducts8").append(mainDiv);
     });
