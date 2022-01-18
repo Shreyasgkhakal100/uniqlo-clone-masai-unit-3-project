@@ -22,8 +22,8 @@ body{
     margin-left: 20px;
 }
 h1{
-    font-size: 36px;
-    font-family: "UniqloPro Bold", "Helvetica Neue", HelveticaNeue, Helvetica, "Noto Sans", Roboto, Arial, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans CJK JP", Osaka, Meiryo, メイリオ, "MS PGothic", "MS Pゴシック", "Hiragino Sans GB", "Arial Unicode MS", sans-serif;
     font-weight: 700;
-    color:#1b1b1b;
+    font-size: 36px;
+    line-height: 36px;
+    color: #1b1b1b;
 }
