@@ -1,4 +1,4 @@
-const newArrivalObj_1 =[
+const newArrivalObj_1 = [
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445293/item/ingoods_64_445293.jpg?width=1008&impolicy=quality_75",
         gendar: "WOMEN",
@@ -15,7 +15,7 @@ const newArrivalObj_1 =[
         exclusive: "Exclusive Size Online Only",
         price: "1,990.00"
     },
-   
+
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445292/item/ingoods_56_445292.jpg?width=1008&impolicy=quality_75",
         gendar: "WOMEN",
@@ -32,10 +32,10 @@ const newArrivalObj_1 =[
         exclusive: "",
         price: "1,990.00"
     }
-  
+
 ];
 
-const newArrivalObj_2 =[
+const newArrivalObj_2 = [
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439088/item/ingoods_34_439088.jpg?width=1008&impolicy=quality_75",
         gendar: "WOMEN",
@@ -68,10 +68,10 @@ const newArrivalObj_2 =[
         exclusive: "Exclusive Size Online Only",
         price: "1,990.00"
     },
-  
+
 ];
 
-const newArrivalObj_3 =[
+const newArrivalObj_3 = [
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/441156/item/ingoods_56_441156.jpg?width=1008&impolicy=quality_75",
         gendar: "WOMEN",
@@ -104,10 +104,10 @@ const newArrivalObj_3 =[
         exclusive: "Online Only",
         price: "2,490.00"
     },
-  
+
 ];
 
-const newArrivalObj_4 =[
+const newArrivalObj_4 = [
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448440/item/ingoods_63_448440.jpg?width=1008&impolicy=quality_75",
         gendar: "WOMEN",
@@ -140,10 +140,10 @@ const newArrivalObj_4 =[
         exclusive: "Exclusive Size Online Only",
         price: "2,490.00"
     },
-  
+
 ];
 
-const newArrivalObj_5 =[
+const newArrivalObj_5 = [
     {
         image: "https://im.uniqlo.com/global-cms/spa/res51e18e31fb2439e0c7dc3c13924ea8aefr.jpg",
     },
@@ -171,10 +171,10 @@ const newArrivalObj_5 =[
     {
         image: "https://im.uniqlo.com/global-cms/spa/res2c87205dc1d06ef92c4fe200ce02baa0fr.jpg",
     },
-  
+
 ];
 
-const newArrivalObj_6 =[
+const newArrivalObj_6 = [
     {
         image: "https://im.uniqlo.com/global-cms/spa/resca7228f636e1f9e9983d8be65e5b5145fr.jpg",
         exclusive: "ULTRA LIGHT DOWN COLLECTION",
@@ -190,11 +190,11 @@ const newArrivalObj_6 =[
         exclusive: "HEATTECH COLLECTION",
         description: "Wear less, More Warmth. Innovative fabric generates heat from your body moisture.",
     },
-    
-  
+
+
 ];
 
-const newArrivalObj_7 =[
+const newArrivalObj_7 = [
     {
         image: "https://im.uniqlo.com/global-cms/spa/resdef97f92047f03ca94ebda796a312568fr.jpg",
         exclusive: "UNIQLO U | LAUNCHING 18TH BERBUARY",
@@ -210,11 +210,11 @@ const newArrivalObj_7 =[
         exclusive: "JW ANDERSON | VIEW COLLECTION",
         description: "This collection blends an urban wardrobe with the serenity of a peaceful weekend in the country.",
     },
-    
-  
+
+
 ];
 
-const newArrivalObj_8 =[
+const newArrivalObj_8 = [
     {
         image: "https://im.uniqlo.com/global-cms/spa/rescf9d98a70918ee030b6b49fa785e1b84fr.jpg",
         exclusive: "ULTRA LIGHT DOWN COLLECTION",
@@ -230,14 +230,14 @@ const newArrivalObj_8 =[
         exclusive: "GOODBYE BULKY WINTER CLOTHING",
         description: "Turn up the heat with HEATTECHI",
     },
-    
-  
+
+
 ];
 
 
 displayProducts_1(newArrivalObj_1);
-function displayProducts_1(data){
-    data.map(({image,gendar,size,description,exclusive,price}) =>{
+function displayProducts_1(data) {
+    data.map(({ image, gendar, size, description, exclusive, price }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv");
@@ -251,7 +251,7 @@ function displayProducts_1(data){
         let exclus = document.createElement("h4");
         let pric = document.createElement("h4");
 
-        exclus.setAttribute("class","exclusive");
+        exclus.setAttribute("class", "exclusive");
 
         img.src = image;
         gend.innerText = gendar;
@@ -261,8 +261,8 @@ function displayProducts_1(data){
         pric.innerText = `Rs. ${price}`;
 
         imgDiv.append(img);
-        sizeDiv.append(gend,siz);
-        mainDiv.append(imgDiv,sizeDiv,desc,exclus,pric);
+        sizeDiv.append(gend, siz);
+        mainDiv.append(imgDiv, sizeDiv, desc, exclus, pric);
 
         document.querySelector(".slideProducts1").append(mainDiv);
     });
@@ -271,8 +271,8 @@ function displayProducts_1(data){
 
 
 displayProducts_2(newArrivalObj_2);
-function displayProducts_2(data){
-    data.map(({image,gendar,size,description,exclusive,price}) =>{
+function displayProducts_2(data) {
+    data.map(({ image, gendar, size, description, exclusive, price }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv");
@@ -286,7 +286,7 @@ function displayProducts_2(data){
         let exclus = document.createElement("h4");
         let pric = document.createElement("h4");
 
-        exclus.setAttribute("class","exclusive");
+        exclus.setAttribute("class", "exclusive");
 
         img.src = image;
         gend.innerText = gendar;
@@ -296,8 +296,8 @@ function displayProducts_2(data){
         pric.innerText = `Rs. ${price}`;
 
         imgDiv.append(img);
-        sizeDiv.append(gend,siz);
-        mainDiv.append(imgDiv,sizeDiv,desc,exclus,pric);
+        sizeDiv.append(gend, siz);
+        mainDiv.append(imgDiv, sizeDiv, desc, exclus, pric);
 
         document.querySelector(".slideProducts2").append(mainDiv);
     });
@@ -306,8 +306,8 @@ function displayProducts_2(data){
 
 
 displayProducts_3(newArrivalObj_3);
-function displayProducts_3(data){
-    data.map(({image,gendar,size,description,exclusive,price}) =>{
+function displayProducts_3(data) {
+    data.map(({ image, gendar, size, description, exclusive, price }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv");
@@ -321,7 +321,7 @@ function displayProducts_3(data){
         let exclus = document.createElement("h4");
         let pric = document.createElement("h4");
 
-        exclus.setAttribute("class","exclusive");
+        exclus.setAttribute("class", "exclusive");
 
         img.src = image;
         gend.innerText = gendar;
@@ -331,8 +331,8 @@ function displayProducts_3(data){
         pric.innerText = `Rs. ${price}`;
 
         imgDiv.append(img);
-        sizeDiv.append(gend,siz);
-        mainDiv.append(imgDiv,sizeDiv,desc,exclus,pric);
+        sizeDiv.append(gend, siz);
+        mainDiv.append(imgDiv, sizeDiv, desc, exclus, pric);
 
         document.querySelector(".slideProducts3").append(mainDiv);
     });
@@ -340,8 +340,8 @@ function displayProducts_3(data){
 }
 
 displayProducts_4(newArrivalObj_4);
-function displayProducts_4(data){
-    data.map(({image,gendar,size,description,exclusive,price}) =>{
+function displayProducts_4(data) {
+    data.map(({ image, gendar, size, description, exclusive, price }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv");
@@ -355,7 +355,7 @@ function displayProducts_4(data){
         let exclus = document.createElement("h4");
         let pric = document.createElement("h4");
 
-        exclus.setAttribute("class","exclusive");
+        exclus.setAttribute("class", "exclusive");
 
         img.src = image;
         gend.innerText = gendar;
@@ -365,8 +365,8 @@ function displayProducts_4(data){
         pric.innerText = `Rs. ${price}`;
 
         imgDiv.append(img);
-        sizeDiv.append(gend,siz);
-        mainDiv.append(imgDiv,sizeDiv,desc,exclus,pric);
+        sizeDiv.append(gend, siz);
+        mainDiv.append(imgDiv, sizeDiv, desc, exclus, pric);
 
         document.querySelector(".slideProducts4").append(mainDiv);
     });
@@ -374,20 +374,20 @@ function displayProducts_4(data){
 }
 
 displayProducts_5(newArrivalObj_5);
-function displayProducts_5(data){
-    data.map(({image}) =>{
+function displayProducts_5(data) {
+    data.map(({ image }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv3");
 
         let img = document.createElement("img");
-    
+
 
         img.src = image;
 
 
         imgDiv.append(img);
-  
+
         mainDiv.append(imgDiv);
 
         document.querySelector(".slideProducts5").append(mainDiv);
@@ -396,8 +396,8 @@ function displayProducts_5(data){
 }
 
 displayProducts_6(newArrivalObj_6);
-function displayProducts_6(data){
-    data.map(({image,description,exclusive}) =>{
+function displayProducts_6(data) {
+    data.map(({ image, description, exclusive }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv4");
@@ -405,7 +405,7 @@ function displayProducts_6(data){
         let desc = document.createElement("h3");
 
         let img = document.createElement("img");
-    
+
 
         img.src = image;
         desc.innerText = description;
@@ -413,8 +413,8 @@ function displayProducts_6(data){
 
 
         imgDiv.append(img);
-  
-        mainDiv.append(imgDiv,exclus,desc);
+
+        mainDiv.append(imgDiv, exclus, desc);
 
         document.querySelector(".slideProducts6").append(mainDiv);
     });
@@ -422,8 +422,8 @@ function displayProducts_6(data){
 }
 
 displayProducts_7(newArrivalObj_7);
-function displayProducts_7(data){
-    data.map(({image,description,exclusive}) =>{
+function displayProducts_7(data) {
+    data.map(({ image, description, exclusive }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv4");
@@ -431,7 +431,7 @@ function displayProducts_7(data){
         let desc = document.createElement("h3");
 
         let img = document.createElement("img");
-    
+
 
         img.src = image;
         desc.innerText = description;
@@ -439,8 +439,8 @@ function displayProducts_7(data){
 
 
         imgDiv.append(img);
-  
-        mainDiv.append(imgDiv,exclus,desc);
+
+        mainDiv.append(imgDiv, exclus, desc);
 
         document.querySelector(".slideProducts7").append(mainDiv);
     });
@@ -448,8 +448,8 @@ function displayProducts_7(data){
 }
 
 displayProducts_8(newArrivalObj_8);
-function displayProducts_8(data){
-    data.map(({image,description,exclusive}) =>{
+function displayProducts_8(data) {
+    data.map(({ image, description, exclusive }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         imgDiv.setAttribute("class", "imgDiv4");
@@ -457,7 +457,7 @@ function displayProducts_8(data){
         let desc = document.createElement("h3");
 
         let img = document.createElement("img");
-    
+
 
         img.src = image;
         desc.innerText = description;
@@ -465,8 +465,8 @@ function displayProducts_8(data){
 
 
         imgDiv.append(img);
-  
-        mainDiv.append(imgDiv,exclus,desc);
+
+        mainDiv.append(imgDiv, exclus, desc);
 
         document.querySelector(".slideProducts8").append(mainDiv);
     });
