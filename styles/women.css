@@ -2,6 +2,7 @@
     width: 93%;
     margin: auto;
     font-family:sans-serif;
+    
 }
 
 .topImg>a>img{
@@ -24,6 +25,8 @@
     font-weight: 700;
     color: #1b1b1b;
     line-height: 36px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
 }
 .moreNewArrivals{
     width: 100%;
