@@ -392,3 +392,158 @@ function featurednews(data){
      featurenews.append(img)
    })
 }
+
+let morefeaturedobj =[
+  {
+    image : "https://im.uniqlo.com/global-cms/spa/resca7228f636e1f9e9983d8be65e5b5145fr.jpg",
+    head : "ULTRA LIGHT COLLECTION",
+    desc : "A new essential for your new way of life."
+  },
+  {
+    image : "https://im.uniqlo.com/global-cms/spa/res2e98846b0ba4832ff9a67ecad4542c79fr.jpg",
+    head : "FLEECE COLLECTION",
+    desc : "Express your personality and stay cozy all season long - just reach for your  favorite fleece."
+             
+        
+  },
+  {
+    image : "https://im.uniqlo.com/global-cms/spa/resc8b66447eb9ae8c8f74035c5f62762b8fr.jpg",
+    head : "HEATTECH COLLECTION",
+    desc :  "Wear less, More Warmth. Innovative  fabric generates heat from your body moisture",
+  
+    
+  }
+]
+let collection =document.getElementById("collection")
+
+feat(morefeaturedobj)
+function feat(data){
+
+  data.map(({image,head,desc})=>{
+    let div =document.createElement("div");
+    let imgdiv =document.createElement("div")
+
+    let img =document.createElement("img")
+    img.src =image
+
+    let h4 =document.createElement("h4");
+    h4.textContent =head;
+    h4.style.paddingLeft ="36px"
+
+    let p =document.createElement("p");
+    p.textContent =desc;
+    p.style.paddingLeft ="36px"
+    p.style.paddingRight ="36px"
+    p.style.lineHeight ="18px"
+    imgdiv.append(img)
+    div.append(imgdiv,h4,p);
+    collection.append(div)
+  })
+}
+
+let morefeaturedobj2 =[
+  {
+    image : "https://im.uniqlo.com/global-cms/spa/resb64ae67a2d1dfa5ad28199023e1a9815fr.jpg",
+    head : "UNIQLO U | LAUNCHING 18TH FEBRUARY",
+    desc : "Future LifeWear essentials, designed in pursuit of a simplified, modern wardrobe.A new essential for your new way of life."
+   
+  },
+  {
+    image : "https://im.uniqlo.com/global-cms/spa/resfbdb3c9303a65708c7f922c7dd63b256fr.jpg",
+    head : "+J | VIEW COLLECTION",
+    desc : "Marking the end of chapter 2 with designer Jil Sander which further develops its signature understatement and quiet distinction."
+    
+   
+           
+        
+  },
+  {
+    image : "https://im.uniqlo.com/global-cms/spa/res1e5990de62ff4e0a54c912cd13fc1f21fr.jpg",
+    head : "JW ANDERSON | VIEW cOLLECTION",
+    desc :  "This collection blends an urban wardrobe with the serenity of a peaceful weekend  in the country.",
+    
+  
+  
+    
+  }
+]
+
+let special =document.getElementById("special")
+feat2(morefeaturedobj2)
+function feat2(data){
+
+  data.map(({image,head,desc})=>{
+    let div =document.createElement("div");
+    let imgdiv =document.createElement("div")
+
+    let img =document.createElement("img")
+    img.src =image
+
+    let h4 =document.createElement("h4");
+    h4.textContent =head;
+    h4.style.paddingLeft ="36px"
+
+    let p =document.createElement("p");
+    p.textContent =desc;
+    p.style.paddingLeft ="36px"
+    p.style.paddingRight ="36px"
+    p.style.lineHeight ="18px"
+    imgdiv.append(img)
+    div.append(imgdiv,h4,p);
+    special.append(div)
+  })
+}
+
+
+let morefeaturedobj3 =[
+  {
+    image : "https://im.uniqlo.com/global-cms/spa/rescf9d98a70918ee030b6b49fa785e1b84fr.jpg",
+    head : "ULTRA LIGHT DOWN COLLECTION",
+    desc : "A new essential for your new way of life."
+   
+  },
+  {
+    image : "https://im.uniqlo.com/global-cms/spa/resef0798d1150ffa6f0c43e7eefb1bd683fr.jpg",
+    head : "LOVE & FLEECE",
+    desc : "Celebrating 25 years of UNIQLO Fleece"
+    
+   
+           
+        
+  },
+  {
+    image : "https://im.uniqlo.com/global-cms/spa/resa6048cd562199b3ba62d2d026080709cfr.jpg",
+    head : "GOODBYE BULKY WINTER CLOTHING",
+    desc :  "Turn up the heat with HEATTECH!.",
+    
+  
+  
+    
+  }
+]
+
+let today =document.getElementById("today")
+feat3(morefeaturedobj3)
+function feat3(data){
+
+  data.map(({image,head,desc})=>{
+    let div =document.createElement("div");
+    let imgdiv =document.createElement("div")
+
+    let img =document.createElement("img")
+    img.src =image
+
+    let h4 =document.createElement("h4");
+    h4.textContent =head;
+    h4.style.paddingLeft ="36px"
+
+    let p =document.createElement("p");
+    p.textContent =desc;
+    p.style.paddingLeft ="36px"
+    p.style.paddingRight ="36px"
+    p.style.lineHeight ="18px"
+    imgdiv.append(img)
+    div.append(imgdiv,h4,p);
+    today.append(div)
+  })
+}
