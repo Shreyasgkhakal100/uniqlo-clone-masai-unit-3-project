@@ -164,18 +164,31 @@ function displayProducts_1(data) {
     data.map(({ image, gendar, size, description, exclusive, price }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
-        imgDiv.setAttribute("class", "imgDiv");
         let sizeDiv = document.createElement("div");
-        sizeDiv.setAttribute("class", "sizeDiv");
-
+        
         let img = document.createElement("img");
         let gend = document.createElement("h3");
         let siz = document.createElement("h3");
         let desc = document.createElement("h2");
         let exclus = document.createElement("h4");
         let pric = document.createElement("h4");
-
+        
+        imgDiv.setAttribute("class", "imgDiv");
+        sizeDiv.setAttribute("class", "sizeDiv");
         exclus.setAttribute("class", "exclusive");
+
+        let productsObj ={
+            image,
+            gendar,
+            size,
+            description,
+            exclusive,
+            price
+        }
+
+        mainDiv.addEventListener("click", ()=>{
+            storeData(productsObj);
+        });
 
         img.src = image;
         gend.innerText = gendar;
@@ -199,18 +212,31 @@ function displayProducts_2(data) {
     data.map(({ image, gendar, size, description, exclusive, price }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
-        imgDiv.setAttribute("class", "imgDiv");
         let sizeDiv = document.createElement("div");
-        sizeDiv.setAttribute("class", "sizeDiv");
-
+        
         let img = document.createElement("img");
         let gend = document.createElement("h3");
         let siz = document.createElement("h3");
         let desc = document.createElement("h2");
         let exclus = document.createElement("h4");
         let pric = document.createElement("h4");
-
+        
+        imgDiv.setAttribute("class", "imgDiv");
+        sizeDiv.setAttribute("class", "sizeDiv");
         exclus.setAttribute("class", "exclusive");
+
+        let productsObj ={
+            image,
+            gendar,
+            size,
+            description,
+            exclusive,
+            price
+        }
+
+        mainDiv.addEventListener("click", ()=>{
+            storeData(productsObj);
+        });
 
         img.src = image;
         gend.innerText = gendar;
@@ -234,18 +260,31 @@ function displayProducts_3(data) {
     data.map(({ image, gendar, size, description, exclusive, price }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
-        imgDiv.setAttribute("class", "imgDiv");
         let sizeDiv = document.createElement("div");
-        sizeDiv.setAttribute("class", "sizeDiv");
-
+        
         let img = document.createElement("img");
         let gend = document.createElement("h3");
         let siz = document.createElement("h3");
         let desc = document.createElement("h2");
         let exclus = document.createElement("h4");
         let pric = document.createElement("h4");
-
+        
+        imgDiv.setAttribute("class", "imgDiv");
+        sizeDiv.setAttribute("class", "sizeDiv");
         exclus.setAttribute("class", "exclusive");
+
+        let productsObj ={
+            image,
+            gendar,
+            size,
+            description,
+            exclusive,
+            price
+        }
+
+        mainDiv.addEventListener("click", ()=>{
+            storeData(productsObj);
+        });
 
         img.src = image;
         gend.innerText = gendar;
@@ -310,4 +349,11 @@ function displayProducts_8(data) {
         document.querySelector(".slideProducts8").append(mainDiv);
     });
 
+}
+
+
+ // Store Data in localStorage here..
+ function storeData(data){
+    localStorage.setItem("uniqloProd", JSON.stringify(data));
+    window.location.href= "./viewProd.html";
 }
