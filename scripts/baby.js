@@ -5,7 +5,7 @@ const newArrivalObj_1 = [
         size: "age3-6m(60)",
         description: "BABIES NEWBORN Joy Of Print Long Sleeve Bodysuit",
         exclusive: "New Arrivals",
-        price: "690.00"
+        price: 690
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/445944/item/goods_01_445944.jpg?width=1008&impolicy=quality_75",
@@ -13,7 +13,7 @@ const newArrivalObj_1 = [
         size: "6-12(70)-4-4Y(110)",
         description: "BABIES TODDLER AIRism Cotton Long Sleeve T-Shirt",
         exclusive: "Exclusive Size Online Only",
-        price: "990.00"
+        price: 990
     },
 
     {
@@ -22,7 +22,7 @@ const newArrivalObj_1 = [
         size: "12-18(80)-4-5Y(110)",
         description: "BABIES TODDLER Joy Of Print Cotton Mesh Inner 2 Pack",
         exclusive: "New Arrivals",
-        price: "990.00"
+        price: 990
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/446018/item/goods_64_446018.jpg?width=1008&impolicy=quality_75",
@@ -30,7 +30,7 @@ const newArrivalObj_1 = [
         size: "12-18(80)-6-6Y(120)",
         description: "BABIES TODDLER Pixar Monsters University Long Sleeve Pajamas",
         exclusive: "Exclusive Size Online Only",
-        price: "1,990.00"
+        price: 1990
     }
 
 ];
@@ -42,7 +42,7 @@ const newArrivalObj_2 = [
         size: "12-18(80-3-4Y(100)",
         description: "BABIES TODDLER Fluffy Yarn Fleece Jacket Long Sleeve",
         exclusive: "",
-        price: "1,990.00"
+        price: 1990
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/438910/item/goods_69_438910.jpg?width=1008&impolicy=quality_75",
@@ -50,7 +50,7 @@ const newArrivalObj_2 = [
         size: "12-18(80)-3-4y(100)",
         description: "BABIES TODDLER Light Warm Padded Full Zip Parka",
         exclusive: "",
-        price: "2,490.00"
+        price: 2490
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/439080/item/goods_11_439080.jpg?width=1008&impolicy=quality_75",
@@ -58,7 +58,7 @@ const newArrivalObj_2 = [
         size: "12-18(80)-3-4Y(100)",
         description: "BABIES TODDLER HEATTECH T-Shirt Scoop Neck Short Sleeve Thermal",
         exclusive: "",
-        price: "490.00"
+        price: 490
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/439078/item/goods_09_439078.jpg?width=1008&impolicy=quality_75",
@@ -66,7 +66,7 @@ const newArrivalObj_2 = [
         size: "12-18(80)-3-4Y(100)",
         description: "BABIES TODDLER HEATTECH Leggings Thermal",
         exclusive: "",
-        price: "690.00"
+        price: 690
     },
 
 ];
@@ -78,7 +78,7 @@ const newArrivalObj_3 = [
         size: "12-18(80)-3-4Y(100)",
         description: "BABIES TODDLER Dry Short Sleeve Pajamas",
         exclusive: "",
-        price: "990.00"
+        price: 990
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/440716/item/goods_53_440716.jpg?width=1008&impolicy=quality_75",
@@ -86,7 +86,7 @@ const newArrivalObj_3 = [
         size: "12-18(80)-3-4Y(110)",
         description: "BABIES TODDLER Leggings",
         exclusive: "",
-        price: "690.00"
+        price: 690
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/426123/item/goods_01_426123.jpg?width=1008&impolicy=quality_75",
@@ -94,7 +94,7 @@ const newArrivalObj_3 = [
         size: "12-18(80)-3-4Y(100)",
         description: "BABIES TODDLER Short Sleeve Dry Pajamas",
         exclusive: "",
-        price: "990.00"
+        price: 990
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/443299/item/goods_40_443299.jpg?width=1008&impolicy=quality_75",
@@ -102,7 +102,7 @@ const newArrivalObj_3 = [
         size: "AGE3-6M(60)-AGE12-18M(80)",
         description: "BABIES NEWBORN Winnie The Pooh Quilted One Piece Outfit",
         exclusive: "",
-        price: "1,290.00"
+        price: 1290
     },
 
 ];
@@ -195,7 +195,7 @@ function displayProducts_1(data) {
         siz.innerText = size;
         desc.innerText = description;
         exclus.innerText = exclusive;
-        pric.innerText = `Rs. ${price}`;
+        pric.innerText = `Rs. ${price}.00`;
 
         imgDiv.append(img);
         sizeDiv.append(gend, siz);
