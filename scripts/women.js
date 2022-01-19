@@ -531,4 +531,5 @@ function displayProducts_8(data) {
  // Store Data in localStorage here..
  function storeData(data){
     localStorage.setItem("uniqloProd", JSON.stringify(data));
+    window.location.href= "./viewProd.html";
 }
