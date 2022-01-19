@@ -20,8 +20,8 @@
     margin-right: 30px;
 }
 .largeImage{
-    flex: 3;
-    height: 500px;
+    flex: 4;
+    height: 520px;
 }
 .largeImage>img{
   
