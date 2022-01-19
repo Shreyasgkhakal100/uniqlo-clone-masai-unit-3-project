@@ -88,3 +88,21 @@ h1{
     border: 1px solid red;
     padding-bottom: 70px;
 }
+
+.leftDiv{
+    width: 70%;
+    min-height: 300px;
+    border: 1px solid black;
+}
+.rightDiv{
+    width: 30%;
+    min-height: 300px;
+    border: 1px solid black;
+}
+.cartDivClass{
+    display: flex;
+}
+.showCartDiv{
+    display: flex;
+    gap: 20px;
+}
