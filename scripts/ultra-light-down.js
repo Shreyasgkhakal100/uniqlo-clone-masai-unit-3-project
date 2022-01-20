@@ -94,7 +94,7 @@ function displayProducts_1(data) {
             description,
             exclusive,
             price
-        }        
+        }
         mainDiv.addEventListener("click", () => {
             storeData(productsObj);
         });
@@ -129,14 +129,109 @@ function displayProducts_1(data) {
 //             });
 //         }
 //         displayProducts_1(newArrivalObj_1);
-        
-        
+
+
 //         // console.log(evel);
 //     }
 
-    // Store Data in localStorage here..
-    
-    function storeData(data) {
-        localStorage.setItem("uniqloProd", JSON.stringify(data));
+// Store Data in localStorage here..
+
+function storeData(data) {
+    localStorage.setItem("uniqloProd", JSON.stringify(data));
     window.location.href = "./viewProd.html";
 }
+
+//for selected option 
+
+var selected1 = document.querySelector(".select1");
+selected1.addEventListener("change", () => {
+
+    let select = document.querySelector(".select1").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+var selected2 = document.querySelector(".select2");
+selected2.addEventListener("change", () => {
+
+    let select = document.querySelector(".select2").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+var selected3 = document.querySelector(".select3");
+selected3.addEventListener("change", () => {
+
+    let select = document.querySelector(".select3").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+var selected4 = document.querySelector(".select4");
+selected4.addEventListener("change", () => {
+
+    let select = document.querySelector(".select4").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+var selected5 = document.querySelector(".select5");
+selected5.addEventListener("change", () => {
+
+    let select = document.querySelector(".select5").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+var selected6 = document.querySelector(".select6");
+selected6.addEventListener("change", () => {
+
+    let select = document.querySelector(".select6").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+var selected7 = document.querySelector(".select7");
+selected7.addEventListener("change", () => {
+
+    let select = document.querySelector(".select7").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+var selected8 = document.querySelector(".select8");
+selected8.addEventListener("change", () => {
+
+    let select = document.querySelector(".select8").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+var selected9 = document.querySelector(".select9");
+selected9.addEventListener("change", () => {
+
+    let select = document.querySelector(".select9").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+var selected10 = document.querySelector(".select10");
+selected10.addEventListener("change", () => {
+
+    let select = document.querySelector(".select10").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+var selected11 = document.querySelector(".select11");
+selected11.addEventListener("change", () => {
+
+    let select = document.querySelector(".select11").value;
+    if (select != "") {
+        window.location.href = `./${select}.html`;
+    }
+});
+
+
+
+// selectedOpt();
