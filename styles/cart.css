@@ -99,10 +99,50 @@ h1{
     min-height: 300px;
     border: 1px solid black;
 }
-.cartDivClass{
-    display: flex;
+
+.showCartDiv h3{
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
 }
 .showCartDiv{
     display: flex;
-    gap: 20px;
+    gap: 10px;
+}
+.card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+.imgDivCart{
+    width: 25%;
+    height: 100%;
+}
+
+.imgDivCart>img{
+    width: 100%;
+    height: 100%;
+}
+
+.infoDivCart{
+    margin-left: 10px;
+    line-height: 30px;
+    width: 73%;
+    height: 100%;
+}
+.infoDivCart>div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.infoDivCart>div:nth-last-child(2){
+    text-align: right !important;
+}
+hr{
+    width: 80%;
+}
+.cancel{
+    cursor: pointer;
 }

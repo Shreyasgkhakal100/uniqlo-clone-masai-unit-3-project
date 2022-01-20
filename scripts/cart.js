@@ -85,7 +85,9 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [
     size: "S-3XL",
     description: "WOMEN Extra Stretch High Rise Denim Leggings Trousers",
     exclusive: "Exclusive Size Online Only\n New Arrivals",
-    price: "1,990.00",
+    price: "1990",
+    ProductID: 441197,
+    quantity: 1,
   },
   {
     image:
@@ -94,7 +96,9 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [
     size: "XS-XXL",
     description: "WOMEN Wirless Bra Active Square Neck",
     exclusive: "",
-    price: "1,990.00",
+    price: "1990",
+    ProductID: 439594,
+    quantity: 2,
   },
 ];
 
@@ -115,22 +119,60 @@ function showCart(cart){
     showCartDiv.append(leftDiv, rightDiv);
     cartDiv.append(showCartDiv);
 
-    cart.map(({ image, gendar, size, description, exclusive, price }) => {
+    cart.map(({ image, gendar, size, description, exclusive, price, quantity, ProductID }, index) => {
+
+      let card = document.createElement("div");
+      card.setAttribute("class", "card");
+
       let imgDivCart = document.createElement("div");
       imgDivCart.setAttribute("class", "imgDivCart");
       let imgCart = document.createElement("img");
       imgCart.src = image;
+      imgDivCart.append(imgCart);
 
       let infoDivCart = document.createElement("div");
       infoDivCart.setAttribute("class", "infoDivCart");
 
       let titleAndCancel = document.createElement("div");
-      let title = document.createElement("h2");
+      let title = document.createElement("h3");
       title.innerHTML = description;
+      let cancel = document.createElement("h3");
+      cancel.setAttribute("class", "cancel");
+      cancel.innerHTML = "<span style='font-size:40px'>&times;</span>";
+      cancel.addEventListener("click", () => {
+        removeFromCart(index);
+      })
+      titleAndCancel.append(title, cancel);
 
-      let cancel = document.createElement("h2");
-      cancel.innerHTML = "&times;";
+      price = +price
+      let content = document.createElement("p");
+      content.innerHTML = `Product Id: ${ProductID} <br> Gender: ${gendar} <br> Size: ${size} <br> ${exclusive}<br> <b>Rs. ${price.toFixed(2)}</b> `;
+
+      let tot = price*quantity;
+      let quantAndSubtotal = document.createElement("div");
+      let quant = document.createElement("p");
+      quant.innerHTML = quantity;
+      let subTotal = document.createElement("h3");
+      subTotal.innerHTML = `SUBTOTAL: Rs. ${tot.toFixed(2)}`
+      quantAndSubtotal.append(quantity, subTotal);
+
+      infoDivCart.append(titleAndCancel, content, quantAndSubtotal);
+
+      
+      card.append(imgDivCart, infoDivCart);
+      leftDiv.append(card);
+      if (cart.length > 1 && index < cart.length-1) {
+        let hr = document.createElement("hr");
+        leftDiv.append(hr);
+      }
     });
     
 
+}
+
+
+
+
+function removeFromCart(index) {
+  
 }
