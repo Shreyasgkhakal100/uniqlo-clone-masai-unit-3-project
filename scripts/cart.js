@@ -120,7 +120,8 @@ function showCart(cart){
     showCartDiv.append(leftDiv, rightDiv);
     cartDiv.append(showCartDiv);
 
-    cart.map(({ image, gendar, size, description, exclusive, price, quantity, ProductID }, index) => {
+    cart.map((elem, index) => {
+      let { image, gendar, size, description, exclusive, price, quantity, ProductID } = elem;
 
       sum += price*quantity;
 
@@ -149,15 +150,33 @@ function showCart(cart){
 
       price = +price
       let content = document.createElement("p");
-      content.innerHTML = `Product Id: ${ProductID} <br> Gender: ${gendar} <br> Size: ${size} <br> ${exclusive}<br> <b>Rs. ${price.toFixed(2)}</b> `;
+      content.innerHTML = `Product Id: ${ProductID} <br> Gender: ${gendar} <br> Size: ${size} <br> ${exclusive}<br> <b>Rs. ${price.toFixed(
+        2
+      )}</b> <br> <h3>Quantity: </h3>`;
 
       let tot = price*quantity;
       let quantAndSubtotal = document.createElement("div");
-      let quant = document.createElement("p");
-      quant.innerHTML = quantity;
+      let quant = document.createElement("select");
+      quant.addEventListener("change", () => {
+        console.log(quant.value);
+        elem.quantity = quant.value;
+        localStorage.setItem("cart", JSON.stringify(cart));
+        showCart(cart);
+      })
+      let option1 = document.createElement("option");
+      option1.value = "1";
+      option1.innerHTML = "1";
+
+      let option2 = document.createElement("option");
+      option2.value = "2";
+      option2.innerHTML = "2";
+
+      quant.append(option1, option2);
+
+      quant.value = quantity;
       let subTotal = document.createElement("h3");
       subTotal.innerHTML = `SUBTOTAL: Rs. ${tot.toFixed(2)}`
-      quantAndSubtotal.append(quantity, subTotal);
+      quantAndSubtotal.append(quant, subTotal);
 
       infoDivCart.append(titleAndCancel, content, quantAndSubtotal);
 
