@@ -111,6 +111,7 @@ function showCart(cart){
   let showCartDiv = document.createElement("div");
   showCartDiv.setAttribute("class", "showCartDiv");
 
+  let sum = 0;
     let leftDiv = document.createElement("div");
     leftDiv.setAttribute("class", "leftDiv");
     let rightDiv = document.createElement("div");
@@ -120,6 +121,8 @@ function showCart(cart){
     cartDiv.append(showCartDiv);
 
     cart.map(({ image, gendar, size, description, exclusive, price, quantity, ProductID }, index) => {
+
+      sum += price*quantity;
 
       let card = document.createElement("div");
       card.setAttribute("class", "card");
@@ -168,11 +171,104 @@ function showCart(cart){
     });
     
 
+    let orderSummary = document.createElement("div");
+    rightDiv.append(orderSummary);
+
+    let orderSummaryTitle = document.createElement("h3");
+    orderSummaryTitle.innerHTML = `ORDER SUMMARY | ${cart.length} ITEM(S)`;
+
+    let table = document.createElement("table");
+    let tbody = document.createElement("tbody");
+
+    let row1 = document.createElement("tr");
+    let col11 = document.createElement("td");
+    col11.innerHTML = "Item(s) subtotal";
+    let col12 = document.createElement("td");
+    col12.innerHTML = `Rs. ${sum.toFixed(2)}`;
+    col12.setAttribute("class", "col");
+    row1.append(col11, col12);
+    tbody.append(row1);
+
+    let row2 = document.createElement("tr");
+    let col21 = document.createElement("td");
+    col21.innerHTML = "Shipping";
+    let col22 = document.createElement("td");
+    col22.innerHTML = `Rs. 100.00`;
+    col22.setAttribute("class", "col");
+    row2.append(col21, col22);
+    tbody.append(row2);
+
+    let row3 = document.createElement("tr");
+    let col31 = document.createElement("td");
+    col31.innerHTML = "<h3>SUBTOTAL</h3>";
+    let col32 = document.createElement("td");
+    col32.innerHTML = `<h3>Rs. ${(sum + 100).toFixed(2)}</h3>`;
+    col32.setAttribute("class", "col");
+    row3.append(col31, col32);
+    tbody.append(row3);
+
+    let row4 = document.createElement("tr");
+    let col41 = document.createElement("td");
+    col41.innerHTML = "<h3>ORDER TOTAL</h3>";
+    let col42 = document.createElement("td");
+    col42.innerHTML = `<h3>Rs. ${(sum + 100).toFixed(2)}</h3>`;
+    col42.setAttribute("class", "col");
+    row4.append(col41, col42);
+    tbody.append(row4);
+
+    table.append(tbody);
+    orderSummary.append(orderSummaryTitle, table);
+
+    let couponBtn = document.createElement("div");
+    couponBtn.innerHTML = `<div><i class="fas fa-gift"></i>    Coupon</div> <div><i class="fas fa-chevron-right"></i></div>`;
+    couponBtn.addEventListener("click", () => {
+      window.location.href = "#"
+    });
+    couponBtn.setAttribute("class", "couponBtn")
+
+    let para = document.createElement("p");
+    para.innerHTML =
+      "Your items will be reserved for the next 30 minutes after the “Checkout” button has been pressed.";
+
+    let checkoutBtn = document.createElement("div");
+    checkoutBtn.innerHTML = "CHECKOUT";
+    checkoutBtn.setAttribute("class", "checkoutBtn");
+    checkoutBtn.addEventListener("click", () =>{
+      window.location.href = "#";
+    })
+
+
+    let shoppingBtn = document.createElement("div");
+    shoppingBtn.innerHTML = "CONTINUE SHOPPING";
+    shoppingBtn.setAttribute("class", "shoppingBtn");
+    shoppingBtn.addEventListener("click", () =>{
+      window.location.href = "#";
+    })
+    
+    rightDiv.append(couponBtn, para, checkoutBtn, shoppingBtn);
+
 }
 
 
 
 
 function removeFromCart(index) {
-  
+  console.log("in-")
+  document.querySelector("#popup").classList.toggle("none");
+
+
+  document.querySelector("#removeBtn").addEventListener("click", ()=>{
+    cart.splice(index, 1);
+    document.querySelector("#popup").classList.toggle("none");
+    showCart(cart);
+    localStorage.setItem("cart", JSON.stringify(cart));
+  })
+}
+
+
+
+
+//popup toggle function
+function toggle() {
+  document.getElementById("popup").classList.toggle("none");
 }
