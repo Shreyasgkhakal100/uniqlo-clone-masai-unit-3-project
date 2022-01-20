@@ -5,7 +5,7 @@ let newMenObj=[
         size  : "4-5Y(110)-14Y(160)",
         name : "KIDS Uniqlo U AIRism Cotton Crew Neck T-Shirt",
          desc : "New Color",
-        price : "Rs. 990.00"
+        price :  990
     },
     {
       image : "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/446717/item/ingoods_10_446717.jpg?width=1008&impolicy=quality_75",
@@ -14,7 +14,7 @@ let newMenObj=[
       name : "GIRLS Smooth Cotton Frill Short  Sleeve T-Shirt",
    
       desc : "New Arrival",
-      price : "Rs. 990.00"
+      price :  990
     },
     {
       image : "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448847/item/ingoods_09_448847.jpg?width=1008&impolicy=quality_75",
@@ -23,7 +23,7 @@ let newMenObj=[
       name : "GIRLS Easy Gingham Checked Shorts",
      
       desc :  "New Arrival",
-      price : "Rs. 990.00"
+      price :  990
     },
     {
       image : "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/447997/item/ingoods_38_447997.jpg?width=1008&impolicy=quality_75",
@@ -31,7 +31,7 @@ let newMenObj=[
       size  : "4-5Y(110)-14Y(160)",
       name : "KIDS Striped Short Sleeve T-Shirt",
       desc :  "New Arrival",
-      price : "Rs. 990.00"
+      price :  990
     },
   ]
   let product4 =document.getElementById("product4")
@@ -58,7 +58,21 @@ let newMenObj=[
        des.id ="desc"
   
        let pric = document.createElement("h5");
-       pric.textContent =price;
+       pric.textContent = `Rs. ${price}`;
+
+       let productObj ={
+           image,
+           gender,
+           size,
+           name,
+           desc,
+           price,
+       };
+
+       div.addEventListener("click",()=>{
+           storingData(productObj)
+       })
+
   
        imgdiv.append(img);
        sizediv.append(gend,siz);
@@ -78,8 +92,8 @@ let newMenObj2= [
       gender : "KIDS",
       size  : "4-5Y(110)-14Y(160)",
       name :  "KIDS Light warm Padded Parka",
-     
-      price : "Rs. 2,990.00",
+      desc : "",
+      price :  2990,
      
       star : "⭐⭐⭐⭐(19)",
     },
@@ -88,8 +102,8 @@ let newMenObj2= [
       gender : "KIDS",
       size  : "4-5Y(110)-14Y(160)",
       name :  "KIDS Pile Lined Sweat Pants",
-     
-      price : "Rs. 690.00",
+      desc : "",
+      price : 690,
       
       star : "⭐⭐⭐⭐(12)",
     },
@@ -98,8 +112,8 @@ let newMenObj2= [
       gender : "KIDS",
       size  : "4-5Y(110)-14Y(160)",
       name : "KIDS Pile Lined Fleece Set (Long Sleeve)", 
-     
-      price : "Rs. 1,990.00",
+      desc : "",
+      price : 1990,
    
       star : "⭐⭐⭐⭐(29)",
     },
@@ -108,8 +122,8 @@ let newMenObj2= [
       gender : "KIDS",
       size  : "4-5Y(110)-14Y(160)",
       name :  "KIDS Ultra Light Down Jacket (3D Cut)",
-     
-      price : "Rs. 1,990.00",
+      desc : "",
+      price : 1990,
      
       star : "⭐⭐⭐⭐(64)",
     },
@@ -118,7 +132,7 @@ let newMenObj2= [
    limitedOffers(newMenObj2)
   function limitedOffers(data){
   
-    data.map(({image,gender,size,name,price,star})=>{
+    data.map(({image,gender,size,name,desc,price,star})=>{
       let div =document.createElement("div");
       let imgdiv = document.createElement("div");
       let sizediv =document.createElement("div");   
@@ -135,13 +149,29 @@ let newMenObj2= [
   
      
       let pric = document.createElement("p");
-      pric.textContent =price;
+      pric.textContent =`Rs. ${price}`;
      
   
          
       let str = document.createElement("p");
       str.textContent =star;
       // str.style.border ="0"
+      let productObj ={
+        image,
+        gender,
+        size,
+        name,
+        desc,
+        price,
+    };
+
+    div.addEventListener("click",()=>{
+        storingData(productObj)
+    })
+
+
+
+
       imgdiv.append(img);
       sizediv.append(gend,siz);
       sizediv.id = "men"
@@ -157,9 +187,9 @@ let newMenObj3= [
       gender : "KIDS",
       size  : "4-5Y(110)-14Y(160)",
       name :  "KIDS Frill Sleeve Long Sleeve T-Shirt",
-     
+     desc : "",
       striked_price : "Rs. 990.00",
-      price : "Rs. 590.00",
+      price : 590,
       limited : "Sale",
       star : "⭐⭐⭐⭐⭐(1)",
     },
@@ -168,9 +198,9 @@ let newMenObj3= [
       gender : "KIDS",
       size  : "4-5Y(110)-14Y(160)",
       name :  "KIDS Smart Ankle Trousers 2WAY Stretch Cotton",
-     
+      desc : "",
       striked_price :"Rs. 2,490.00",
-      price : "Rs. 1,490.00",
+      price : 1490,
       limited : "Sale",
       star : "",
     },
@@ -179,9 +209,9 @@ let newMenObj3= [
       gender : "KIDS",
       size  : "4-5Y(110)-14Y(160)",
       name : "KIDS Souffle Yarn Mock Neck Long Sleeve Sweater", 
-     
+      desc : "",
       striked_price :"Rs. 1,290.00",
-      price : "Rs. 990.00",
+      price :990,
       limited :"Sale",
       star : "⭐⭐⭐⭐(2)",
     },
@@ -190,9 +220,9 @@ let newMenObj3= [
       gender : "KIDS",
       size  : "4-5Y(110)-14Y(160)",
       name :  "KIDS Supima Cotton Oversized Stand Collar Shirt",
-     
+      desc : "",
       striked_price : "Rs. 1,290.00",
-      price : "Rs. 990.00",
+      price : 990,
       limited : "Sale",
       star : "",
     },
@@ -201,7 +231,7 @@ let newMenObj3= [
    SaleOffers(newMenObj3)
   function  SaleOffers(data){
   
-    data.map(({image,gender,size,name,striked_price,price,limited,star})=>{
+    data.map(({image,gender,size,name,desc,striked_price,price,limited,star})=>{
       let div =document.createElement("div");
       let imgdiv = document.createElement("div");
       let sizediv =document.createElement("div");   
@@ -216,15 +246,15 @@ let newMenObj3= [
       let nam = document.createElement("h3");
       nam.textContent =name;
   
-    //   let des = document.createElement("p");
-    //   des.textContent =exc;
+      let des = document.createElement("p");
+      des.textContent = desc;
     //   des.id ="desc"
   
       let striked = document.createElement("p");
       striked.textContent =striked_price;
       striked.id ="strikedprice"
       let pric = document.createElement("p");
-      pric.textContent =price;
+      pric.textContent =`Rs. ${price}`;
       pric.id ="redprice"
   
       let limit = document.createElement("p");
@@ -234,6 +264,21 @@ let newMenObj3= [
       let str = document.createElement("p");
       str.textContent =star;
       // str.style.border ="0"
+      let productObj ={
+        image,
+        gender,
+        size,
+        name,
+        desc,
+        price,
+    };
+
+    div.addEventListener("click",()=>{
+        storingData(productObj)
+    })
+
+
+
       imgdiv.append(img);
       sizediv.append(gend,siz);
       sizediv.id = "men"
@@ -250,7 +295,7 @@ let newMenObj4=[
         size  : "4-5Y(110)-14Y(160)",
         name : "KIDS Extra Stretch Dry Sweat Long Sleeve Full-Zip Hoodie",
           desc : "",
-        price : "Rs. 1,990.00",
+        price : 1990,
         star : "",
     },
     {
@@ -260,7 +305,7 @@ let newMenObj4=[
       name : "KIDS Extra Stretch Dry Sweat Trousers",
       
       desc : "New Color",
-      price : "Rs. 1,290.00",
+      price : 1290,
       star : "⭐⭐⭐⭐⭐(3)",
     },
     {
@@ -269,7 +314,7 @@ let newMenObj4=[
       size  :  "4-5Y(110)-14Y(160)",
       name :  "KIDS Extra Stretch Dry Sweat Sleeve",
       desc : "Exclusive Size Online Only",
-      price : "Rs. 1,990.00",
+      price : 1990,
       star : "⭐⭐⭐⭐⭐(1)",
     },
     {
@@ -278,7 +323,7 @@ let newMenObj4=[
       size  :  "4-5Y(110)-14Y(160)",
       name : "KIDS Ultra Stretch Dry Sweat Trousers",
       desc : "Limited Store",
-      price : "Rs. 1,290.00",
+      price : 1290,
       star : "",
     },
   ]
@@ -307,10 +352,24 @@ let newMenObj4=[
        des.id ="desc"
   
        let pric = document.createElement("h4");
-       pric.textContent =price;
+       pric.textContent =`Rs. ${price}`;
   
        let str = document.createElement("h4");
        str.textContent =star;
+
+       let productObj ={
+        image,
+        gender,
+        size,
+        name,
+        desc,
+        price,
+    };
+
+    div.addEventListener("click",()=>{
+        storingData(productObj)
+    })
+
   
        imgdiv.append(img);
        sizediv.append(gend,siz);
@@ -495,4 +554,10 @@ let morefeaturedobj3 =[
       div.append(imgdiv,h4,p);
       today.append(div)
     })
+  }
+
+
+  function storingData(data){
+      localStorage.setItem("uniqProd",JSON.stringify(data));
+      window.location.href = "./productinfo.html"
   }
