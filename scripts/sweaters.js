@@ -1,68 +1,92 @@
 const newArrivalObj_1 = [
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439702/item/ingoods_74_439702.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439154/item/ingoods_32_439154.jpg?width=1008&impolicy=quality_75",
         gendar: "WOMEN",
-        size: "S-XXL",
-        description: "WOMEN Ultra Light6 Down Jecket",
+        size: "XS",
+        description: "WOMEN Extra Fine Merino Crew Neck Long Sleeve Cardigan",
         exclusive: "Exclusive Size Online Only",
-        price: 4990
+        price: 1990
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439704/item/ingoods_71_439704.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448033/item/ingoods_69_448033.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Ultra Light Down Parka",
+        size: "XS-XL",
+        description: "WOMEN Washable Mock Neck Striped Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 5990
+        price: 2490
     },
 
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/429452/item/ingoods_09_429452.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445190/item/ingoods_15_445190.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
-        size: "S-XXL",
-        description: "WOMEN Ultra Light Down Vest",
+        size: "S-XL",
+        description: "WOMEN Washable Cotton Crew Neck Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 24990
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/443932/item/goods_09_443932.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445186/item/ingoods_53_445186.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
-        size: "S",
-        description: "WOMEN Ultra Light Down Jecket",
+        size: "SL",
+        description: "WOMEN Washable Mock Neck Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 6990
+        price: 2490
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439707/item/ingoods_56_439707.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/445190/sub/goods_445190_sub9.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
         size: "S-3XL",
-        description: "WOMEN Ultra Light Down Relaxed Jecket",
+        description: "WOMEN Washable Mock Neck Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 2490
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/429454/item/goods_07_429454.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/439150/sub/goods_439150_sub9.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
         size: "S",
-        description: "WOMEN Ultra Light Down Parka",
+        description: "WOMEN Extra Fine Merino Crew Neck Long Sleeve Cardigan",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2490
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/440037/item/ingoods_34_440037.jpg?width=1008&impolicy=quality_75",
         gendar: "WOMEN",
-        size: "S-3XL",
+        size: "XS-XXL",
         description: "WOMEN Light Pile Lined Fleece Long Sleeve Set",
         exclusive: "Exclusive Size Online Only",
         price: 2990
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_12_439138.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445192/item/ingoods_12_445192.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
         size: "SX-XXL",
-        description: "WOMEN Fluffy Yarn Fleece Full-Zip Jecket",
+        description: "WOMEN UV Protection Crew Neck Cardigan",
         exclusive: "Exclusive Size Online Only",
         price: 3990
+    },
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445192/item/ingoods_53_445192.jpg?width=1600&impolicy=quality_75",
+        gendar: "WOMEN",
+        size: "SX-XL",
+        description: "WOMEN UV Protection Crew Neck Green",
+        exclusive: "Exclusive Size Online Only",
+        price: 3990
+    },
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_08_442884.jpg?width=1600&impolicy=quality_75",
+        gendar: "WOMEN",
+        size: "S-3XL",
+        description: "WOMEN Light  Dark Gray Fleece Long Sleeve Set",
+        exclusive: "Exclusive Size Online Only",
+        price: 3990
+    },
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_32_442884.jpg?width=1600&impolicy=quality_75",
+        gendar: "WOMEN",
+        size: "SX-XXL",
+        description: "WOMEN Fluffy Yarn Beige Fleece Full-Zip Jecket",
+        exclusive: "Exclusive Size Online Only",
+        price: 2990
     }
 
 ];

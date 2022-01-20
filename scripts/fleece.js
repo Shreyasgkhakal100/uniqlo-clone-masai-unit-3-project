@@ -1,68 +1,68 @@
 const newArrivalObj_1 = [
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439702/item/ingoods_74_439702.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_10_439138.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
         size: "S-XXL",
-        description: "WOMEN Ultra Light6 Down Jecket",
+        description: "WOMEN Fluffy Yarn Fleece Full-Zip Jacket",
+        exclusive: "Exclusive Size Online Only",
+        price: 1990
+    },
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_32_439138.jpg?width=1600&impolicy=quality_75",
+        gendar: "WOMEN",
+        size: "S-3XL",
+        description: "WOMEN Ultra Light Down Parka",
+        exclusive: "Exclusive Size Online Only",
+        price: 4990
+    },
+
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_38_439138.jpg?width=1600&impolicy=quality_75",
+        gendar: "WOMEN",
+        size: "S-XL",
+        description: "WOMEN Fluffy Yarn Fleece Full-Zip Jacket",
+        exclusive: "Exclusive Size Online Only",
+        price: 3990
+    },
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_15_439138.jpg?width=1600&impolicy=quality_75",
+        gendar: "WOMEN",
+        size: "S-XL",
+        description: "WOMEN Ultra Light Down Jecket",
+        exclusive: "Exclusive Size Online Only",
+        price: 5990
+    },
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_76_439138.jpg?width=1600&impolicy=quality_75",
+        gendar: "WOMEN",
+        size: "S-3XL",
+        description: "WOMEN Ultra Light Blue Down Relaxed Jecket",
         exclusive: "Exclusive Size Online Only",
         price: 4990
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439704/item/ingoods_71_439704.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Ultra Light Down Parka",
-        exclusive: "Exclusive Size Online Only",
-        price: 5990
-    },
-
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/429452/item/ingoods_09_429452.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_01_442884.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
         size: "S-XXL",
-        description: "WOMEN Ultra Light Down Vest",
+        description: "WOMEN Pile Lined Fleece Single Breasted Short Coat",
         exclusive: "Exclusive Size Online Only",
         price: 2990
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/443932/item/goods_09_443932.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S",
-        description: "WOMEN Ultra Light Down Jecket",
-        exclusive: "Exclusive Size Online Only",
-        price: 6990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439707/item/ingoods_56_439707.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_08_442884.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
         size: "S-3XL",
-        description: "WOMEN Ultra Light Down Relaxed Jecket",
+        description: "WOMEN Light  Dark Gray Fleece Long Sleeve Set",
         exclusive: "Exclusive Size Online Only",
         price: 3990
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/429454/item/goods_07_429454.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S",
-        description: "WOMEN Ultra Light Down Parka",
-        exclusive: "Exclusive Size Online Only",
-        price: 2990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/440037/item/ingoods_34_440037.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Light Pile Lined Fleece Long Sleeve Set",
-        exclusive: "Exclusive Size Online Only",
-        price: 2990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_12_439138.jpg?width=1008&impolicy=quality_75",
+        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_32_442884.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
         size: "SX-XXL",
-        description: "WOMEN Fluffy Yarn Fleece Full-Zip Jecket",
+        description: "WOMEN Fluffy Yarn Beige Fleece Full-Zip Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 2990
     }
 
 ];
