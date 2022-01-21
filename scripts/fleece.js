@@ -5,7 +5,8 @@ const newArrivalObj_1 = [
         size: "S-XXL",
         description: "WOMEN Fluffy Yarn Fleece Full-Zip Jacket",
         exclusive: "Exclusive Size Online Only",
-        price: 1990
+        price: 1990,
+        id: 445307
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_32_439138.jpg?width=1600&impolicy=quality_75",
@@ -13,7 +14,9 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Ultra Light Down Parka",
         exclusive: "Exclusive Size Online Only",
-        price: 4990
+        price: 4990,
+        id: 445308
+
     },
 
     {
@@ -22,7 +25,9 @@ const newArrivalObj_1 = [
         size: "S-XL",
         description: "WOMEN Fluffy Yarn Fleece Full-Zip Jacket",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 3990,
+        id: 445309,
+
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_15_439138.jpg?width=1600&impolicy=quality_75",
@@ -30,7 +35,8 @@ const newArrivalObj_1 = [
         size: "S-XL",
         description: "WOMEN Ultra Light Down Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 5990
+        price: 5990,
+        id: 445310
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_76_439138.jpg?width=1600&impolicy=quality_75",
@@ -38,7 +44,8 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Ultra Light Blue Down Relaxed Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 4990
+        price: 4990,
+        id: 445311
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_01_442884.jpg?width=1600&impolicy=quality_75",
@@ -46,7 +53,8 @@ const newArrivalObj_1 = [
         size: "S-XXL",
         description: "WOMEN Pile Lined Fleece Single Breasted Short Coat",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445312
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_08_442884.jpg?width=1600&impolicy=quality_75",
@@ -54,7 +62,9 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Light  Dark Gray Fleece Long Sleeve Set",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 3990,
+        id: 445313
+
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_32_442884.jpg?width=1600&impolicy=quality_75",
@@ -62,7 +72,9 @@ const newArrivalObj_1 = [
         size: "SX-XXL",
         description: "WOMEN Fluffy Yarn Beige Fleece Full-Zip Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445314
+
     }
 
 ];
@@ -70,7 +82,7 @@ const newArrivalObj_1 = [
 
 displayProducts_1(newArrivalObj_1);
 function displayProducts_1(data) {
-    data.map(({ image, gendar, size, description, exclusive, price }) => {
+    data.map(({ image, gendar, size, description, exclusive, price,id }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         let sizeDiv = document.createElement("div");
@@ -93,7 +105,8 @@ function displayProducts_1(data) {
             size,
             description,
             exclusive,
-            price
+            price,
+            id
         }
         mainDiv.addEventListener("click", () => {
             storeData(productsObj);

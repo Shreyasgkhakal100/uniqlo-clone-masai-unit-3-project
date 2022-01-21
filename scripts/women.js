@@ -437,6 +437,9 @@ function displayProducts_5(data) {
 
         let img = document.createElement("img");
 
+        mainDiv.addEventListener("click", ()=>{
+            window.location.href = "./ultra-light-down.html";
+        });
 
         img.src = image;
 
