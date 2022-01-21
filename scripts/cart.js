@@ -102,10 +102,16 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [
   },
 ];
 
+
+let discount = JSON.parse(localStorage.getItem("discount"));
+
 let cartDiv = document.querySelector("#cartDiv");
 if(cart.length>0){
   showCart(cart);
 }
+
+
+
 function showCart(cart){
   cartDiv.innerHTML = "";
   let showCartDiv = document.createElement("div");
@@ -228,12 +234,31 @@ function showCart(cart){
 
     let row4 = document.createElement("tr");
     let col41 = document.createElement("td");
-    col41.innerHTML = "<h3>ORDER TOTAL</h3>";
+    col41.innerHTML = "<h3>DISCOUNT</h3>";
     let col42 = document.createElement("td");
-    col42.innerHTML = `<h3>Rs. ${(sum + 100).toFixed(2)}</h3>`;
+    if (discount == 1) {
+      col42.innerHTML = `<h3>10%</h3>`;
+    } else {
+      col42.innerHTML = `<h3>0%</h3>`;
+    }
     col42.setAttribute("class", "col");
     row4.append(col41, col42);
     tbody.append(row4);
+
+    let amt = (sum + 100).toFixed(2);
+    let row5 = document.createElement("tr");
+    let col51 = document.createElement("td");
+    col51.innerHTML = "<h3>ORDER TOTAL</h3>";
+    let col52 = document.createElement("td");
+    if (discount == 1) {
+      amt = amt - amt * 0.1;
+      col52.innerHTML = `<h3>Rs. ${amt}</h3>`;
+    } else {
+      col52.innerHTML = `<h3>Rs. ${amt}</h3>`;
+    }
+    col52.setAttribute("class", "col");
+    row5.append(col51, col52);
+    tbody.append(row5);
 
     table.append(tbody);
     orderSummary.append(orderSummaryTitle, table);
@@ -253,7 +278,7 @@ function showCart(cart){
     checkoutBtn.innerHTML = "CHECKOUT";
     checkoutBtn.setAttribute("class", "checkoutBtn");
     checkoutBtn.addEventListener("click", () =>{
-      window.location.href = "#";
+      window.location.href = "checkout-delivery.html";
     })
 
 
@@ -279,8 +304,14 @@ function removeFromCart(index) {
   document.querySelector("#removeBtn").addEventListener("click", ()=>{
     cart.splice(index, 1);
     document.querySelector("#popup").classList.toggle("none");
-    showCart(cart);
     localStorage.setItem("cart", JSON.stringify(cart));
+    if(cart.length>0){
+      showCart(cart);
+    }else{
+      location.reload();
+    }
+    
+    
   })
 }
 
@@ -290,4 +321,8 @@ function removeFromCart(index) {
 //popup toggle function
 function toggle() {
   document.getElementById("popup").classList.toggle("none");
+}
+
+function goToNextPage() {
+  window.location.href = "index.html";
 }
