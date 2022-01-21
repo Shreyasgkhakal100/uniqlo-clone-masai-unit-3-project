@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <script src="./party.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     
+  </head>
+  <style>
+      div{
+          border: 1px solid black;
+          width:1200px;
+          height:700px;
+          display:flex;
+          gap:50px;
+      }
+      .Hero_Video {
+          width:100%;
+          height:100%;
+      }
+  </style>
+  <body>
+    
+ <div>
+    <video class="Hero_Video js-Hero_Video" preload="auto" muted="true" autoplay="true" loop="true" playsinline="true" src="https://www.uniqlo.com/jp/ja/contents/collaboration/plusj/21fw/common/imgs/home/hero-video.mp4"></video>
+    <video class="Hero_Video js-Hero_Video" preload="auto" muted="true" autoplay="true" loop="true" playsinline="true" src="https://www.uniqlo.com//jp/ja/contents/collaboration/whitemountaineering/21fw/common/imgs/home/hero-video-in.mp4"></video>
+</div>
+
+
 </body>
 </html>
+<script>
+    party.screen({ 
+   count: 500 * (window.innerWidth / 1980),
+  countVariation: 0.5,
+  angleSpan: 0,
+  yVelocity: -100,
+  yVelocityVariation: 2,
+  rotationVelocityLimit: 6,
+  scaleVariation: 0.8
+});
+</script>

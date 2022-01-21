@@ -7,6 +7,7 @@
     <title>UNIQLO INDIA | ONLINE CLOTHING</title>
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <div class="newarrivals">
             <p>NEW ARRIVALS</p>
             <div id="section-cat">
-                <p>WOMEN</p>
+                <p id="women">WOMEN</p>
                 <p>MEN</p>
                 <p>KIDS</p>
                 <p>BABY</p>
@@ -29,7 +30,7 @@
         <div class="newarrivals">
             <p>LIMITED OFFER</p>
             <div id="section-cat">
-                <p>WOMEN</p>
+                <p id="women">WOMEN</p>
                 <p>MEN</p>
                 <p>KIDS</p>
                 <p>BABY</p>
@@ -39,7 +40,7 @@
         <div class="newarrivals">
             <p>SALE</p>
             <div id="section-cat">
-                <p>WOMEN</p>
+                <p id="women1">WOMEN</p>
                 <p>MEN</p>
                 <p>KIDS</p>
                 <p>BABY</p>
@@ -49,7 +50,7 @@
         <div class="newarrivals">
             <p>COMING SOON</p>
             <div id="section-cat">
-                <p>WOMEN</p>
+                <p id="women">WOMEN</p>
                 <p>MEN</p>
                 <p>KIDS</p>
                 <p>BABY</p>
@@ -101,7 +102,7 @@
 
         <h1>LOUNGE AT HOME</h1>
      <div id="gridimage">
-         <img src="https://im.uniqlo.com/global-cms/spa/res643375ded9887e31fccecc934ecca74bfr.jpg" alt="">
+         <img src="https://im.uniqlo.com/global-cms/spa/res37c5e7db4f271179b9eb0b8aceffa92ffr.jpg" alt="">
          <img src="https://im.uniqlo.com/global-cms/spa/resdadc1b98c32afd1c3a2c8121c5cff5e4fr.jpg" alt="">
          <img src="https://im.uniqlo.com/global-cms/spa/res89faf066d7cc7b24a4e2d178bae3d68dfr.jpg" alt="">
         <img src="https://im.uniqlo.com/global-cms/spa/resd421183c5a42aeac2850ecc23b26687bfr.jpg" alt="">
@@ -115,20 +116,31 @@
            <img src="https://im.uniqlo.com/global-cms/spa/res90bd6262c3ff9617d9a355005d97b90cfr.jpg" alt="">
            </div>
 
+           <h1>LOOKS FOR THIS SEASON</h1>
+        <div id="gridimage">
+            <img src="https://im.uniqlo.com/global-cms/spa/res28214d40eab223991bf40835669b7b63fr.jpg" alt="">
+            <img src="https://im.uniqlo.com/global-cms/spa/res9f876aa1c20cebf7b914e6f3ff61cff1fr.jpg" alt="">
+            <img src="https://im.uniqlo.com/global-cms/spa/res2a0a6c68ff494f078472f3c8b38d299cfr.jpg" alt="">
+           <img src="https://im.uniqlo.com/global-cms/spa/res729e31169145bbc1cf2cfad659ceba73fr.jpg" alt="">
+           </div>
+
            <h1>SPECIAL COLLABORATIONS</h1>
            <div id="scgrid">
                <div>
-            <img src="https://im.uniqlo.com/global-cms/spa/resb64ae67a2d1dfa5ad28199023e1a9815fr.jpg" alt="">
+            <!-- <img src="https://im.uniqlo.com/global-cms/spa/resb64ae67a2d1dfa5ad28199023e1a9815fr.jpg" alt=""> -->
+            <video class="Hero_Video js-Hero_Video" preload="auto" muted="true" autoplay="true" loop="true" playsinline="true" src="https://www.uniqlo.com//jp/ja/contents/collaboration/uniqlo-u/22ss/common/imgs/home/hero-video-desktop.mp4"></video>
             <p>Uniqlo U | Launching 18th February</p>
             <div>Future LifeWear essentials, designed in pursuit of a simplified, modern wardrobe.</div>
                </div>
                <div>
-                <img src="https://im.uniqlo.com/global-cms/spa/resa3b0a61ef92c82820124a327ecd34303fr.jpg" alt="">
+                <!-- <img src="https://im.uniqlo.com/global-cms/spa/resa3b0a61ef92c82820124a327ecd34303fr.jpg" alt=""> -->
+                <video  id="specialvideo" class="Hero_Video js-Hero_Video" preload="auto" muted="true" autoplay="true" loop="true" playsinline="true" src="https://www.uniqlo.com/jp/ja/contents/collaboration/plusj/21fw/common/imgs/home/hero-video.mp4"></video>
                 <p>+J | View Collection</p>
                 <div>Marking the end of chapter 2 with designer Jil Sander which further develops its signature understatement and quiet distinction.</div>
                    </div>
                    <div>
-                    <img src="https://im.uniqlo.com/global-cms/spa/res1e5990de62ff4e0a54c912cd13fc1f21fr.jpg" alt="">
+                    <!-- <img src="https://im.uniqlo.com/global-cms/spa/res1e5990de62ff4e0a54c912cd13fc1f21fr.jpg" alt=""> -->
+                    <video class="Hero_Video js-Hero_Video" preload="auto" muted="true" autoplay="true" loop="true" playsinline="true" src="https://www.uniqlo.com//jp/ja/contents/collaboration/jwanderson/21fw/common/imgs/home/hero-video-desktop.mp4"></video>
                     <p>JW Anderson | View Collection</p>
                     <div>This collection blends an urban wardrobe with the serenity of a peaceful weekend in the country.</div>
                        </div>
@@ -270,6 +282,9 @@ let crslpic=["https://im.uniqlo.com/global-cms/spa/res2a96a18ade9fe3ecaeb3bbe5ed
             "https://im.uniqlo.com/global-cms/spa/rescff3140a7639104150811d84415f6c71fr.jpg",
             "https://im.uniqlo.com/global-cms/spa/resff98eb755cb810e1104b099192022c4bfr.jpg",
             "https://im.uniqlo.com/global-cms/spa/res768d6eeb924df08ca1f79449981d2c37fr.jpg",
+            "https://im.uniqlo.com/global-cms/spa/res60b8f6841d32a501f2ca76146614f9c2fr.jpg",
+            "https://im.uniqlo.com/global-cms/spa/resc4124a6f541dfda2a6549aafa033308dfr.jpg",
+            "https://im.uniqlo.com/global-cms/spa/resfe0483b529c64c28ecc08915a027894efr.jpg"
 ]
 
 function start(){
@@ -296,5 +311,8 @@ window.location.href="app.html"
 })
 document.querySelector(".application").addEventListener("click",()=>{
 window.location.href="app.html"
+})
+document.querySelector("#women").addEventListener("click",()=>{
+window.location.href="women.html"
 })
 </script>
