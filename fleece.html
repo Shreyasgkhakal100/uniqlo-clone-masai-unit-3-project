@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./styles/ultra-light-down.css">
     <!-- title icone -->
     <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <!-- footer css link here  -->
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
@@ -16,7 +18,7 @@
         <div class="filterMain">
             <div>
                 <h2>RESULTS</h2>
-                <h2>8 Items</h2>
+                <h2>All Items</h2>
             </div>
             <div>
                 <h2>SORT BY</h2>
@@ -135,9 +137,17 @@
             <div class="productSide"></div>
         </div>
     </div>
+    <div id="footer-container"></div>
 </body>
 
 </html>
+<script type="module">
+
+    import footer from "./components/footer.js"
+    let footerdiv = document.getElementById("footer-container");
+    footerdiv.innerHTML = footer();
+
+</script>
 <script src="./scripts/fleece.js">
 
 </script>

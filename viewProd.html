@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-        <!-- title icone -->
-        <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <!-- title icone -->
+    <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <!-- footer css link here  -->
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
@@ -31,15 +33,6 @@
                     <hr>
                     <select name="" id="">
                         <option value="">Overview</option>
-                        <!-- <option value="">
-                            - Longer length extends down to the ribs. <br>
-                            - Flattering square neckline adds a sporty look. <br>
-                            - Removable, breathable pads. <br>
-                            - Racerback style for unimpeded shoulder movement. <br>
-                            - Ventilation holes placed in areas prone to sweat. <br>
-                            - Great for activities such as yoga and walking. <br>
-                            NET QUANTITY 1 N
-                        </option> -->
 
                     </select>
 
@@ -112,7 +105,7 @@
                 <h3>QUANTITY</h3>
                 <div>
                     <select name="" id="select">
-                        <option value="1" >1</option>
+                        <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -129,7 +122,7 @@
             <div id="btnDiv">
 
             </div>
-         
+
             <div class="twoBtn">
                 <button>ADD TO WISH LIST</button>
                 <button>FIND STOCK IN STORE</button>
@@ -162,9 +155,17 @@
             <button onclick="toggle()" id="continueBtn">CONTINUE SHOPPING</button>
         </div>
     </div>
+    <div id="footer-container"></div>
 </body>
 
 </html>
+<script type="module">
+
+    import footer from "./components/footer.js"
+    let footerdiv = document.getElementById("footer-container");
+    footerdiv.innerHTML = footer();
+
+</script>
 <script src="./scripts/viewProd.js">
 
 </script>

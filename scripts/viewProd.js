@@ -17,9 +17,13 @@ function showProd(getData) {
     let pera = document.createElement("p");
     let hr = document.createElement("hr");
 
+    var itemPriceTotal =   document.getElementById("itemPrice");
+    itemPriceTotal.innerText = `Rs. ${getData.price}.00`;
     document.getElementById("select").addEventListener("change", ()=>{
-        getData.quantity = document.getElementById("select").value;
+        let selected = document.getElementById("select").value;
+        getData.quantity = selected;
         showProd(getData);
+        itemPriceTotal.innerText= `Rs. ${getData.price * selected}.00`;
     });
     document.getElementById("btnDiv").innerHTML="";
     let addBtn = document.createElement("button");

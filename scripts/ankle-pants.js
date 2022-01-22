@@ -5,7 +5,8 @@ const newArrivalObj_1 = [
         size: "S-XXL",
         description: "WOMEN Ultra Light6 Down Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 4990
+        price: 4990,
+        id: 445360
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439704/item/ingoods_71_439704.jpg?width=1008&impolicy=quality_75",
@@ -13,7 +14,8 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Ultra Light Down Parka",
         exclusive: "Exclusive Size Online Only",
-        price: 5990
+        price: 5990,
+        id: 445361
     },
 
     {
@@ -22,7 +24,8 @@ const newArrivalObj_1 = [
         size: "S-XXL",
         description: "WOMEN Ultra Light Down Vest",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445361
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/443932/item/goods_09_443932.jpg?width=1008&impolicy=quality_75",
@@ -30,7 +33,8 @@ const newArrivalObj_1 = [
         size: "S",
         description: "WOMEN Ultra Light Down Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 6990
+        price: 6990,
+        id: 445362
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439707/item/ingoods_56_439707.jpg?width=1008&impolicy=quality_75",
@@ -38,7 +42,8 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Ultra Light Down Relaxed Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 3990,
+        id: 445363
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/429454/item/goods_07_429454.jpg?width=1008&impolicy=quality_75",
@@ -46,7 +51,8 @@ const newArrivalObj_1 = [
         size: "S",
         description: "WOMEN Ultra Light Down Parka",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445364
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/440037/item/ingoods_34_440037.jpg?width=1008&impolicy=quality_75",
@@ -54,7 +60,8 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Light Pile Lined Fleece Long Sleeve Set",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445365
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_12_439138.jpg?width=1008&impolicy=quality_75",
@@ -62,7 +69,8 @@ const newArrivalObj_1 = [
         size: "SX-XXL",
         description: "WOMEN Fluffy Yarn Fleece Full-Zip Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 3990,
+        id: 445366
     }
 
 ];
@@ -70,7 +78,8 @@ const newArrivalObj_1 = [
 
 displayProducts_1(newArrivalObj_1);
 function displayProducts_1(data) {
-    data.map(({ image, gendar, size, description, exclusive, price }) => {
+    document.querySelector(".productSide").innerHTML="";
+    data.map(({ image, gendar, size, description, exclusive, price,id }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         let sizeDiv = document.createElement("div");
@@ -93,7 +102,10 @@ function displayProducts_1(data) {
             size,
             description,
             exclusive,
-            price
+            price,
+            id,
+            quantity: 1,
+
         }
         mainDiv.addEventListener("click", () => {
             storeData(productsObj);
@@ -115,24 +127,26 @@ function displayProducts_1(data) {
 
 }
 
-// function sortProductFun(evel) {
-//         var selected = document.querySelector("#sortProduct").value;
-//         if (selected == "low") {
-//             evel.sort((a, b) => {
-//                 return a - b;
-//             });
-//         }
-//         if (selected == "high") {
-//             evel.sort((a, b) => {
-//                 console.log(b.price);
-//                 return b - a;
-//             });
-//         }
-//         displayProducts_1(newArrivalObj_1);
 
+var sort = document.getElementById("sortProduct");
+sort.addEventListener("change", function priceSort() {
+    var selected = document.getElementById("sortProduct").value;
+    if (selected == "low") {
+        newArrivalObj_1.sort(function (a, b) {
+            // console.log(a.price)
+            return a.price - b.price;
 
-//         // console.log(evel);
-//     }
+        })
+    }
+    if (selected == "high") {
+        newArrivalObj_1.sort(function (a, b) {
+            // console.log(b.price)
+            return b.price - a.price;
+        })
+    }
+    
+    displayProducts_1(newArrivalObj_1);
+});
 
 // Store Data in localStorage here..
 
