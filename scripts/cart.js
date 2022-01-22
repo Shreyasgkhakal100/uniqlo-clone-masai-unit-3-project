@@ -286,7 +286,7 @@ function showCart(cart){
     shoppingBtn.innerHTML = "CONTINUE SHOPPING";
     shoppingBtn.setAttribute("class", "shoppingBtn");
     shoppingBtn.addEventListener("click", () =>{
-      window.location.href = "#";
+      window.location.href = "index.html";
     })
     
     rightDiv.append(couponBtn, para, checkoutBtn, shoppingBtn);

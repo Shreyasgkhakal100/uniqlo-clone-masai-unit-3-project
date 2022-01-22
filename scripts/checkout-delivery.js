@@ -125,7 +125,7 @@ function showCart(cart){
     let couponBtn = document.createElement("div");
     couponBtn.innerHTML = `<div><i class="fas fa-gift"></i>    Coupon</div> <div><i class="fas fa-chevron-right"></i></div>`;
     couponBtn.addEventListener("click", () => {
-      window.location.href = "#"
+      window.location.href = "coupon.html"
     });
     couponBtn.setAttribute("class", "couponBtn")
 
@@ -144,6 +144,21 @@ function showCart(cart){
 //   document.getElementById("popup").classList.toggle("none");
 // }
 
+
 function goToNextPage(){
-  window.location.href = "checkout-payment.html";
+  let firstName = document.getElementById("firstName").value;
+  let lastName = document.getElementById("lastName").value;
+  let pincode = document.getElementById("pincode").value;
+  let add1 = document.getElementById("add1").value;
+  let city = document.getElementById("city").value;
+  let state = document.getElementById("state").value;
+  let mobile = document.getElementById("mobile").value;
+
+  if(firstName.length > 0 && lastName.length > 0 && pincode.length > 0 && add1.length > 0 && city.length > 0 && state.length > 0 && mobile.length > 0){
+    alert(firstName + ", We are adding this address to your current order, Please click on ok to complete payment.");
+    window.location.href = "checkout-payment.html";
+  }else{
+    alert("You Are Missing Something!, Please Make Sure That No Field Remains Empty");
+  }
+  
 }

@@ -143,5 +143,16 @@ function showCart(cart) {
 // }
 
 function goToNextPage() {
-  window.location.href = "order-confirmation.html";
+  let cardNumber = document.getElementById("cardNumber").value;
+  let expiryDate = document.getElementById("expiryDate").value;
+  let securityCode = document.getElementById("securityCode").value;
+  let fullName = document.getElementById("fullName").value;
+
+  if(cardNumber.length == 16 && securityCode.length == 3 && fullName.length > 0 && expiryDate.length > 0){
+    alert("Your Payment Is Successful, Please Click Ok");
+    window.location.href = "order-confirmation.html";
+  }else{
+    alert("Please Check You Credentials, Once Again")
+  }
+  
 }
