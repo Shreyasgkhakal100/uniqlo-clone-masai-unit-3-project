@@ -267,7 +267,7 @@ function showCart(cart){
     let couponBtn = document.createElement("div");
     couponBtn.innerHTML = `<div><i class="fas fa-gift"></i>    Coupon</div> <div><i class="fas fa-chevron-right"></i></div>`;
     couponBtn.addEventListener("click", () => {
-      window.location.href = "#"
+      window.location.href = "coupon.html"
     });
     couponBtn.setAttribute("class", "couponBtn")
 
