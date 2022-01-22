@@ -1,6 +1,8 @@
 
 /* Desktop */
-
+body{
+    margin:0
+}
 #crsl{
     margin-left:150px;
     margin-bottom: 50px;
@@ -205,6 +207,7 @@ video{
     #crsl{
         width:90%;
         margin-left:10px;
+        margin-top: 100px;
     }
     #crsl>img{
         width:100%;
@@ -316,6 +319,22 @@ video{
     
     width:340px;
 }
+#navbar{
+    width:90%;
+    
+}
+#inputdiv{
+    width:200px;
+}
+#downdiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#navhover{
+    overflow-x: scroll;
+    overflow:hidden;
+}
 
 }
 /* i pad */
@@ -323,9 +342,25 @@ video{
     body{
         width:100%;
     }
+    #navbar{
+    width:70%;
+}
+#inputdiv{
+    width:200px;
+}
+#downdiv{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 60px;
+}
+#updiv>div{
+    align-items: flex-start;
+}
     #crsl{
         width:90%;
         margin-left:10px;
+        margin-top: 100px;
     }
     #crsl>img{
         width:100%;

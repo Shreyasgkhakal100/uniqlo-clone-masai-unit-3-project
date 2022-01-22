@@ -1,7 +1,7 @@
 body{
     font-family:  'Helvetica Neue', HelveticaNeue, Helvetica, 'Noto Sans', Roboto, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3', 'Noto Sans CJK JP', Osaka, Meiryo, '\30E1\30A4\30EA\30AA', 'MS PGothic', '\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF', 'Hiragino Sans GB', 'Arial Unicode MS', sans-serif;
 }
-.return,a{
+.return,.coupon-ref+a{
 text-decoration:underline;
 font-weight: bolder;
 margin-left:150px;
@@ -9,7 +9,7 @@ color:black;
 
 display:inline-block;
 }
-a{
+.coupon-ref+a{
 margin-left:0;
 }
 .coupon-box{
@@ -19,12 +19,12 @@ margin-left:150px;
 padding:12px;
 margin-bottom: 120px;
 }
-span,.text{
+.coupon-box span,.text{
 font-weight: bolder;
 text-decoration: none;
 
 }
-button{
+.coupon-box button{
 font-size: 20px;
 background-color: black;
 color:white;
@@ -34,7 +34,7 @@ margin-right: 20px;
 .coupon-value{
 display:flex;
 }
-input{
+.coupon-box input{
 width:400px;
 padding:10px;
 margin-left: 50px;
@@ -43,7 +43,7 @@ border:0;
 background-color: whitesmoke;
 
 }
-input:focus{
+.coupon-box input:focus{
 outline:white;
 border-bottom: 3px solid cadetblue;
 background-color: white;
@@ -55,6 +55,7 @@ text-decoration: underline;
 font-size: 15px;
 margin-left: 150px;
 font-weight: lighter;
+padding-top: 60px;
 }
 @media only screen and (min-width:0px) and (max-width:376px){
 .coupon-box{
@@ -64,7 +65,7 @@ margin-left:2px;
 padding:8px;
 margin-bottom: 120px;
 }
-input{
+.coupon-box input{
 width:180px;
 
 margin-left: 20px;
