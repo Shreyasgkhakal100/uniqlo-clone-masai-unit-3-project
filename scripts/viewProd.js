@@ -1,8 +1,26 @@
-var getData = JSON.parse(localStorage.getItem("uniqloProd")) || [];
+var getData = JSON.parse(localStorage.getItem("uniqloProd"));
+
+
+// function selectItem() {
+//     console.log(quant.value);
+//     elem.quantity = quant.value;
+//     localStorage.setItem("cart", JSON.stringify(cart));
+//     showCart(cart);
+//   })
+
+
+var selected;  
+
+// function selectItem(){
+//     selected= document.querySelector("#select").value;
+//     document.querySelector("#itemPrice").innerText =  `Rs. ${Number(getData.price) * Number(selected)}`;
+
+// }
 
 showProd(getData);
-function showProd(data) {
-
+function showProd(getData) {
+   
+    console.log(getData);
     let descDiv = document.createElement("div");
     let img = document.createElement("img");
     let desc = document.createElement("h2");
@@ -12,54 +30,63 @@ function showProd(data) {
     let pera = document.createElement("p");
     let hr = document.createElement("hr");
 
-    var cartObj = {
-        image: data.image,
-        description: data.description,
-        exclusive: data.exclusive,
-        price: data.price,
-        id: data.id,
+    document.getElementById("select").addEventListener("change", ()=>{
+        getData.quantity = document.getElementById("select").value;
+        // console.log(getData);
+        showProd(getData);
+    });
+    // <button id="addtoCart">ADD TO CART</button>
+    document.getElementById("btnDiv").innerHTML="";
+    let addBtn = document.createElement("button");
+    addBtn.setAttribute("id","addtoCart");
+    addBtn.innerText="ADD TO CART";
 
-    }
+   addBtn.addEventListener("click", ()=>{
+        console.log("inside cart");
+        addToCart(getData);
+    });
+    document.getElementById("btnDiv").append(addBtn);
+
     document.querySelector("#addBtn").addEventListener("click", () => {
 
-        addDataFunc(cartObj);
+        window.location.href = "./cart.html";
     })
+
+    descDiv.innerHTML = "";
+    document.querySelector(".largeImage").innerHTML = "";
+    document.getElementById("productId").innerHTML = "";
+    document.querySelector(".content").innerHTML = "";
 
     inclus.innerText = `inclusive of all taxes`;
     pera.innerText = `Supple texture that can be styled elegantly. A convenient blouse that can be worn for both casual and formal occasions.`;
-    img.src = data.image;
-    desc.innerText = data.description;
-    exclus.innerText = data.exclusive;
-    pric.innerText = `MRP Rs.  ${data.price}`;
+    img.src = getData.image;
+    desc.innerText = getData.description;
+    exclus.innerText = getData.exclusive;
+    pric.innerText = `MRP Rs.  ${getData.price}`;
     descDiv.append(desc, pric, exclus, inclus, pera, hr);
-    document.getElementById("productId").innerText = data.id;
+    document.getElementById("productId").innerText = getData.id;
     document.querySelector(".largeImage").append(img);
     document.querySelector(".content").append(descDiv);
 
 
 }
 
-// js for popup....
 
-function addDataFunc(data){
-    localStorage.setItem("cart", JSON.stringify(data));
-    window.location.href = "./cart.html";
-}
-function addToCart() {
+let arr =JSON.parse(localStorage.getItem("cart"))|| [];
+function addToCart(data) {
+    arr.push(data);
+    localStorage.setItem("cart", JSON.stringify(arr));
     toggle()
-}
-
-
-function selectItem(){
-    var selected = document.querySelector("#select").value;
-    
-    document.querySelector("#itemPrice").innerText =  `Rs. ${Number(getData.price) * Number(selected)}`;
     
 }
+
+// addToCart(getData);
+
 
 function toggle() {
     document.getElementById("popup").classList.toggle("none");
 
 }
+
 
 

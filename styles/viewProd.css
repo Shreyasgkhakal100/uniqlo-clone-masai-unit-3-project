@@ -153,7 +153,7 @@
     font-weight: 600;
     padding: 12px 10px;
 }
-.cartSide>button{
+#btnDiv>button{
     width: 100%;
     border: none;
     padding: 10px;
@@ -164,7 +164,7 @@
     line-height: 25px;
     background-color: #ff0000;
 }
-.cartSide>button:hover{
+#btnDiv>button:hover{
     transition: .5s all ease;
     background-color: rgba(255, 0, 0, 0.616);
 }

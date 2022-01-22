@@ -5,7 +5,8 @@ const newArrivalObj_1 = [
         size: "XS",
         description: "WOMEN Extra Fine Merino Crew Neck Long Sleeve Cardigan",
         exclusive: "Exclusive Size Online Only",
-        price: 1990
+        price: 1990,
+        id: 445314
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448033/item/ingoods_69_448033.jpg?width=1600&impolicy=quality_75",
@@ -13,7 +14,8 @@ const newArrivalObj_1 = [
         size: "XS-XL",
         description: "WOMEN Washable Mock Neck Striped Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 2490
+        price: 2490,
+        id: 445314
     },
 
     {
@@ -22,7 +24,8 @@ const newArrivalObj_1 = [
         size: "S-XL",
         description: "WOMEN Washable Cotton Crew Neck Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 24990
+        price: 24990,
+        id: 445314
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445186/item/ingoods_53_445186.jpg?width=1600&impolicy=quality_75",
@@ -30,7 +33,8 @@ const newArrivalObj_1 = [
         size: "SL",
         description: "WOMEN Washable Mock Neck Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 2490
+        price: 2490,
+        id: 445314
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/445190/sub/goods_445190_sub9.jpg?width=1600&impolicy=quality_75",
@@ -38,7 +42,8 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Washable Mock Neck Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 2490
+        price: 2490,
+        id: 445314
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/439150/sub/goods_439150_sub9.jpg?width=1600&impolicy=quality_75",
@@ -46,7 +51,8 @@ const newArrivalObj_1 = [
         size: "S",
         description: "WOMEN Extra Fine Merino Crew Neck Long Sleeve Cardigan",
         exclusive: "Exclusive Size Online Only",
-        price: 2490
+        price: 2490,
+        id: 445314
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/440037/item/ingoods_34_440037.jpg?width=1008&impolicy=quality_75",
@@ -54,7 +60,8 @@ const newArrivalObj_1 = [
         size: "XS-XXL",
         description: "WOMEN Light Pile Lined Fleece Long Sleeve Set",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445314
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445192/item/ingoods_12_445192.jpg?width=1600&impolicy=quality_75",
@@ -62,7 +69,8 @@ const newArrivalObj_1 = [
         size: "SX-XXL",
         description: "WOMEN UV Protection Crew Neck Cardigan",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 3990,
+        id: 445314
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445192/item/ingoods_53_445192.jpg?width=1600&impolicy=quality_75",
@@ -70,7 +78,8 @@ const newArrivalObj_1 = [
         size: "SX-XL",
         description: "WOMEN UV Protection Crew Neck Green",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 3990,
+        id: 445314
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_08_442884.jpg?width=1600&impolicy=quality_75",
@@ -78,7 +87,8 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Light  Dark Gray Fleece Long Sleeve Set",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 3990,
+        id: 445314
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_32_442884.jpg?width=1600&impolicy=quality_75",
@@ -86,7 +96,8 @@ const newArrivalObj_1 = [
         size: "SX-XXL",
         description: "WOMEN Fluffy Yarn Beige Fleece Full-Zip Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445314
     }
 
 ];
@@ -94,7 +105,8 @@ const newArrivalObj_1 = [
 
 displayProducts_1(newArrivalObj_1);
 function displayProducts_1(data) {
-    data.map(({ image, gendar, size, description, exclusive, price }) => {
+    document.querySelector(".productSide").innerHTML="";
+    data.map(({ image, gendar, size, description, exclusive, price,id }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         let sizeDiv = document.createElement("div");
@@ -117,7 +129,9 @@ function displayProducts_1(data) {
             size,
             description,
             exclusive,
-            price
+            price,
+            id,
+            quantity: 1,
         }
         mainDiv.addEventListener("click", () => {
             storeData(productsObj);
@@ -139,24 +153,25 @@ function displayProducts_1(data) {
 
 }
 
-// function sortProductFun(evel) {
-//         var selected = document.querySelector("#sortProduct").value;
-//         if (selected == "low") {
-//             evel.sort((a, b) => {
-//                 return a - b;
-//             });
-//         }
-//         if (selected == "high") {
-//             evel.sort((a, b) => {
-//                 console.log(b.price);
-//                 return b - a;
-//             });
-//         }
-//         displayProducts_1(newArrivalObj_1);
+var sort = document.getElementById("sortProduct");
+sort.addEventListener("change", function priceSort() {
+    var selected = document.getElementById("sortProduct").value;
+    if (selected == "low") {
+        newArrivalObj_1.sort(function (a, b) {
+            // console.log(a.price)
+            return a.price - b.price;
 
-
-//         // console.log(evel);
-//     }
+        })
+    }
+    if (selected == "high") {
+        newArrivalObj_1.sort(function (a, b) {
+            // console.log(b.price)
+            return b.price - a.price;
+        })
+    }
+    
+    displayProducts_1(newArrivalObj_1);
+});
 
 // Store Data in localStorage here..
 

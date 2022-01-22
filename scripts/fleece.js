@@ -1,4 +1,4 @@
-const newArrivalObj_1 = [
+let newArrivalObj_1 = [
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439138/item/ingoods_10_439138.jpg?width=1600&impolicy=quality_75",
         gendar: "WOMEN",
@@ -82,6 +82,7 @@ const newArrivalObj_1 = [
 
 displayProducts_1(newArrivalObj_1);
 function displayProducts_1(data) {
+    document.querySelector(".productSide").innerHTML="";
     data.map(({ image, gendar, size, description, exclusive, price,id }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
@@ -106,7 +107,8 @@ function displayProducts_1(data) {
             description,
             exclusive,
             price,
-            id
+            id,
+            quantity: 1,
         }
         mainDiv.addEventListener("click", () => {
             storeData(productsObj);
@@ -128,24 +130,29 @@ function displayProducts_1(data) {
 
 }
 
-// function sortProductFun(evel) {
-//         var selected = document.querySelector("#sortProduct").value;
-//         if (selected == "low") {
-//             evel.sort((a, b) => {
-//                 return a - b;
-//             });
-//         }
-//         if (selected == "high") {
-//             evel.sort((a, b) => {
-//                 console.log(b.price);
-//                 return b - a;
-//             });
-//         }
-//         displayProducts_1(newArrivalObj_1);
 
 
-//         // console.log(evel);
-//     }
+var sort = document.getElementById("sortProduct");
+sort.addEventListener("change", function priceSort() {
+    var selected = document.getElementById("sortProduct").value;
+    if (selected == "low") {
+        newArrivalObj_1.sort(function (a, b) {
+            // console.log(a.price)
+            return a.price - b.price;
+
+        })
+    }
+    if (selected == "high") {
+        newArrivalObj_1.sort(function (a, b) {
+            // console.log(b.price)
+            return b.price - a.price;
+        })
+    }
+    
+    displayProducts_1(newArrivalObj_1);
+});
+
+
 
 // Store Data in localStorage here..
 
