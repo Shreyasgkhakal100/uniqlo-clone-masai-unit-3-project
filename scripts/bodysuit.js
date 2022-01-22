@@ -1,94 +1,103 @@
 const newArrivalObj_1 = [
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/446503/item/ingoods_12_446503.jpg?width=1600&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-XXL",
-        description: "WOMEN AIRism UV Protection Soft Leggings",
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/446445001/item/goods_01_446445001.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE0-3M(50)-AGE3-6M(60)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit",
         exclusive: "Exclusive Size Online Only",
-        price: 1990,
-        id: 445346
+        price: 690,
+        id: 445345
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/446503/item/ingoods_67_446503.jpg?width=1600&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Ultra Light Down Parka",
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/446445/item/goods_01_446445.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE3-6M(60)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit",
         exclusive: "Exclusive Size Online Only",
-        price: 1990,
-        id: 445347
+        price: 690,
+        id: 445344
     },
 
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/433741/item/ingoods_11_433741.jpg?width=1600&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-XXL",
-        description: "WOMEN Extra Stretch High Rise Leggings Trousers",
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/446443001/item/goods_01_446443001.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE0-3M(50)-AGE3-6M(60)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit",
         exclusive: "Exclusive Size Online Only",
         price: 2990,
-        id: 445348
+        id: 445343
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439241/item/ingoods_18_439241.jpg?width=1600&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S",
-        description: "WOMEN Ultra Light Down Jecket",
-        exclusive: "Exclusive Size Online Only",
-        price: 1490,
-        id: 445349
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439241/item/ingoods_01_439241.jpg?width=1600&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S",
-        description: "WOMEN Ultra Light Down Jecket",
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/446441001/item/goods_30_446441001.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE3-6M(60)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit",
         exclusive: "Exclusive Size Online Only",
         price: 2490,
-        id: 445350
+        id: 445342
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439707/item/ingoods_56_439707.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Extra Stretch High Rise Leggings Trousers",
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/446435001/item/goods_11_446435001.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE3-6M(60)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit",
         exclusive: "Exclusive Size Online Only",
-        price: 1990,
-        id: 445351
+        price: 2490,
+        id: 445341
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439241/item/ingoods_34_439241.jpg?width=1600&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Extra Stretch High Rise Leggings Trousers",
-        exclusive: "Exclusive Size Online Only",
-        price: 2990,
-        id: 445352
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439241/item/ingoods_54_439241.jpg?width=1600&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S",
-        description: "WOMEN Ultra Light Down Parka",
-        exclusive: "Exclusive Size Online Only",
-        price: 1490,
-        id: 445353
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/433741/item/ingoods_57_433741.jpg?width=1600&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Light Pile Lined Fleece Long Sleeve Set",
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/446432001/item/goods_69_446432001.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE6-12M(70)-AGE18-24M(90)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit Down Parka",
         exclusive: "Exclusive Size Online Only",
         price: 2990,
-        id: 445355
+        id: 445340
     },
     {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/433741/item/ingoods_19_433741.jpg?width=1600&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "SX-XXL",
-        description: "WOMEN Extra Stretch High Rise Leggings Trousers",
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/446432/item/goods_22_446432.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE6-12M(70)-AGE18-24M(90)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit Set",
+        exclusive: "Exclusive Size Online Only",
+        price: 2990,
+        id: 445339
+    },
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/444678001/item/goods_69_444678001.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE3-6M(60)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit",
+        exclusive: "Exclusive Size Online Only",
+        price: 3990,
+        id: 44538
+    },
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/446399/item/goods_02_446399.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE0-3M(50)-AGE3-6M(60)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit Flare Dress",
+        exclusive: "Exclusive Size Online Only",
+        price: 2990,
+        id: 445337
+    },
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/444813/item/goods_00_444813.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE0-3M(50)-AGE3-6M(60)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit",
+        exclusive: "Exclusive Size Online Only",
+        price: 3990,
+        id: 445336
+    },
+    {
+        image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/444813001/item/goods_50_444813001.jpg?width=1008&impolicy=quality_75",
+        gendar: "BABY",
+        size: "AGE0-3M(50)-AGE3-6M(60)",
+        description: "BABIES NEWBORN Joy Of Print Cotton Mesh Inner Bodysuit",
         exclusive: "Exclusive Size Online Only",
         price: 1990,
-        id: 4453456
+        id: 445335
     }
 
 ];
@@ -97,7 +106,7 @@ const newArrivalObj_1 = [
 displayProducts_1(newArrivalObj_1);
 function displayProducts_1(data) {
     document.querySelector(".productSide").innerHTML="";
-    data.map(({ image, gendar, size, description, exclusive, price ,id}) => {
+    data.map(({ image, gendar, size, description, exclusive, price,id }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         let sizeDiv = document.createElement("div");
@@ -163,6 +172,7 @@ sort.addEventListener("change", function priceSort() {
     
     displayProducts_1(newArrivalObj_1);
 });
+
 // Store Data in localStorage here..
 
 function storeData(data) {

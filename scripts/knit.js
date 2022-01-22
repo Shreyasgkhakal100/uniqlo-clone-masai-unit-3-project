@@ -5,7 +5,8 @@ const newArrivalObj_1 = [
         size: "S-XXL",
         description: "WOMEN 3D Knit Cotton Volume 3/4 Sleeve Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 2490
+        price: 2490,
+        id: 445315
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/445188/sub/goods_445188_sub9.jpg?width=1600&impolicy=quality_75",
@@ -13,7 +14,8 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN 3D Knit Cotton Volume 4/3 Sleeve Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 2490
+        price: 2490,
+        id: 445316
     },
 
     {
@@ -22,7 +24,8 @@ const newArrivalObj_1 = [
         size: "S-XXL",
         description: "WOMEN 3D Knit Cotton Volume 3/4 Sleeve Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445317
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445188/item/ingoods_61_445188.jpg?width=1600&impolicy=quality_75",
@@ -30,7 +33,8 @@ const newArrivalObj_1 = [
         size: "S-L",
         description: "WOMEN 3D knit with a comfortable fit and stylish cut. Smooth, light feel.",
         exclusive: "Exclusive Size Online Only",
-        price: 6990
+        price: 6990,
+        id: 445318
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439707/item/ingoods_56_439707.jpg?width=1008&impolicy=quality_75",
@@ -38,7 +42,8 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Ultra Light Down Relaxed Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 3990,
+        id: 445319
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/429454/item/goods_07_429454.jpg?width=1008&impolicy=quality_75",
@@ -46,7 +51,8 @@ const newArrivalObj_1 = [
         size: "S",
         description: "WOMEN Ultra Light Down Parka",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445320
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/440037/item/ingoods_34_440037.jpg?width=1008&impolicy=quality_75",
@@ -54,7 +60,8 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Light Pile Lined Fleece Long Sleeve Set",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445321
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445190/item/ingoods_10_445190.jpg?width=1600&impolicy=quality_75",
@@ -62,7 +69,8 @@ const newArrivalObj_1 = [
         size: "SX-XXL",
         description: "WOMEN Fluffy Yarn Fleece Full-Zip Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 2490
+        price: 2490,
+        id: 445322
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_08_442884.jpg?width=1600&impolicy=quality_75",
@@ -70,7 +78,8 @@ const newArrivalObj_1 = [
         size: "S-3XL",
         description: "WOMEN Light  Dark Gray Fleece Long Sleeve Set",
         exclusive: "Exclusive Size Online Only",
-        price: 3990
+        price: 3990,
+        id: 445323
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_32_442884.jpg?width=1600&impolicy=quality_75",
@@ -78,7 +87,8 @@ const newArrivalObj_1 = [
         size: "SX-XXL",
         description: "WOMEN Fluffy Yarn Beige Fleece Full-Zip Jecket",
         exclusive: "Exclusive Size Online Only",
-        price: 2990
+        price: 2990,
+        id: 445324
     }
 
 ];
@@ -86,7 +96,7 @@ const newArrivalObj_1 = [
 
 displayProducts_1(newArrivalObj_1);
 function displayProducts_1(data) {
-    data.map(({ image, gendar, size, description, exclusive, price }) => {
+    data.map(({ image, gendar, size, description, exclusive, price,id }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         let sizeDiv = document.createElement("div");
@@ -109,7 +119,9 @@ function displayProducts_1(data) {
             size,
             description,
             exclusive,
-            price
+            price,
+            id,
+            quantity: 1,
         }
         mainDiv.addEventListener("click", () => {
             storeData(productsObj);
@@ -131,25 +143,26 @@ function displayProducts_1(data) {
 
 }
 
-// function sortProductFun(evel) {
-//         var selected = document.querySelector("#sortProduct").value;
-//         if (selected == "low") {
-//             evel.sort((a, b) => {
-//                 return a - b;
-//             });
-//         }
-//         if (selected == "high") {
-//             evel.sort((a, b) => {
-//                 console.log(b.price);
-//                 return b - a;
-//             });
-//         }
-//         displayProducts_1(newArrivalObj_1);
+var sort = document.getElementById("sortProduct");
+sort.addEventListener("change", function priceSort() {
+    document.querySelector(".productSide").innerHTML="";
+    var selected = document.getElementById("sortProduct").value;
+    if (selected == "low") {
+        newArrivalObj_1.sort(function (a, b) {
+            // console.log(a.price)
+            return a.price - b.price;
 
-
-//         // console.log(evel);
-//     }
-
+        })
+    }
+    if (selected == "high") {
+        newArrivalObj_1.sort(function (a, b) {
+            // console.log(b.price)
+            return b.price - a.price;
+        })
+    }
+    
+    displayProducts_1(newArrivalObj_1);
+});
 // Store Data in localStorage here..
 
 function storeData(data) {

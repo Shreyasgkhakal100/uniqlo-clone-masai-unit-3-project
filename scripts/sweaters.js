@@ -6,7 +6,7 @@ const newArrivalObj_1 = [
         description: "WOMEN Extra Fine Merino Crew Neck Long Sleeve Cardigan",
         exclusive: "Exclusive Size Online Only",
         price: 1990,
-        id: 445314
+        id: 445324
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448033/item/ingoods_69_448033.jpg?width=1600&impolicy=quality_75",
@@ -15,7 +15,7 @@ const newArrivalObj_1 = [
         description: "WOMEN Washable Mock Neck Striped Sweater",
         exclusive: "Exclusive Size Online Only",
         price: 2490,
-        id: 445314
+        id: 445325
     },
 
     {
@@ -25,7 +25,7 @@ const newArrivalObj_1 = [
         description: "WOMEN Washable Cotton Crew Neck Sweater",
         exclusive: "Exclusive Size Online Only",
         price: 24990,
-        id: 445314
+        id: 445326
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445186/item/ingoods_53_445186.jpg?width=1600&impolicy=quality_75",
@@ -34,7 +34,7 @@ const newArrivalObj_1 = [
         description: "WOMEN Washable Mock Neck Sweater",
         exclusive: "Exclusive Size Online Only",
         price: 2490,
-        id: 445314
+        id: 445327
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/445190/sub/goods_445190_sub9.jpg?width=1600&impolicy=quality_75",
@@ -43,7 +43,7 @@ const newArrivalObj_1 = [
         description: "WOMEN Washable Mock Neck Sweater",
         exclusive: "Exclusive Size Online Only",
         price: 2490,
-        id: 445314
+        id: 445328
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/439150/sub/goods_439150_sub9.jpg?width=1600&impolicy=quality_75",
@@ -52,7 +52,7 @@ const newArrivalObj_1 = [
         description: "WOMEN Extra Fine Merino Crew Neck Long Sleeve Cardigan",
         exclusive: "Exclusive Size Online Only",
         price: 2490,
-        id: 445314
+        id: 445329
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/440037/item/ingoods_34_440037.jpg?width=1008&impolicy=quality_75",
@@ -61,7 +61,7 @@ const newArrivalObj_1 = [
         description: "WOMEN Light Pile Lined Fleece Long Sleeve Set",
         exclusive: "Exclusive Size Online Only",
         price: 2990,
-        id: 445314
+        id: 445330
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445192/item/ingoods_12_445192.jpg?width=1600&impolicy=quality_75",
@@ -70,7 +70,7 @@ const newArrivalObj_1 = [
         description: "WOMEN UV Protection Crew Neck Cardigan",
         exclusive: "Exclusive Size Online Only",
         price: 3990,
-        id: 445314
+        id: 445331
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445192/item/ingoods_53_445192.jpg?width=1600&impolicy=quality_75",
@@ -79,7 +79,7 @@ const newArrivalObj_1 = [
         description: "WOMEN UV Protection Crew Neck Green",
         exclusive: "Exclusive Size Online Only",
         price: 3990,
-        id: 445314
+        id: 445332
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_08_442884.jpg?width=1600&impolicy=quality_75",
@@ -88,7 +88,7 @@ const newArrivalObj_1 = [
         description: "WOMEN Light  Dark Gray Fleece Long Sleeve Set",
         exclusive: "Exclusive Size Online Only",
         price: 3990,
-        id: 445314
+        id: 445333
     },
     {
         image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/442884/item/ingoods_32_442884.jpg?width=1600&impolicy=quality_75",
@@ -97,7 +97,7 @@ const newArrivalObj_1 = [
         description: "WOMEN Fluffy Yarn Beige Fleece Full-Zip Jecket",
         exclusive: "Exclusive Size Online Only",
         price: 2990,
-        id: 445314
+        id: 445334
     }
 
 ];

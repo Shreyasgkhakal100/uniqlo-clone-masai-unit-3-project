@@ -1,21 +1,7 @@
 var getData = JSON.parse(localStorage.getItem("uniqloProd"));
 
-
-// function selectItem() {
-//     console.log(quant.value);
-//     elem.quantity = quant.value;
-//     localStorage.setItem("cart", JSON.stringify(cart));
-//     showCart(cart);
-//   })
-
-
 var selected;  
 
-// function selectItem(){
-//     selected= document.querySelector("#select").value;
-//     document.querySelector("#itemPrice").innerText =  `Rs. ${Number(getData.price) * Number(selected)}`;
-
-// }
 
 showProd(getData);
 function showProd(getData) {
@@ -23,6 +9,7 @@ function showProd(getData) {
     console.log(getData);
     let descDiv = document.createElement("div");
     let img = document.createElement("img");
+    let smallImg = document.createElement("img");
     let desc = document.createElement("h2");
     let exclus = document.createElement("h3");
     let pric = document.createElement("h4");
@@ -32,10 +19,8 @@ function showProd(getData) {
 
     document.getElementById("select").addEventListener("change", ()=>{
         getData.quantity = document.getElementById("select").value;
-        // console.log(getData);
         showProd(getData);
     });
-    // <button id="addtoCart">ADD TO CART</button>
     document.getElementById("btnDiv").innerHTML="";
     let addBtn = document.createElement("button");
     addBtn.setAttribute("id","addtoCart");
@@ -56,15 +41,20 @@ function showProd(getData) {
     document.querySelector(".largeImage").innerHTML = "";
     document.getElementById("productId").innerHTML = "";
     document.querySelector(".content").innerHTML = "";
+    document.querySelector(".smallImages").innerHTML="";
+
+    
 
     inclus.innerText = `inclusive of all taxes`;
     pera.innerText = `Supple texture that can be styled elegantly. A convenient blouse that can be worn for both casual and formal occasions.`;
     img.src = getData.image;
+    smallImg.src = getData.image;
     desc.innerText = getData.description;
     exclus.innerText = getData.exclusive;
     pric.innerText = `MRP Rs.  ${getData.price}`;
     descDiv.append(desc, pric, exclus, inclus, pera, hr);
     document.getElementById("productId").innerText = getData.id;
+    document.querySelector(".smallImages").append(smallImg);
     document.querySelector(".largeImage").append(img);
     document.querySelector(".content").append(descDiv);
 
