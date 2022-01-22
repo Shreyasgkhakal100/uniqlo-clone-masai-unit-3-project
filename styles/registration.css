@@ -1,0 +1,198 @@
+* {
+    font-family: sans-serif;
+}
+
+span {
+    color: rgb(0, 89, 255);
+}
+
+.tank {
+    width: 53%;
+
+    margin-top: 60px;
+    margin-left: 80px;
+    /* border: 1px solid red; */
+}
+
+.tank1 {
+    border: 1px solid grey;
+    height: 900px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.notice{
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    /* margin-left: 1px; */
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+#email {
+    width: 75%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+#create_password {
+    width: 75%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 60px;
+
+}
+
+#pin {
+    width: 75%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 80px;
+
+}
+
+#birthday {
+    width: 40%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 80px;
+
+}
+
+#fill label {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* p {
+    margin-left: 140px;
+} */
+
+.material-icons {
+    color: black;
+}
+
+
+
+
+#gender {
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#gender:nth-child(2n) {
+
+    gap: 70px;
+}
+
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+
+#p1 {
+    margin: 0%;
+    text-decoration: underline;
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+}
+
+#h1 {
+    display: flex;
+    gap: 5px;
+}
+
+.fill input {
+    /* outline: none; */
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    background-color: rgb(248, 246, 246);
+
+}
+
+#p2 {
+    margin-left: 180px;
+}
+
+.subscribe {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+#checkbox {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+
+
+}
+
+#checkbox p {
+    margin-left: 10px;
+}
+
+.membership {
+    margin-left: 10px;
+
+}
+
+.membership p {
+    margin-left: 5px;
+    color: gray;
+
+}
+
+.tick {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+label {
+    font-weight: bold;
+}
+
+.policy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+#signup {
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+#signup:hover{
+background-color: grey;
+}
+#not{
+width: 67%;
+}
