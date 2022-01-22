@@ -7,7 +7,7 @@
     <title>Product Info</title>
 
     <link rel="stylesheet" href="./styles/productinfo.css">
-
+    <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
        <!-- font awesome link here... -->
        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -94,8 +94,8 @@
             <div id="quantity">
                 <h3>QUANTITY</h3>
                 <div>
-                    <select name="" id="">
-                        <option value="1">1</option>
+                    <select name="" id="select">
+                        <option  value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -104,7 +104,11 @@
                     <p>In Stock</p>
                 </div>
             </div>
-            <button>ADD TO CART </button>
+            <!-- <button>ADD TO CART</button> -->
+            <div id="btnDiv">
+
+            </div>
+
             <div id="twoBtn">
                 <button>ADD TO WISH LIST</button>
                 <button>FIND STOCK IN STORE</button>
@@ -118,8 +122,26 @@
                 </div>
             </div>
         </div>
+        
 
+    </div>
+    <div id="popup" class="none">
+        <div class="overlay"></div>
+        <!-- <div id="loader">
+                <img src="https://cdn.dribbble.com/users/1787505/screenshots/7300251/media/a351d9e0236c03a539181b95faced9e0.gif"
+                    alt="Loader" width="100%">
+            </div> -->
+        <div class="content">
+            <div class="close-btn" onclick="toggle()">&times;</div>
+            <h3>1 ITEMS ADDED TO YOUR CART</h3>
+            <div id="itemTotal">
+                <p>SUBTOTAL | <span>1items(s)</span> </p>
+                <p id="itemPrice"></p>
 
+            </div>
+            <button id="addBtn">VIEW CART</button>
+            <button onclick="toggle()" id="continueBtn">CONTINUE SHOPPING</button>
+        </div>
     </div>
 </body>
 </html>

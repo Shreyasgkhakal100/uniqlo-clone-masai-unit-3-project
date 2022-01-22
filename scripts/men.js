@@ -5,7 +5,7 @@ let newMenObj=[
       size  : "S-3XL",
       name : "MEN Coach Jacket",
       desc : "Exclusive Size Online Only,New Arrivals",
-      price : "Rs. 3,990.00"
+      price : 3990
   },
   {
     image : "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/446217/item/ingoods_00_446217.jpg?width=1008&impolicy=quality_75",
@@ -13,7 +13,7 @@ let newMenObj=[
     size  : "S-XXL",
     name : "MEN Monochrome Mickey Long Sleeve Sweatshirt",
     desc : "",
-    price : "Rs. 1,990.00"
+    price : 1990
   },
   {
     image : "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448383/item/ingoods_65_448383.jpg?width=1008&impolicy=quality_75",
@@ -21,7 +21,7 @@ let newMenObj=[
     size  : "S-3XL",
     name : "MEN Hickory Oversized Stand Collar Long Sleeve Shirt",
     desc : "Exclusive Size Online Only",
-    price : "Rs. 2,490.00"
+    price : 2490
   },
   {
     image : "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/444586/item/ingoods_67_444586.jpg?width=1008&impolicy=quality_75",
@@ -29,7 +29,7 @@ let newMenObj=[
     size  : "28INCH-40INCH",
     name : "MEN Regular Fit Straight Jeans",
     desc : "Exclusive Size Online Only,Limited Store",
-    price : "Rs. 2,990.00"
+    price : 2990
   },
 ]
 let product4 =document.getElementById("product4")
@@ -56,7 +56,20 @@ function displayprod(data){
      des.id ="desc"
 
      let pric = document.createElement("p");
-     pric.textContent =price;
+     pric.textContent = `Rs. ${price}`;
+
+     let productObj ={
+      image,
+      gender,
+      size,
+      name,
+      desc,
+      price,
+  };
+
+  div.addEventListener("click",()=>{
+      storingData(productObj)
+  })
 
      imgdiv.append(img);
      sizediv.append(gend,siz);
@@ -77,7 +90,8 @@ let newMenObj2= [
     name :  "MEN Pile Lined Sweat Long Sleeve Full-Zip Hoodie",
     exc :  "Exclusive Size Online Only",
     striked_price : "Rs. 2,490.00",
-    price : "Rs. 1,990.00",
+    price : 1990,
+    desc : "",
     limited : "Limited Offer Until Jan 20",
     star : "⭐⭐⭐⭐(19)",
   },
@@ -88,7 +102,8 @@ let newMenObj2= [
     name :  "MEN Pile Lined Sweat Pants",
     exc : "Exclusive Size Online Only",
     striked_price :"Rs. 2,490.00",
-    price : "Rs. 1,990.00",
+    price : 1990,
+    desc : "",
     limited : "Limited Offer Until Jan 20",
     star : "⭐⭐⭐⭐(12)",
   },
@@ -99,7 +114,8 @@ let newMenObj2= [
     name : "MEN Pile Lined Fleece Set (Long Sleeve)", 
     exc : "Exclusive Size Online Only",
     striked_price :"Rs. 2,490.00",
-    price : "Rs. 1,990.00",
+    price : 1990,
+    desc : "",
     limited :"Limited Offer Until Jan 20",
     star : "⭐⭐⭐⭐(29)",
   },
@@ -110,7 +126,8 @@ let newMenObj2= [
     name :  "MEN Ultra Light Down Jacket (3D Cut)",
     exc : "",
     striked_price : "",
-    price : "Rs. 4,990.00",
+    price :1990,
+    desc : "",
     limited : "",
     star : "⭐⭐⭐⭐(64)",
   },
@@ -119,7 +136,7 @@ let newMenObj2= [
  limitedOffers(newMenObj2)
 function limitedOffers(data){
 
-  data.map(({image,gender,size,name,exc,striked_price,price,limited,star})=>{
+  data.map(({image,gender,size,name,exc,striked_price,price,desc,limited,star})=>{
     let div =document.createElement("div");
     let imgdiv = document.createElement("div");
     let sizediv =document.createElement("div");   
@@ -142,7 +159,7 @@ function limitedOffers(data){
     striked.textContent =striked_price;
     striked.id ="strikedprice"
     let pric = document.createElement("p");
-    pric.textContent =price;
+    pric.textContent =`Rs. ${price}`;
     pric.id ="redprice"
 
     let limit = document.createElement("p");
@@ -151,6 +168,19 @@ function limitedOffers(data){
        
     let str = document.createElement("p");
     str.textContent =star;
+
+    let productObj ={
+      image,
+      gender,
+      size,
+      name,
+      desc,
+      price,
+  };
+
+  div.addEventListener("click",()=>{
+      storingData(productObj)
+  })
     // str.style.border ="0"
     imgdiv.append(img);
     sizediv.append(gend,siz);
@@ -169,7 +199,8 @@ let newMenObj3= [
     name :  "MEN Easy Work Trousers",
     exc :  "Exclusive Size Online Only",
     striked_price : "Rs. 4,990.00",
-    price : "Rs. 3,990.00",
+    price : 3990,
+    desc : "",
     limited : "Sale",
     star : "⭐(1)",
   },
@@ -180,7 +211,8 @@ let newMenObj3= [
     name :  "MEN Smart Ankle Trousers 2WAY Stretch Cotton",
     exc : "Exclusive Size Online Only,New Arrivals",
     striked_price :"Rs. 2,490.00",
-    price : "Rs. 1,990.00",
+    price : 1990,
+    desc : "",
     limited : "Sale",
     star : "⭐⭐⭐⭐⭐(2)",
   },
@@ -191,7 +223,8 @@ let newMenObj3= [
     name : "MEN Souffle Yarn Mock Neck Long Sleeve Sweater", 
     exc : "Exclusive Size Online Only",
     striked_price :"Rs. 2,490.00",
-    price : "Rs. 1,990.00",
+    price :  1990,
+    desc : "",
     limited :"Sale",
     star : "⭐⭐⭐⭐(2)",
   },
@@ -202,7 +235,8 @@ let newMenObj3= [
     name :  "MEN Supima Cotton Oversized Stand Collar Shirt",
     exc : "Online Only",
     striked_price : "Rs. 2,990.00",
-    price : "Rs. 1,990.00",
+    price :  1990,
+    desc : "",
     limited : "Sale",
     star : "",
   },
@@ -211,7 +245,7 @@ let newMenObj3= [
  SaleOffers(newMenObj3)
 function  SaleOffers(data){
 
-  data.map(({image,gender,size,name,exc,striked_price,price,limited,star})=>{
+  data.map(({image,gender,size,name,exc,striked_price,price,desc,limited,star})=>{
     let div =document.createElement("div");
     let imgdiv = document.createElement("div");
     let sizediv =document.createElement("div");   
@@ -234,7 +268,7 @@ function  SaleOffers(data){
     striked.textContent =striked_price;
     striked.id ="strikedprice"
     let pric = document.createElement("p");
-    pric.textContent =price;
+    pric.textContent =`Rs. ${price}`;
     pric.id ="redprice"
 
     let limit = document.createElement("p");
@@ -243,6 +277,18 @@ function  SaleOffers(data){
        
     let str = document.createElement("p");
     str.textContent =star;
+    let productObj ={
+      image,
+      gender,
+      size,
+      name,
+      desc,
+      price,
+  };
+
+  div.addEventListener("click",()=>{
+      storingData(productObj)
+  })
     // str.style.border ="0"
     imgdiv.append(img);
     sizediv.append(gend,siz);
@@ -260,7 +306,7 @@ let newMenObj4=[
       size  : "S-XXL",
       name : "MEN Utility Parka",
       desc : "Limited Store",
-      price : "Rs. 4,990.00",
+      price : 4990,
       star : "⭐⭐⭐⭐⭐(1)",
   },
   {
@@ -269,7 +315,7 @@ let newMenObj4=[
     size  : "S-3XL",
     name : "Waffle Crew Neck Long Sleeve T-Shirt",
     desc : "Exclusive Size Online Only",
-    price : "Rs. 1,990.00",
+    price : 1990,
     star : "⭐⭐⭐⭐⭐(3)",
   },
   {
@@ -278,7 +324,7 @@ let newMenObj4=[
     size  : "28INCH-38INCH",
     name : "MEN Extra Stretch Skinny Fit Jeans",
     desc : "Exclusive Size Online Only",
-    price : "Rs. 2,990.00",
+    price : 2990,
     star : "⭐⭐⭐⭐⭐(1)",
   },
   {
@@ -287,7 +333,7 @@ let newMenObj4=[
     size  : "S-3XL",
     name : "MEN Ultra Stretch Dry Sweat Trousers",
     desc : "Exclusive Size Online Only,New Arrivals",
-    price : "Rs. 2,490.00",
+    price : 2490,
     star : "⭐⭐⭐⭐⭐(5)",
   },
 ]
@@ -316,11 +362,22 @@ function featureprod(data){
      des.id ="desc"
 
      let pric = document.createElement("h4");
-     pric.textContent =price;
+     pric.textContent =`Rs. ${price}`;
 
      let str = document.createElement("h4");
      str.textContent =star;
+     let productObj ={
+      image,
+      gender,
+      size,
+      name,
+      desc,
+      price,
+  };
 
+  div.addEventListener("click",()=>{
+      storingData(productObj)
+  })
      imgdiv.append(img);
      sizediv.append(gend,siz);
      sizediv.id = "men"
@@ -546,4 +603,10 @@ function feat3(data){
     div.append(imgdiv,h4,p);
     today.append(div)
   })
+}
+
+
+function storingData(data){
+  localStorage.setItem("uniqProd",JSON.stringify(data));
+  window.location.href = "./productinfo.html"
 }
