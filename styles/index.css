@@ -1,3 +1,6 @@
+
+/* Desktop */
+
 #crsl{
     margin-left:150px;
     margin-bottom: 50px;
@@ -187,14 +190,14 @@ width:100%;
 color:cadetblue;
 cursor:pointer;
 
+
 }
 video{
     height:310px;
 }
-/* #specialvideo{
-    width:300px;
-} */
 
+
+/* iphone x */
 @media only screen and (min-width:0px) and (max-width:376px){
     body{
         width:100%;
@@ -313,7 +316,9 @@ video{
     
     width:340px;
 }
+
 }
+/* i pad */
 @media only screen and (min-width:377px) and (max-width:776px){
     body{
         width:100%;

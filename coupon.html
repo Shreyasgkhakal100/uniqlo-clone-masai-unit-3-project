@@ -7,67 +7,8 @@
     <title>COUPONS | UNIQLO  IN</title>
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <link rel="stylesheet" href="./styles/coupon.css">
 </head>
-<style>
-    body{
-        font-family:  'Helvetica Neue', HelveticaNeue, Helvetica, 'Noto Sans', Roboto, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3', 'Noto Sans CJK JP', Osaka, Meiryo, '\30E1\30A4\30EA\30AA', 'MS PGothic', '\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF', 'Hiragino Sans GB', 'Arial Unicode MS', sans-serif;
-    }
-.return,a{
-    text-decoration:underline;
-    font-weight: bolder;
-    margin-left:150px;
-    color:black;
-    
-    display:inline-block;
-}
-a{
-    margin-left:0;
-}
-.coupon-box{
-    border:1px solid grey;
-    width:60%;
-    margin-left:150px;
-    padding:12px;
-    margin-bottom: 120px;
-}
-span,.text{
-    font-weight: bolder;
-    text-decoration: none;
-    
-}
-button{
-    font-size: 20px;
-    background-color: black;
-    color:white;
-    padding:10px 100px;
-    margin-right: 20px;
-}
-.coupon-value{
-    display:flex;
-}
-input{
-    width:400px;
-    padding:10px;
-    margin-left: 50px;
-    font-size: 18px;
-    border:0;
-    background-color: whitesmoke;
-    
-}
-input:focus{
-    outline:white;
-    border-bottom: 3px solid cadetblue;
-    background-color: white;
-    
-}
-.couponref{
-    color:grey;
-    text-decoration: underline;
-    font-size: 15px;
-    margin-left: 150px;
-    font-weight: lighter;
-}
-</style>
 <body>
     <h1>Header</h1><br>
 
@@ -94,41 +35,12 @@ input:focus{
     <div id="footer-container"></div>
 </body>
 </html>
+<!-- Import export script -->
 <script type="module">
 import footer from  "./components/footer.js"
 let footerdiv=document.getElementById("footer-container");
 footerdiv.innerHTML=footer();
-var coupon=document.querySelector("#input")
 
-document.getElementById("apply").addEventListener("click",applycoupon);
-function applycoupon(){
-    
-    var p1=document.getElementById("success");
-   if(coupon.value=="Republic10"){
-
-p1.innerText=" Coupon Applied !"
-p1.style.color="green"
-p1.style.fontWeight="bolder"
-localStorage.setItem("coupon",JSON.stringify(+1))
-   }
-   else{
-       p1.innerText="The coupon code is invalid"
-       p1.style.color="red"
-       localStorage.setItem("coupon",JSON.stringify(0))
-   }
-}
-
-
-document.querySelector("input").addEventListener("mouseover",()=>{
-    var text=document.querySelector(".text");
-    text.style.color="cadetblue";
-})
-document.querySelector("input").addEventListener("mouseout",()=>{
-    var text=document.querySelector(".text");
-    text.style.color="black";
-})
-document.getElementById("cancel").addEventListener("click",()=>{
-    window.location.href="cart.html"
-    localStorage.setItem("coupon",JSON.stringify(0))
-})
 </script>
+<!-- coupon script -->
+<script src="./scripts/coupon.js"></script>
