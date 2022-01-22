@@ -3,6 +3,9 @@
     margin: 40px;
     font-family: sans-serif;
 }
+body{
+    margin: 0;
+}
 #leftside{
     flex: 3;
     margin-right: 50px;

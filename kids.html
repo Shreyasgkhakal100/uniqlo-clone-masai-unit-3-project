@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Products</title>
     <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <link rel="stylesheet" href="./styles/mens.css">
 <body>
@@ -104,10 +106,17 @@
 
        <a id="saleoffer" href="">SEE MORE UNIQLO TODAY</a>
     </div>
+
+    <div id="down"></div>
 </body>
 </html>
 
 
 <script src="./scripts/kids.js">
 
+</script>
+<script type="module">
+    import footer from "./components/footer.js"
+   let downA =document.getElementById("down")
+   downA.innerHTML =footer()
 </script>

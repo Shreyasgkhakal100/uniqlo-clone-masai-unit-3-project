@@ -8,6 +8,8 @@
     <title>ULTRA LIGHT DOWN</title>
     <link rel="stylesheet" href="./styles/mens_ultra-light-down.css">
     <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
@@ -34,7 +36,7 @@
                 <select name="" class="select1">
                     <option value="" selected>OUTERWEAR</option>
                     <option value="men_ultra-light-down">Ultra Light Down</option>
-                    <option value="fleece">Fleece</option>
+                    <option value="men_fleece">Fleece</option>
                     <option value="">Down</option>
                     <option value="">Coats</option>
                     <option value="">Blazers</option>
@@ -136,9 +138,18 @@
             <div class="productSide"></div>
         </div>
     </div>
+    <div id="down"></div>
 </body>
 
 </html>
-<script src="./scripts/mens_ultra-light-down.js">
+<script  src="./scripts/mens_ultra-light-down.js">
 
+   
+
+</script>
+
+<script type="module">
+     import footer from "./components/footer.js"
+    let downA =document.getElementById("down")
+    downA.innerHTML =footer()
 </script>

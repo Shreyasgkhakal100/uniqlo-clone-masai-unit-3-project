@@ -7,6 +7,7 @@
     <title>Mens Products</title>
     <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
     <link rel="stylesheet" href="./styles/mens.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
     <div id="maindiv">
@@ -102,8 +103,16 @@
 
         <a id="saleoffer" href="">SEE MORE UNIQLO TODAY</a>
     </div>
+    <div id="down"></div>
 </body>
 </html>
 <script src="./scripts/men.js">
 
+</script>
+
+
+<script type="module">
+    import footer from "./components/footer.js"
+   let downA =document.getElementById("down")
+   downA.innerHTML =footer()
 </script>

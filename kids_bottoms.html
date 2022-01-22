@@ -8,6 +8,8 @@
     <title>BOTTOMS</title>
     <link rel="stylesheet" href="./styles/kids_bottoms.css">
     <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
@@ -137,9 +139,15 @@
             <div class="productSide"></div>
         </div>
     </div>
+    <div id="down"></div>
 </body>
 
 </html>
 <script src="./scripts/kids_bottoms.js">
 
+</script>
+<script type="module">
+    import footer from "./components/footer.js"
+   let downA =document.getElementById("down")
+   downA.innerHTML =footer()
 </script>

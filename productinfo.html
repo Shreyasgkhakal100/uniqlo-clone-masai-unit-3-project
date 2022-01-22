@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./styles/productinfo.css">
     <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <link rel="stylesheet" href="./styles/footer.css">
        <!-- font awesome link here... -->
        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -143,7 +144,14 @@
             <button onclick="toggle()" id="continueBtn">CONTINUE SHOPPING</button>
         </div>
     </div>
+ <div id="down"></div>
 </body>
 </html>
 
 <script src="./scripts/productinfo.js"></script>
+
+<script type="module">
+    import footer from "./components/footer.js"
+   let downA =document.getElementById("down")
+   downA.innerHTML =footer()
+</script>

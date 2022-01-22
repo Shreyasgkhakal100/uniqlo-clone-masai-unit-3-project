@@ -8,6 +8,7 @@
     <title>ULTRA LIGHT DOWN</title>
     <link rel="stylesheet" href="./styles/mens_fleece.css">
     <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
@@ -136,9 +137,16 @@
             <div class="productSide"></div>
         </div>
     </div>
+    <div id="down"></div>
 </body>
 
 </html>
 <script src="./scripts/mens_fleece.js">
 
+</script>
+
+<script type="module">
+    import footer from "./components/footer.js"
+   let downA =document.getElementById("down")
+   downA.innerHTML =footer()
 </script>

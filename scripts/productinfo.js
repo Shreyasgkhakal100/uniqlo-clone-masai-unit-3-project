@@ -1,7 +1,7 @@
 let getData =JSON.parse(localStorage.getItem("uniqProd")) || [];
 
 showData(getData)
-function showData(data){
+function showData(getData){
     let div = document.createElement("div");
     let img =document.createElement("img");
     let img2 =document.createElement("img");
@@ -11,10 +11,13 @@ function showData(data){
     let inclu =document.createElement("h5");
     let per = document.createElement("p");
     let hr =document.createElement("hr");
+    var itemPriceTotal =   document.getElementById("itemPrice");
+    
 
     document.getElementById("select").addEventListener("change", ()=>{
-        getData.quantity = document.getElementById("select").value;
-        // console.log(getData);
+        let selected = document.getElementById("select").value;
+        getData.quantity = selected;
+        itemPriceTotal.innerText= `Rs. ${getData.price * selected}.00`;
         showData(getData);
     });
     document.getElementById("btnDiv").innerHTML="";
@@ -42,11 +45,11 @@ function showData(data){
 
     inclu.innerText = `inclusive of all taxes`;
     per.innerText = `Supple texture that can be styled elegantly. A convenient blouse that can be worn for both casual and formal occasions.`;
-    img.src =data.image;
-    img2.src =data.image;
-    nam.innerText =data.name;
-    des.innerText =data.desc;
-    pric.innerText = `MRP Rs.  ${data.price}.00`;
+    img.src =getData.image;
+    img2.src =getData.image;
+    nam.innerText =getData.name;
+    des.innerText =getData.desc;
+    pric.innerText = `MRP Rs.  ${getData.price}.00`;
     div.append(nam,pric,des,inclu,per,hr);
     document.getElementById("smallimg").append(img2);
     document.getElementById("largeimg").append(img);
@@ -54,8 +57,8 @@ function showData(data){
 
 }
 let arr =JSON.parse(localStorage.getItem("cart"))|| [];
-function addToCart(data) {
-    arr.push(data);
+function addToCart(getData) {
+    arr.push(getData);
     localStorage.setItem("cart", JSON.stringify(arr));
     toggle()
     
