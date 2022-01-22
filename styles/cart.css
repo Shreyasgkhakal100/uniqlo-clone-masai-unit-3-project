@@ -201,7 +201,7 @@ tbody>tr{
 .infoDivCart>div:nth-last-child(2){
     text-align: right !important;
 }
-hr{
+.infoDivCart hr{
     width: 80%;
 }
 .cancel{
@@ -310,8 +310,8 @@ select{
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        
     }
-
     #popup .close-btn:hover{
         color: black;
         border: 2px solid black;

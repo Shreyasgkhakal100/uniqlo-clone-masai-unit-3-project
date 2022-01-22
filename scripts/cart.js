@@ -103,7 +103,7 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [
 ];
 
 
-let discount = JSON.parse(localStorage.getItem("discount"));
+let discount = JSON.parse(localStorage.getItem("coupon"));
 
 let cartDiv = document.querySelector("#cartDiv");
 if(cart.length>0){
@@ -148,7 +148,8 @@ function showCart(cart){
       title.innerHTML = description;
       let cancel = document.createElement("h3");
       cancel.setAttribute("class", "cancel");
-      cancel.innerHTML = "<span style='font-size:40px'>&times;</span>";
+      cancel.innerHTML =
+        "<span style='font-size:40px; text-decoration: none'>&times;</span>";
       cancel.addEventListener("click", () => {
         removeFromCart(index);
       })

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DELIVERY OPTION | UNIQLO IN</title>
     <link rel="stylesheet" href="./styles/checkout-delivery.css"/>
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
 </head>
@@ -129,7 +130,15 @@
             </div>
         </div>
     </div>
+    <div id="footerDiv"></div>
 </body>
 
 </html>
 <script type="text/javascript" src="./scripts/checkout-delivery.js"></script>
+<script type="module">
+    import footer from './components/footer.js';
+    // let footerDiv = document.getElementById('div');
+    // footerDiv.innerHTML = footer();
+    document.getElementById('footerDiv').innerHTML = footer();
+
+</script>
