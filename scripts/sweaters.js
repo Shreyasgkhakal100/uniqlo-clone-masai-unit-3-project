@@ -24,7 +24,7 @@ const newArrivalObj_1 = [
         size: "S-XL",
         description: "WOMEN Washable Cotton Crew Neck Sweater",
         exclusive: "Exclusive Size Online Only",
-        price: 24990,
+        price: 2490,
         id: 445326
     },
     {
@@ -101,7 +101,7 @@ const newArrivalObj_1 = [
     }
 
 ];
-// console.log(newArrivalObj_1[0].price+newArrivalObj_1[1].price);
+
 
 displayProducts_1(newArrivalObj_1);
 function displayProducts_1(data) {

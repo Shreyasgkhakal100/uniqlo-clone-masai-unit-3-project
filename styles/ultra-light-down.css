@@ -1,6 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .ultra_container{
     width: 93%;
-    margin:50px auto;
+    margin:10px auto;
     font-family: sans-serif;
     /* border: 1px solid black; */
 }

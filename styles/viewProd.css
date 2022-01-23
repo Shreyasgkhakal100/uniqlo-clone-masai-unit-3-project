@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .viewProd_container{
     width: 93%;
     display: flex;
