@@ -13,10 +13,10 @@ function navbar(){
     
         
 
-        <h5 id="women_box"><a href="#">WOMEN</a></h5>
-        <h5 id="men_box"><a href="#">MEN</a></h5>
-        <h5 id="kids_box"><a href="#">KIDS</a></h5>
-        <h5 id="baby_box"><a href="#">BABY</a></h5>
+        <h5 id="women_box"><a href="women.html">WOMEN</a></h5>
+        <h5 id="men_box"><a href="mens.html">MEN</a></h5>
+        <h5 id="kids_box"><a href="kids.html">KIDS</a></h5>
+        <h5 id="baby_box"><a href="baby.html">BABY</a></h5>
 
       
         
@@ -173,8 +173,8 @@ function men(){
   <div id="leftmen1">
     <ul>
       <h3>OUTERWEAR</h3>
-      <li><a href="#">Ultra Light Down</a></li>
-      <li><a href="#">Fleece</a></li>
+      <li><a href="men_ultra-light-down.html">Ultra Light Down</a></li>
+      <li><a href="men_fleece.html">Fleece</a></li>
       <li><a href="#">Coats</a></li>
       <li><a href="#">Blazers</a></li>
       <li><a href="#">Down</a></li>
@@ -290,8 +290,8 @@ function kids(){
   <div id="leftkids1">
     <ul>
       <h3>SPORT UTILITY WEAR</h3>
-      <li><a href="#">Bottoms</a></li>
-      <li><a href="#">Outerwear</a></li>
+      <li><a href="kids_bottoms.html">Bottoms</a></li>
+      <li><a href="kids_outerwear.html">Outerwear</a></li>
       <li><a href="#">Tops</a></li>
     </ul>
 
@@ -332,7 +332,7 @@ function kids(){
         <li><a href="#">AIRism</a></li>
         <li><a href="#">Tops</a></li>
         <li><a href="#">Innerwear</a></li>
-        <li><a href="#">Outerwear</a></li>
+        <li><a href="kids_outerwear.html">Outerwear</a></li>
       </ul>
     </div>
   </div>
