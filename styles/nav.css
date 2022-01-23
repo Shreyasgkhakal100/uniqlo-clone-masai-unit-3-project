@@ -84,7 +84,7 @@ display: none;
 background-color: white;
 }
 .profile {
-height: 225px;
+height: auto;
 width: 175px;
 margin-left: 1200px;
 position: absolute;
@@ -93,7 +93,7 @@ background-color: white;
 
 .profile > div {
 
-width: 150px;
+width: 170px;
 margin-top: 5px;
 height: 31px;
 cursor: pointer;

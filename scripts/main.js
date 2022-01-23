@@ -25,17 +25,37 @@ var profile_hover = document.querySelector(".login-icon");
 profile_hover.addEventListener("mouseover", () =>{
   profile.style.display = "contents"
 
-  profile.innerHTML=` <div class="profile">
-   <div><a href="#"></a>Profile</div>
+  let userStatus=JSON.parse(localStorage.getItem("userStatus"))||false;
+  if(userStatus==true){
+    profile.innerHTML=` <div class="profile">
+    <div><a href="#"></a>Profile</div>
+       <div><a href="#"></a>Coupons</div>
+       <div><a href="#"></a>Purchase history</div>
+       <div><a href="#"></a>Order history</div>
+       <div><a href="#"></a>Wish list</div>
+       <div id="logincheck" ><a href="#"></a>LogOut</div>
+     </div>`
+    
+  }else{
+    
+    profile.innerHTML=` <div class="profile">
+  
       <div><a href="#"></a>Coupons</div>
-      <div><a href="#"></a>Purchase history</div>
-      <div><a href="#"></a>Order history</div>
+      
       <div><a href="#"></a>Wish list</div>
-      <div><a href="#"></a>Logout</div>
+      <div><a href="#"></a>Register</div>
+      <div id="logincheck" ><a href="#"></a>Login</div>
     </div>`
+  
 
+
+  
+  }
 
 })
+document.querySelector(".login-icon").addEventListener("click",()=>{
+  window.location.href="registration.html"
+  })
 
   profile.addEventListener("mouseout", () =>{
     profile.style.display="none"
@@ -94,9 +114,7 @@ document.querySelector("svg").addEventListener("click",()=>{
 window.location.href="index.html"
 })
 
-document.querySelector(".login-icon").addEventListener("click",()=>{
-    window.location.href="signup.html"
-    })
+
     document.querySelector(".cart").addEventListener("click",()=>{
         window.location.href="cart.html"
         })
@@ -120,4 +138,14 @@ small2.classList.toggle("none");
 let count = document.createElement("p");
 count.innerHTML = cart.length;
 small2.append(count);
-} 
+}
+
+let userStatus=JSON.parse(localStorage.getItem("userStatus"))||false;
+if(userStatus==true){
+  profile.classList.toggle("none")
+}else{
+  document.querySelector(".login-icon").addEventListener("click",()=>{
+    window.location.href="registration.html"
+    })
+}
+localStorage.getElementById("logincheck").innerHTML="Logout";

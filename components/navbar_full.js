@@ -32,7 +32,7 @@ function navbar(){
     </div> 
  </div> 
 </div>
-<div class="profilecont">
+<div class="profilecont none">
     
     </div>
     <div id="navhover">
