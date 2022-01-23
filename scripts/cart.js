@@ -77,30 +77,7 @@ function recentlyView(data) {
 //cart div appending
 
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [
-  {
-    image:
-      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445292/item/ingoods_56_445292.jpg?width=1008&impolicy=quality_75",
-    gendar: "WOMEN",
-    size: "S-3XL",
-    description: "WOMEN Extra Stretch High Rise Denim Leggings Trousers",
-    exclusive: "Exclusive Size Online Only\n New Arrivals",
-    price: "1990",
-    ProductID: 441197,
-    quantity: 1,
-  },
-  {
-    image:
-      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445388/item/ingoods_12_445388.jpg?width=1008&impolicy=quality_75",
-    gendar: "WOMEN",
-    size: "XS-XXL",
-    description: "WOMEN Wirless Bra Active Square Neck",
-    exclusive: "",
-    price: "1990",
-    ProductID: 439594,
-    quantity: 2,
-  },
-];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 
 let discount = JSON.parse(localStorage.getItem("coupon"));
@@ -127,7 +104,7 @@ function showCart(cart){
     cartDiv.append(showCartDiv);
 
     cart.map((elem, index) => {
-      let { image, gendar, size, description, exclusive, price, quantity, ProductID } = elem;
+      let { image, gendar, size, description, exclusive, price, quantity, id } = elem;
 
       sum += price*quantity;
 
@@ -157,7 +134,7 @@ function showCart(cart){
 
       price = +price
       let content = document.createElement("p");
-      content.innerHTML = `Product Id: ${ProductID} <br> Gender: ${gendar} <br> Size: ${size} <br> ${exclusive}<br> <b>Rs. ${price.toFixed(
+      content.innerHTML = `Product Id: ${id} <br> Gender: ${gendar} <br> Size: ${size} <br> ${exclusive}<br> <b>Rs. ${price.toFixed(
         2
       )}</b> <br> <h3>Quantity: </h3>`;
 

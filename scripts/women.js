@@ -1,146 +1,190 @@
 const newArrivalObj_1 = [
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445293/item/ingoods_64_445293.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Extra Stretch High Rise Denim Leggings Trousers",
-        exclusive: "",
-        price: 1990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/433604/item/ingoods_30_433604.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "XS-XXL",
-        description: "WOMEN Rayon Long Sleeve Blouse",
-        exclusive: "Exclusive Size Online Only",
-        price: 1990
-    },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445293/item/ingoods_64_445293.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "S-3XL",
+    description: "WOMEN Extra Stretch High Rise Denim Leggings Trousers",
+    exclusive: "",
+    price: 1990,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/433604/item/ingoods_30_433604.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "XS-XXL",
+    description: "WOMEN Rayon Long Sleeve Blouse",
+    exclusive: "Exclusive Size Online Only",
+    price: 1990,
+    id: 458760,
+    quantity: 1,
+  },
 
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445292/item/ingoods_56_445292.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Extra Stretch High Rise Denim Leggings Trousers",
-        exclusive: "Exclusive Size Online Only\n New Arrivals",
-        price: 1990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445388/item/ingoods_12_445388.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "XS-XXL",
-        description: "WOMEN Wirless Bra Active Square Neck",
-        exclusive: "",
-        price: 1990
-    }
-
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445292/item/ingoods_56_445292.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "S-3XL",
+    description: "WOMEN Extra Stretch High Rise Denim Leggings Trousers",
+    exclusive: "Exclusive Size Online Only\n New Arrivals",
+    price: 1990,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445388/item/ingoods_12_445388.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "XS-XXL",
+    description: "WOMEN Wirless Bra Active Square Neck",
+    exclusive: "",
+    price: 1990,
+    id: 458760,
+    quantity: 1,
+  },
 ];
 
 const newArrivalObj_2 = [
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439088/item/ingoods_34_439088.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "XS-XXL",
-        description: "WOMEN Soft Pile Lined Sweat Long Sleeve Full-Zip Hoodie",
-        exclusive: "Exclusive Size Online Only",
-        price: 1990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439093/item/ingoods_09_439093.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-XXL",
-        description: "WOMEN HEATTECH Pile Lined Sweat Trousers",
-        exclusive: "Exclusive Size Online Only",
-        price: 2490
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439702/item/ingoods_74_439702.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Ultra Light down Jecket",
-        exclusive: "Exclusive Size Online Only",
-        price: 4990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439532/item/ingoods_78_439532.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "XS-XL",
-        description: "WOMEN HEATTECH Bra Sleeveless Top (Regular Warm) Thermal",
-        exclusive: "Exclusive Size Online Only",
-        price: 1990
-    },
-
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439088/item/ingoods_34_439088.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "XS-XXL",
+    description: "WOMEN Soft Pile Lined Sweat Long Sleeve Full-Zip Hoodie",
+    exclusive: "Exclusive Size Online Only",
+    price: 1990,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439093/item/ingoods_09_439093.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "S-XXL",
+    description: "WOMEN HEATTECH Pile Lined Sweat Trousers",
+    exclusive: "Exclusive Size Online Only",
+    price: 2490,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439702/item/ingoods_74_439702.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "S-3XL",
+    description: "WOMEN Ultra Light down Jecket",
+    exclusive: "Exclusive Size Online Only",
+    price: 4990,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439532/item/ingoods_78_439532.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "XS-XL",
+    description: "WOMEN HEATTECH Bra Sleeveless Top (Regular Warm) Thermal",
+    exclusive: "Exclusive Size Online Only",
+    price: 1990,
+    id: 458760,
+    quantity: 1,
+  },
 ];
 
 const newArrivalObj_3 = [
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/441156/item/ingoods_56_441156.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "XS-XXL",
-        description: "WOMEN Low Gauge Sweater",
-        exclusive: "Exclusive Size Online Only",
-        price: 1990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439161/item/ingoods_01_439161.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "XS-XL",
-        description: "WOMEN HEATTECH Pile Lined Sweat Trousers",
-        exclusive: "Exclusive Size Online Only",
-        price: 2490
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/447916/item/ingoods_37_447916.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Cotton Wide Relax",
-        exclusive: "Online Only",
-        price: 2990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/443915/item/ingoods_16_443915.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-L",
-        description: "WOMEN Flannel Shirt (Long Sleeve)",
-        exclusive: "Online Only",
-        price: 2490
-    },
-
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/441156/item/ingoods_56_441156.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "XS-XXL",
+    description: "WOMEN Low Gauge Sweater",
+    exclusive: "Exclusive Size Online Only",
+    price: 1990,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439161/item/ingoods_01_439161.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "XS-XL",
+    description: "WOMEN HEATTECH Pile Lined Sweat Trousers",
+    exclusive: "Exclusive Size Online Only",
+    price: 2490,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/447916/item/ingoods_37_447916.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "S-3XL",
+    description: "WOMEN Cotton Wide Relax",
+    exclusive: "Online Only",
+    price: 2990,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/443915/item/ingoods_16_443915.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "S-L",
+    description: "WOMEN Flannel Shirt (Long Sleeve)",
+    exclusive: "Online Only",
+    price: 2490,
+    id: 458760,
+    quantity: 1,
+  },
 ];
 
 const newArrivalObj_4 = [
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448440/item/ingoods_63_448440.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "XS-XXL",
-        description: "WOMEN Cotton Stand Collar Long Sleeve Shirt",
-        exclusive: "Exclusive Size Online Only",
-        price: 2490
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445292/item/ingoods_56_445292.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Extra Stretch High Rise Leggings Trousers",
-        exclusive: "",
-        price: 1990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448223/item/ingoods_00_448223.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "XS-XXL",
-        description: "WOMEN Raron Dolman 3/4 Sleeve Blouse",
-        exclusive: "Exclusive Size Online Only",
-        price: 1990
-    },
-    {
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439473/item/ingoods_34_439473.jpg?width=1008&impolicy=quality_75",
-        gendar: "WOMEN",
-        size: "S-3XL",
-        description: "WOMEN Cotton Jogger Trousers",
-        exclusive: "Exclusive Size Online Only",
-        price: 2490
-    },
-
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448440/item/ingoods_63_448440.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "XS-XXL",
+    description: "WOMEN Cotton Stand Collar Long Sleeve Shirt",
+    exclusive: "Exclusive Size Online Only",
+    price: 2490,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/445292/item/ingoods_56_445292.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "S-3XL",
+    description: "WOMEN Extra Stretch High Rise Leggings Trousers",
+    exclusive: "",
+    price: 1990,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448223/item/ingoods_00_448223.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "XS-XXL",
+    description: "WOMEN Raron Dolman 3/4 Sleeve Blouse",
+    exclusive: "Exclusive Size Online Only",
+    price: 1990,
+    id: 458760,
+    quantity: 1,
+  },
+  {
+    image:
+      "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/439473/item/ingoods_34_439473.jpg?width=1008&impolicy=quality_75",
+    gendar: "WOMEN",
+    size: "S-3XL",
+    description: "WOMEN Cotton Jogger Trousers",
+    exclusive: "Exclusive Size Online Only",
+    price: 2490,
+    id: 458760,
+    quantity: 1,
+  },
 ];
 
 const newArrivalObj_5 = [
@@ -237,7 +281,7 @@ const newArrivalObj_8 = [
 
 displayProducts_1(newArrivalObj_1);
 function displayProducts_1(data) {
-    data.map(({ image, gendar, size, description, exclusive, price }) => {
+    data.map(({ image, gendar, size, description, exclusive, price, id, quantity }) => {
         let mainDiv = document.createElement("div");
         let imgDiv = document.createElement("div");
         let sizeDiv = document.createElement("div");
@@ -260,7 +304,9 @@ function displayProducts_1(data) {
             size,
             description,
             exclusive,
-            price
+            price,
+            id,
+            quantity
         }
 
         mainDiv.addEventListener("click", ()=>{

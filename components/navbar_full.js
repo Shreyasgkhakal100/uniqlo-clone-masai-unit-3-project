@@ -149,40 +149,40 @@ function men(){
             <div>
               
               <h3>OUTERWEAR</h3>
-              <p><a href="men_ultra-light-down.html">Ultra Light Down</a></p>
-              <p><a href="men_fleece.html">Fleece</a></p>
-              <p><a href="men.html">Coats</a></p>
-              <p><a href="men.html">Blazers</a></p>
-              <p><a href="men.html">Down</a></p>
-              <p><a href="men.html">Jackets</a></p>
+              <p><a href="mens_ultra-light-down.html">Ultra Light Down</a></p>
+              <p><a href="mens_fleece.html">Fleece</a></p>
+              <p><a href="mens.html">Coats</a></p>
+              <p><a href="mens.html">Blazers</a></p>
+              <p><a href="mens.html">Down</a></p>
+              <p><a href="mens.html">Jackets</a></p>
             
                 <h3>LOUNGEWEAR</h3>
-                <p><a href="men.html">Loungewear</a></p>
-                <p><a href="men.html">Room Shoes</a></p>
+                <p><a href="mens.html">Loungewear</a></p>
+                <p><a href="mens.html">Room Shoes</a></p>
              
             
               
                 <h3>HEATTECH</h3>
-                <p><a href="men.html">HEATTECH Regular Warm</a></p>
+                <p><a href="mens.html">HEATTECH Regular Warm</a></p>
                   
             </div>
   <!-- second -->
             <div>
   
               <h3>TOPS</h3>
-              <p><a href="men.html">Sweaters & Cardigans</a></p>
-              <p><a href="men.html">Sweatshirts & Hoodies</a></p>
-              <p><a href="men.html">Shirts (Casual)</a></p>
-              <p><a href="men.html">Shirts (Formal)</a></p>
-              <p><a href="men.html">Polo T-Shirts</a></p>
-              <p><a href="men.html">T-Shirts</a></p>
-              <p><a href="men.html">UT(Graphic T-Shirts)</a></p>
+              <p><a href="mens.html">Sweaters & Cardigans</a></p>
+              <p><a href="mens.html">Sweatshirts & Hoodies</a></p>
+              <p><a href="mens.html">Shirts (Casual)</a></p>
+              <p><a href="mens.html">Shirts (Formal)</a></p>
+              <p><a href="mens.html">Polo T-Shirts</a></p>
+              <p><a href="mens.html">T-Shirts</a></p>
+              <p><a href="mens.html">UT(Graphic T-Shirts)</a></p>
             
             
                 <h3>ACCESSORIES</h3>
-                <p><a href="men.html">Accessories</a></p>
-                <p><a href="men.html">Homeware</a></p>
-                <p><a href="men.html">Socks</a></p>
+                <p><a href="mens.html">Accessories</a></p>
+                <p><a href="mens.html">Homeware</a></p>
+                <p><a href="mens.html">Socks</a></p>
         
       
          
@@ -191,54 +191,54 @@ function men(){
   <!-- third -->
             <div>
               <h3>BOTTOMS</h3>
-              <p><a href="men.html">Shorts</a></p>
-              <p><a href="men.html">Ankle Pants</a></p>
-              <p><a href="men.html">Jeans</a></p>
-              <p><a href="men.html">Pants (Casual)</a></p>
-              <p><a href="men.html">Pants (Formal)</a></p>
+              <p><a href="mens.html">Shorts</a></p>
+              <p><a href="mens.html">Ankle Pants</a></p>
+              <p><a href="mens.html">Jeans</a></p>
+              <p><a href="mens.html">Pants (Casual)</a></p>
+              <p><a href="mens.html">Pants (Formal)</a></p>
             
                 <h3>SPORT UTILITY WEAR</h3>
-                <p><a href="men.html">Outerwear</a></p>
-                <p><a href="men.html">Tops</a></p>
-                <p><a href="men.html">Pants</a></p>
-                <p><a href="men.html">Shorts</a></p>
-                <p><a href="men.html">Innerwear</a></p>
+                <p><a href="mens.html">Outerwear</a></p>
+                <p><a href="mens.html">Tops</a></p>
+                <p><a href="mens.html">Pants</a></p>
+                <p><a href="mens.html">Shorts</a></p>
+                <p><a href="mens.html">Innerwear</a></p>
               
           </div>
   <!-- fourth -->
             <div>
   
               <h3>INNERWEAR</h3>
-              <p><a href="men.html">HEATTECH Thermals</a></p>
-              <p><a href="men.html">Inner Tops</a></p>
-              <p><a href="men.html">Underwear</a></p>
-              <p><a href="men.html">AIRism</a></p>
-              <p><a href="men.html">Tights</a></p>
+              <p><a href="mens.html">HEATTECH Thermals</a></p>
+              <p><a href="mens.html">Inner Tops</a></p>
+              <p><a href="mens.html">Underwear</a></p>
+              <p><a href="mens.html">AIRism</a></p>
+              <p><a href="mens.html">Tights</a></p>
             
                 <h3>AIRism</h3>
-                <p><a href="men.html">Outerwear</a></p>
-                <p><a href="men.html">Tops</a></p>
-                <p><a href="men.html">Innerwear</a></p>
-                <p><a href="men.html">Underwear</a></p>
-                <p><a href="men.html">Loungewear</a></p>
-                <p><a href="men.html">Accessories</a></p>
+                <p><a href="mens.html">Outerwear</a></p>
+                <p><a href="mens.html">Tops</a></p>
+                <p><a href="mens.html">Innerwear</a></p>
+                <p><a href="mens.html">Underwear</a></p>
+                <p><a href="mens.html">Loungewear</a></p>
+                <p><a href="mens.html">Accessories</a></p>
   
           </div>
   <!-- fifth -->
             <div><h3>Featured</h3>
-              <p><a href="men.html">New Arrivals</a></p>
-              <p><a href="men.html">Limited Offer</a></p>
-              <p><a href="men.html">Sale</a></p>
-              <p><a href="men.html">Coming Soon</a></p>
-              <p><a href="men.html">Comfort at Home</a></p>
-              <p><a href="men.html">Everything Under Rs.1990/-</a></p>
-              <p><a href="men.html">Styling book</a></p>
-              <p><a href="men.html">About LifeWear</a></p>
-              <p><a href="men.html">Browse</a></p>
+              <p><a href="mens.html">New Arrivals</a></p>
+              <p><a href="mens.html">Limited Offer</a></p>
+              <p><a href="mens.html">Sale</a></p>
+              <p><a href="mens.html">Coming Soon</a></p>
+              <p><a href="mens.html">Comfort at Home</a></p>
+              <p><a href="mens.html">Everything Under Rs.1990/-</a></p>
+              <p><a href="mens.html">Styling book</a></p>
+              <p><a href="mens.html">About LifeWear</a></p>
+              <p><a href="mens.html">Browse</a></p>
               
             
                   <h3>Browose</h3>
-                  <p><a href="men.html">All Men</a></p>
+                  <p><a href="mens.html">All mens</a></p>
               </div>
         </div>`
 }
