@@ -41,7 +41,7 @@ window.location.href="women.html"
 var men=document.querySelectorAll(".men");
 men.forEach(function(elem){
 elem.addEventListener("click",()=>{
-window.location.href="men.html"
+window.location.href="mens.html"
 })
 })
 
