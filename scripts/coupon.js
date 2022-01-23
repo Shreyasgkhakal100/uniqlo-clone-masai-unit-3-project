@@ -1,5 +1,6 @@
 var coupon=document.querySelector("#input")
 
+
 document.getElementById("apply").addEventListener("click",applycoupon);
 function applycoupon(){
     

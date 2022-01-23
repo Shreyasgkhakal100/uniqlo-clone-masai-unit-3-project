@@ -1,4 +1,5 @@
 
+
 start()
 let crslpic=["https://im.uniqlo.com/global-cms/spa/res2a96a18ade9fe3ecaeb3bbe5eda8ea40fr.jpg",
             "https://im.uniqlo.com/global-cms/spa/rescff3140a7639104150811d84415f6c71fr.jpg",
@@ -41,7 +42,7 @@ window.location.href="women.html"
 var men=document.querySelectorAll(".men");
 men.forEach(function(elem){
 elem.addEventListener("click",()=>{
-window.location.href="mens.html"
+window.location.href="men.html"
 })
 })
 

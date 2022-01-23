@@ -1,6 +1,7 @@
 import {navbar, women, men, kids, baby } from "../components/navbar_full.js";
 
 
+
 // NavBar
 
 var container = document.getElementById("navbarContainer");
@@ -27,14 +28,14 @@ profile_hover.addEventListener("mouseover", () =>{
 
   let userStatus=JSON.parse(localStorage.getItem("userStatus"))||false;
   if(userStatus==true){
-    profile.innerHTML=` <div class="profile">
-    <div><a href="profile.html">Profile </a></div>
+    profile.innerHTML = ` <div class="profile">
+    <div><a href="profile.html">Profile</a></div>
        <div class="tocoupon" ><a href="coupon.html">Coupons</a></div>
        <div><a href="#">Purchase history</a></div>
        <div><a href="#">Order history </a></div>
        <div><a href="#">Wish list </a></div>
        <div id="logincheck" ><a href="login.html">LogOut</a></div>
-     </div>`
+     </div>`;
     
   }else{
     

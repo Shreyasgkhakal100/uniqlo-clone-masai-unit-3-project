@@ -2,6 +2,7 @@ body{
     margin:0;
     font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, 'Noto Sans', Roboto, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3', 'Noto Sans CJK JP', Osaka, Meiryo, '\30E1\30A4\30EA\30AA', 'MS PGothic', '\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF', 'Hiragino Sans GB', 'Arial Unicode MS', sans-serif;
 }
+
 #navbar{
     border:1px solid grey; 
     width:100%;
@@ -158,4 +159,3 @@ text-decoration: none;
     color:black;
     text-decoration: none;
 } 
-
