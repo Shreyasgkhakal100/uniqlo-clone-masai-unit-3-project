@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view Product</title>
+    <link rel="stylesheet" href="./styles/viewProd.css">
+    <!-- font awesome link here... -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- title icone -->
+    <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <!-- footer css link here  -->
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+</head>
+
+<body>
+    <div id="navbarContainer"></div>
+
+    <div class="viewProd_container">
+        <div class="prodSide">
+            <div class="imageDiv">
+                <div class="smallImages"></div>
+                <div class="largeImage"></div>
+            </div>
+            <div class="description">
+                <div class="heading">
+                    <h1>DESCRIPTION</h1>
+                    <h4>Product ID: <span id="productId">445388</span></h4>
+                </div><br>
+                <div class="selectOverview">
+                    <hr>
+                    <select name="" id="">
+                        <option value="">Overview</option>
+
+                    </select>
+
+                </div>
+                <div class="selectOverview">
+                    <hr>
+                    <select name="" id="">
+                        <option value="">Materials</option>
+                    </select>
+
+                </div>
+                <div class="selectOverview">
+                    <hr>
+                    <select name="" id="">
+                        <option value="">Customer Service</option>
+                    </select>
+
+                </div>
+                <div class="selectOverview">
+                    <hr>
+                    <select name="" id="">
+                        <option value="">Return policy</option>
+                    </select>
+
+                </div>
+                <hr><br><br>
+                <div class="heading">
+                    <h1>REVIEWS (0)</h1>
+                </div>
+                <hr><br>
+                <button class="reviewBtn">WRITE A REVIEW</button>
+            </div>
+
+        </div>
+        <div class="cartSide">
+            <div class="content"></div>
+            <div class="colors">
+                <h3>COLOUR 12 NATURAL</h3>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="sizes">
+                <h3>SIZE</h3>
+                <div>
+                    <div>
+                        <h4>XS</h4>
+                    </div>
+                    <div>
+                        <h4>S</h4>
+                    </div>
+                    <div>
+                        <h4>M</h4>
+                    </div>
+                    <div>
+                        <h4>L</h4>
+                    </div>
+                    <div>
+                        <h4>XL</h4>
+                    </div>
+                    <!-- <div></div> -->
+                </div>
+            </div>
+            <div class="quantity">
+                <h3>QUANTITY</h3>
+                <div>
+                    <select name="" id="select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select><br>
+                    <p>In stock</p>
+                </div>
+            </div>
+            <div id="btnDiv">
+
+            </div>
+
+            <div class="twoBtn">
+                <button>ADD TO WISH LIST</button>
+                <button>FIND STOCK IN STORE</button>
+            </div><br>
+            <hr>
+            <div class="share">
+                <h3>SHARE</h3>
+                <div>
+                    <div><i class="fab fa-twitter-square"></i></div>
+                    <div><i class="fab fa-facebook-square"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="none">
+        <div class="overlay"></div>
+        <!-- <div id="loader">
+                <img src="https://cdn.dribbble.com/users/1787505/screenshots/7300251/media/a351d9e0236c03a539181b95faced9e0.gif"
+                    alt="Loader" width="100%">
+            </div> -->
+        <div class="content">
+            <div class="close-btn" onclick="toggle()">&times;</div>
+            <h3>1 ITEMS ADDED TO YOUR CART</h3>
+            <div id="itemTotal">
+                <p>SUBTOTAL | <span>1items(s)</span> </p>
+                <p id="itemPrice"></p>
+
+            </div>
+            <button id="addBtn">VIEW CART</button>
+            <button onclick="toggle()" id="continueBtn">CONTINUE SHOPPING</button>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+</body>
+
+</html>
+<script type="module">
+
+    import footer from "./components/footer.js"
+    let footerdiv = document.getElementById("footer-container");
+    footerdiv.innerHTML = footer();
+
+</script>
+<script src="./scripts/viewProd.js">
+
+</script>
+
+<script type="module" src="./scripts/main.js">
+</script>
