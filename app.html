@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/nav.css" />
+</head>
+<style>
+    .poster{
+        margin-top: 50px;
+        width:80%;
+        margin:auto;
+        
+        
+    }
+    
+    .words{
+        padding:30px;
+        color:grey;
+        margin-bottom: 50px;
+        text-decoration: underline;
+    }
+    .mobile{
+        
+        width:85%;
+        margin:auto;
+    }
+    .notice{
+        
+        width:80%;
+        margin:auto;
+        padding:20px;
+    }
+</style>
+<body>
+    <div id="navbarContainer"></div>
+    <div class="words"> UNIQLO HOME PAGE  /  SPECIAL   /   UNIQLO APP </div>
+    <div class="poster">
+    <img src="https://im.uniqlo.com/global-cms/spa/res43b0909cb09cc62a94d64bcbe6b42facfr.jpg" alt="">
+</div>
+<div class="mobile">
+    <img src="https://im.uniqlo.com/global-cms/spa/resb46761396231de2d634887a7a8f6ab67fr.jpg" alt="">
+    <img src="https://im.uniqlo.com/global-cms/spa/res440fe5b302d19e8ba8c15d8bb1102e46fr.jpg" alt="">
+    <img src="https://im.uniqlo.com/global-cms/spa/res0b65f95608ca5e7cc1ac5f0da524ad56fr.jpg" alt="">
+</div>
+<div class="notice">
+    <img src="https://im.uniqlo.com/global-cms/spa/res4f94233ffb3d57a68bd05e7eab3d0bdafr.jpg" alt="">
+    <img src="https://im.uniqlo.com/global-cms/spa/res2d14f7d7511d7c1ca2a6fc92766b8017fr.jpg" alt="">
+</div>
+<div id="footer-container"></div>
+</body>
+</html>
+<script type="module">
+
+    import footer from "./components/footer.js"
+    let footerdiv=document.getElementById("footer-container");
+    footerdiv.innerHTML=footer();
+    
+    </script>
+    <script type="module" src="./scripts/main.js">
+    
+    </script>
+    
+    <script src="./scripts/index.js"></script>
