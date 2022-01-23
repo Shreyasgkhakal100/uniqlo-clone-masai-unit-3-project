@@ -86,7 +86,7 @@ background-color: white;
 .profile {
 height: auto;
 width: 175px;
-margin-left: 1200px;
+margin-left: 75%;
 position: absolute;
 background-color: white;
 }
@@ -99,10 +99,14 @@ height: 31px;
 cursor: pointer;
 display: block;
 }
-.profile > div:hover {
+.profile div>a:hover {
 background-color: rgb(245, 241, 241);
 color:cadetblue;
 }
+.profile div:hover {
+    background-color: rgb(245, 241, 241);
+    color:cadetblue;
+    }
 #navhover {
 border:1px solid black;
 width: 90%;
@@ -150,4 +154,8 @@ text-decoration: none;
     border-left: 1px solid grey;
     padding-left:40px;
 }
+.profile div>a{
+    color:black;
+    text-decoration: none;
+} 
 

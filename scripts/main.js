@@ -28,23 +28,23 @@ profile_hover.addEventListener("mouseover", () =>{
   let userStatus=JSON.parse(localStorage.getItem("userStatus"))||false;
   if(userStatus==true){
     profile.innerHTML=` <div class="profile">
-    <div><a href="#"></a>Profile</div>
-       <div><a href="#"></a>Coupons</div>
-       <div><a href="#"></a>Purchase history</div>
-       <div><a href="#"></a>Order history</div>
-       <div><a href="#"></a>Wish list</div>
-       <div id="logincheck" ><a href="#"></a>LogOut</div>
+    <div><a href="profile.html"></a>Profile</div>
+       <div class="tocoupon" ><a href="coupon.html">Coupons</a></div>
+       <div><a href="#">Purchase history</a></div>
+       <div><a href="#">Order history </a></div>
+       <div><a href="#">Wish list </a></div>
+       <div id="logincheck" ><a href="login.html">LogOut</a></div>
      </div>`
     
   }else{
     
     profile.innerHTML=` <div class="profile">
   
-      <div><a href="#"></a>Coupons</div>
+      <div class="tocoupon" ><a href="coupon.html">Coupons</a></div>
       
       <div><a href="#"></a>Wish list</div>
-      <div><a href="#"></a>Register</div>
-      <div id="logincheck" ><a href="#"></a>Login</div>
+      <div><a href="registration.html">Register</a></div>
+      <div id="logincheck" ><a href="login.html">Login</a></div>
     </div>`
   
 
@@ -140,12 +140,19 @@ count.innerHTML = cart.length;
 small2.append(count);
 }
 
-let userStatus=JSON.parse(localStorage.getItem("userStatus"))||false;
-if(userStatus==true){
-  profile.classList.toggle("none")
-}else{
-  document.querySelector(".login-icon").addEventListener("click",()=>{
-    window.location.href="registration.html"
-    })
-}
-localStorage.getElementById("logincheck").innerHTML="Logout";
+// let userStatus=JSON.parse(localStorage.getItem("userStatus"))||false;
+// if(userStatus==true){
+//   profile.classList.toggle("none")
+// }else{
+//   document.querySelector(".login-icon").addEventListener("click",()=>{
+//     window.location.href="registration.html"
+//     })
+// }
+// localStorage.getElementById("logincheck").innerHTML="Logout";
+
+var tocoupon=document.querySelectorAll(".tocoupon");
+tocoupon.forEach(function(elem){
+elem.addEventListener("click",()=>{
+window.location.href="coupon.html"
+})
+})
