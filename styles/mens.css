@@ -1,0 +1,104 @@
+#maindiv{
+  margin: 4%;
+  font-family: sans-serif;
+}
+#div2{
+    margin-top: 35px;
+}
+#product4,#featured_offer{
+    display: flex;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#product4>div,#limited_offer>div,#sale_product>div,#featured_offer>div{
+    margin-right: 23px;
+}
+#product4>div>div>img,#featured_offer>div>div>img{
+    width: 290px;
+
+}
+#men{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    color: rgb(150, 148, 148);
+}
+#desc{
+    color: rgb(150, 148, 148);
+    font-weight: 500;
+    margin-top: 30px;
+}
+#see_more,#limitedoffer,#saleoffer{
+    color: black;
+    margin-left: 43%;
+   font-weight: 700;
+       line-height: 100px;
+} 
+#see_more:hover,#limitedoffer:hover,#saleoffer:hover{
+    color: gray;
+}
+#limited_offer>div>div>img,#sale_product>div>div>img{
+    width: 290px;
+}
+#limited_offer,#sale_product{
+    display: flex;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#strikedprice{
+    text-decoration: line-through;
+    font-weight: 700;
+    font-size: small;
+    
+}
+#redprice{
+    color: red;
+    line-height: 0;
+    font-weight: bolder;
+
+}
+#topics,#smalltopic{
+    display: flex;
+    margin-bottom: 50px;
+}
+#topics>div{
+    width: 50%;
+    margin-right: 20px;
+}
+#smalltopic>div>img{
+   width: 230px;
+   padding-right: 13px;
+}
+#pickup{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(3,400px);
+    grid-gap: 1px;
+    margin-bottom: 60px;
+}
+#pickup>div>img{
+    width: 100%;
+    height: 100%;
+}
+#sweats{
+    margin-left: 50px;
+    line-height: 8px;
+}
+#collection,#special,#today{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /* gap: 0; */
+}
+#collection>div>div>img,#special>div>div>img,#today>div>div>img{
+    width: 100%;
+    height: 400px;
+}
+#collection>div,#special>div,#today>div{
+    border: 1px solid rgb(212, 208, 208);
+}
+
+body{
+    margin: 0;
+}
