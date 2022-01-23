@@ -79,13 +79,13 @@ h1{
     border: 1px solid grey;
     margin-bottom: 30px;
 }
-.leftDiv>div:nth-child(2){
+.leftDiv>div:nth-child(1){
     background-color: rgba(238, 238, 238, 0.664);
     border-bottom: 1px solid grey;
     height: 40px;
     padding-top: 20px;
 }
-.leftDiv>div:nth-child(2)>h3{ 
+.leftDiv>div:nth-child(1)>h3{ 
     color:rgb(179, 179, 179);
 }
 .leftDiv>div:nth-child(3){
