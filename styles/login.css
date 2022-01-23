@@ -1,0 +1,116 @@
+*{
+    font-family: "UniqloPro Bold", "Helvetica Neue", HelveticaNeue, Helvetica, "Noto Sans", Roboto, Arial, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans CJK JP", Osaka, Meiryo, メイリオ, "MS PGothic", "MS Pゴシック", "Hiragino Sans GB", "Arial Unicode MS", sans-serif;
+    text-decoration: #1b1b1b;
+}
+.box1{
+    border: 1px solid grey;
+    width: 90%;
+    height: 530px;        
+    margin: auto;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;      
+}
+.box2{
+    /* border: 1px solid blue; */
+    width: 52%;        
+    height: 480px;      
+}
+.vl {
+border-left: 1px solid grey;
+height: 460px;
+margin-top: 35px;
+
+}
+.box3{
+    width: 100%;
+    height: 35px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box4{
+    width: 100%;
+    height: 20px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+}
+.box5{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid greenyellow; */
+    align-items: center;
+}
+#email{
+  width: 98%;
+  height: 30px;
+}
+#password{
+  width: 98%;
+  height: 30px;
+}
+.box6{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid greenyellow; */
+    align-items: center;
+}
+.box7{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid rgb(243, 92, 5); */
+    align-items: center;
+    color: grey;
+    margin: auto;
+    font-size: 13px;
+}
+.box8{
+    /* border: 1px solid grey; */
+    text-decoration: underline;
+    align-items: center;
+
+}
+#log{
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+#log:hover{
+background-color: grey;
+}
+
+.container1{
+    /* border: 1px solid black; */
+    height: 400px;
+    width: 40%;
+    /* margin-top: 10%; */
+
+}   
+.create{
+width: 100%;
+height: 400px;   
+}
+p{
+font-size: 13px;
+}
+.box22{
+color: red;
+}
+button{
+width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+button:hover{
+background-color: grey;
+}
