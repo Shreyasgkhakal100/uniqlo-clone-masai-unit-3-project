@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUPONS | UNIQLO  IN</title>
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <link rel="stylesheet" href="./styles/coupon.css">
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/nav.css" />
+</head>
+<body>
+    <div id="navbarContainer"></div>
+
+    <div class="couponref"><span> UNIQLO HOME PAGE </span>  / <span>SHOPPING CART</span> / <span> APPLY COUPON </span></div><br><br>
+    <a href="cart.html"> <p class="return">RETURN TO CART</p></a><br><br>
+
+    <div class="coupon-box">
+        <h1> APPLY COUPON </h1>
+        <p id="success"></p>
+        
+        <div class="coupon-value">
+            <p class="text"> ENTER COUPON CODE </p>
+            <input  id="input" type="text" placeholder="coupon code">
+        </div>
+        <hr>
+
+        <p> Available coupons (1)</p>
+        <p> Apply  <span>  Republic10  </span>to get 10% off on all your products</p><br>
+        <button id="apply">APPLY</button><button id="cancel">CANCEL</button><br>
+
+        
+    </div><br>
+
+    
+    <div id="footer-container"></div>
+</body>
+</html>
+<!-- Import export script -->
+<script type="module">
+import footer from  "./components/footer.js"
+let footerdiv=document.getElementById("footer-container");
+footerdiv.innerHTML=footer();
+
+</script>
+<script type="module" src="./scripts/main.js">
+
+</script>
+<!-- coupon script -->
+<script src="./scripts/coupon.js"></script>
+

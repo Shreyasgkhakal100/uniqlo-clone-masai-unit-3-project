@@ -1,0 +1,218 @@
+body{
+    margin : 0px;
+}
+#main{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.pageLinks{
+    color: #757575;
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, "Noto Sans", Roboto, Arial, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans CJK JP", Osaka, Meiryo, メイリオ, "MS PGothic", "ＭＳ Ｐゴシック", "Hiragino Sans GB", "Arial Unicode MS", sans-serif;
+    font-size: 13px;
+    display: flex;
+}
+.pageLinks a{
+    color: #757575;
+    margin-right: 20px;
+}
+#this{
+    margin-left: 20px;
+}
+h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #1b1b1b;
+}
+#cartDiv{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+#cartDiv button{
+    width: 300px;
+    border: none;
+    background-color: #1b1b1b;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+#cartDiv button:hover{
+    background-color: rgba(0, 0, 0, 0.658);
+}
+
+
+.imgDiv{
+    width: 100%;
+    height: 65%;
+}
+.imgDiv>img{
+    width: 100%;
+    height: 100%;
+}
+
+.sizeDiv{
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.sizeDiv>h3{
+  font-size: 14px;
+  line-height: 14px;
+  color: #ababab;
+  font-weight: 700;
+}
+
+.leftDiv{
+    width: 60%;
+    min-height: 300px;
+}
+.leftDiv>div{
+    border: 1px solid grey;
+    margin-bottom: 30px;
+}
+.leftDiv>div:nth-child(1){
+    background-color: rgba(238, 238, 238, 0.664);
+    border-bottom: 1px solid grey;
+    height: 40px;
+    padding-top: 20px;
+}
+.leftDiv>div:nth-child(1)>h3{ 
+    color:rgb(179, 179, 179);
+}
+.leftDiv>div:nth-child(3){
+    background-color: rgba(238, 238, 238, 0.664);
+    border-bottom: 1px solid grey;
+    height: 40px;
+    padding-top: 20px;
+}
+.leftDiv>div:nth-child(3)>h3{ 
+    color:rgb(179, 179, 179);
+}
+.leftDiv>div:nth-child(4){ 
+    padding: 20px;
+}
+.rightDiv{
+    width: 30%;
+    min-height: 300px;
+}
+
+.rightDiv hr{
+    width:100%;
+}
+.rightDiv > div:nth-child(1) {
+    border: 1px solid grey;
+    padding: 15px;
+}
+
+.rightDiv > div > table{
+    margin-top: 20px;
+    width: 100%;
+}
+.col{
+    text-align: right;
+}
+
+tbody>tr{
+    height: 35px;
+}
+
+.checkoutBtn{
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+}
+.checkoutBtn:hover{
+    background-color: rgba(255, 0, 0, 0.712);
+}
+
+.shoppingBtn{
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+     background-color: white;
+    cursor: pointer;
+    border: 2px solid black;
+    font-weight: bold;
+}
+.shoppingBtn:hover{
+    background-color: rgba(209, 209, 209, 0.699);
+}
+.couponBtn{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+
+.showCartDiv h3{
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+}
+.showCartDiv{
+    display: flex;
+    gap: 40px;
+}
+
+.deliveryOption{
+    width: 96%;
+    display: flex;
+    gap: 2%;
+    padding: 2%;
+    justify-content: space-between;
+}
+.deliveryOption > div:nth-child(1){
+    width: 35%;
+}
+.deliveryOption td{
+    vertical-align: top;
+}
+#deliveryForm{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 96%;
+}
+
+#deliveryForm table input{
+    width: 400px;
+    height: 35px;
+    padding: 10px;
+    background-color: rgba(238, 238, 238, 0.664);
+    border: none;
+    border-bottom: 2px solid grey;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#deliveryForm h3{
+    margin-top: 30px;
+}
+
+#billing{
+    width: 20px;
+    height: 20px;
+}

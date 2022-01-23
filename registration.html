@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./styles/registration.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+
+</head>
+<body>
+   
+    <div id="navbarContainer"></div>
+
+    <!-- navbar end -->
+    <div class="main_tank">
+        <div class="tank">
+            <div id="h1">
+                <div id="p1">UNIQLO HOME PAGE</div>
+                <div id="p1">/</div>
+                <div id="p1">CREATE AN ACCOUNT</div>
+            </div>
+            <div class="div1">
+                <div>
+                    <h1>CREATE AN ACCOUNT </h1>
+                </div>
+                <div> <span class="material-icons"> https</span> </div>
+            </div>
+            <div>
+                <div class="tank1">
+                    <div class="notice">
+                        <div id="not">
+                            <p>You will receive the confirmation mail to your email address associated with account.
+                                Please
+                                make sure to check your incoming email from us.</p>
+                        </div>
+
+                        <div id="not-not">
+                            <p>Required<span> *</span></p>
+                        </div>
+                    </div>
+                    <div class="fill">
+                        <form onsubmit="signUp(event)">
+
+                            <div>
+                                <label>EMAIL ADDRESS <span>*</span></label>
+                                <input type="email" id="email" placeholder="xxx@uniqulo.com" required>
+                                <p id="p2">
+                                    Please enter an email address.</p>
+                            </div>
+
+                            <div>
+                                <label>PASSWORD<span> *</span></label>
+                                <input type="password" id="create_password" placeholder="enter password" required>
+
+                                <p id="p2">Password must be at least 8 characters, and contain both numbers and alphabet
+                                    letters.
+                                </p>
+                            </div>
+                            <div>
+                                <label>PINCODE<span> *</span></label>
+
+                                <input type="number" id="pin" placeholder="enter pincode" required>
+
+
+                            </div>
+
+
+                            <div>
+                                <label>BIRTHDAY</label>
+                                <input type="date" id="birthday" placeholder="dd-mm-yyyy" required>
+                            </div>
+                            <p id="p2">Unable to edit birthday after you register.</p>
+
+                            <div id="gender">
+                                <label>GENDER</label>
+                                <label for="male" id="maleLabel">Male</label>
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="Others">Others</label>
+                                <input type="radio" name="gender" id="Others" value="Others">
+                            </div>
+
+                            <div class="subscribe">
+                                <h3>SUBSCRIBE ME TO UNIQLO’S MAILING LIST</h3>
+                            </div>
+                            <div id="checkbox">
+                                <div>
+                                    <input type="checkbox" required>
+                                </div>
+                                <div>
+                                    <p>UNIQLO E-newspaper</p>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="membership">
+                                <h4>MEMBERSHIP AGGREMENT <span>*</span></h4>
+                                <p>By creating an account, you agree to UNIQLO’s privacy policy and terms of use.</p>
+
+                            </div>
+                            <div id="checkbox">
+                                <input type="checkbox" required>
+                                <p>I agree to the UNIQLO’s TERMS OF USE and PRIVACY POLICY</p>
+                            </div>
+                            <div class="policy">
+                                <h3>TERMS OF USE</h3>
+                                <h3>PRIVACY POLICY</h3>
+                            </div>
+                            <div>
+                                <!-- <button id="signUp()"><a href="./login.html" > REGISTER</a></button> -->
+                                <input id="signup" type="submit" value="REGISTER" />
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<div id="footer"></div>
+</html>
+<script src="./scripts/registration.js"></script>
+<script type="module" src="./scripts/import.js"></script>
+<script type="module" src="./scripts/main.js"></script>
+

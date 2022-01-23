@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRA LIGHT DOWN</title>
+    <link rel="stylesheet" href="./styles/ultra-light-down.css">
+    <!-- title icone -->
+    <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <!-- footer css link here  -->
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+</head>
+
+<body>
+    <div id="navbarContainer"></div>
+
+    <div class="ultra_container">
+        <div class="filterMain">
+            <div>
+                <h2>RESULTS</h2>
+                <h2>All Items</h2>
+            </div>
+            <div>
+                <h2>SORT BY</h2>
+                <select name="" id="sortProduct">
+                    <option value="" selected>Featured</option>
+                    <!-- <option value="">New arrivals</option> -->
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                    <!-- <option value="">Top rated</option> -->
+                </select>
+            </div>
+        </div>
+        <div class="ProductsMain">
+            <div class="categorySide">
+                <h1>WOMEN</h1>
+                <select name="" class="select1">
+                    <option value="" selected>OUTERWEAR</option>
+                    <option value="ultra-light-down">Ultra Light Down</option>
+                    <option value="fleece">Fleece</option>
+                    <option value="">Down</option>
+                    <option value="">Coats</option>
+                    <option value="">Blazers</option>
+                    <option value="">Jeckets</option>
+
+                </select>
+                <select name="" class="select2">
+                    <option value="" selected>TOPS</option>
+                    <option value="sweaters">Sweaters & Cardigans</option>
+                    <option value="knit">3D Knit</option>
+                    <option value="">Sweatshirts & Hoodies</option>
+                    <option value="">Shirts & Tops</option>
+                    <option value="">Bratop</option>
+                    <option value="">UT(Graphic T-Shirts)</option>
+                </select>
+                <select name="" class="select3">
+                    <option value="" selected>DRESSES & JUMPSUITS</option>
+                    <option value="dresses-jumpsuits">Dresses & Jumpsuits</option>
+                </select>
+                <select name="" class="select4">
+                    <option value="" selected>BOTTOMS</option>
+                    <option value="leggings">Leggings Pants</option>
+                    <option value="ankle-pants">Ankle Pants</option>
+                    <option value="">Jeans</option>
+                    <option value="">Pants (Casual)</option>
+                    <option value="">Pants (Formal)</option>
+                    <option value="">Shorts</option>
+                    <option value="">Skirts</option>
+                </select>
+                <select name="" class="select5">
+                    <option value="" selected>INNERWEAR</option>
+                    <option value="heattech-thermals">HEATTECH Thermals</option>
+                    <option value="wirelessBra">Wireless Bra</option>
+                    <option value="">Bratop</option>
+                    <option value="">Inner Tops</option>
+                    <option value="">Underwear</option>
+                    <option value="">AIRism Innerwear</option>
+                    <option value="">Leggings</option>
+                </select>
+                <select name="" class="select6">
+                    <option value="" selected>LOUNGEWEAR</option>
+                    <option value="loungewear">Loungewear</option>
+                    <option value="roomShoes">Room Shoes</option>
+                </select>
+                <select name="" class="select7">
+                    <option value="" selected>SPORT UTILITY WEAR</option>
+                    <option value="outerwear">Outerwear</option>
+                    <option value="tops">Tops</option>
+                    <option value="">Pants & Leggings</option>
+                    <option value="">Shorts</option>
+                    <option value="">Innerwear</option>
+                </select>
+                <select name="" class="select8">
+                    <option value="" selected>ACCESSORIES</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="homeware">Homeware</option>
+                    <option value="">Socks</option>
+                    <option value="">shoes</option>
+                    <option value="">Innerwear</option>
+                </select>
+                <select name="" class="select9">
+                    <option value="" selected>HEATTECH</option>
+                    <option value="heattech">HEATTECH Regular Warm</option>
+                    <option value="homewareExtra">HEATTECH Extra Warm</option>
+                    <option value="">HEATTECH Ultra Warm</option>
+                    <option value="">Accessories</option>
+                </select>
+                <select name="" class="select10">
+                    <option value="" selected>AIRism</option>
+                    <option value="outherwear">Outherwear</option>
+                    <option value="tops-airism">Tops</option>
+                    <option value="">Bottoms</option>
+                    <option value="">Innerwear</option>
+                    <option value="">Loungewear</option>
+                    <option value="">Accessories</option>
+                </select>
+                <select name="" class="select11">
+                    <option value="" selected>COMFORT WORK WEAR</option>
+                    <option value="tops-confort">Tops</option>
+                    <option value="pants">Pants</option>
+                    <option value="">Sweaters & Cardigans</option>
+                </select>
+                <br><br>
+                <hr>
+                <br>
+                <select name="" id="">
+                    <option value="" selected>Size</option>
+                </select>
+                <select name="" id="">
+                    <option value="" selected>Color</option>
+                </select>
+                <select name="" id="">
+                    <option value="" selected>Price</option>
+                </select>
+                <select name="" id="">
+                    <option value="" selected>Additional</option>
+                </select>
+            </div>
+            <div class="productSide"></div>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+</body>
+
+</html>
+<script type="module">
+
+    import footer from "./components/footer.js"
+    let footerdiv = document.getElementById("footer-container");
+    footerdiv.innerHTML = footer();
+
+</script>
+<script src="./scripts/tops-confort.js">
+
+</script>
+
+<script type="module" src="./scripts/main.js">
+</script>

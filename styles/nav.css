@@ -1,0 +1,162 @@
+body{
+    margin:0;
+    font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, 'Noto Sans', Roboto, Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3', 'Noto Sans CJK JP', Osaka, Meiryo, '\30E1\30A4\30EA\30AA', 'MS PGothic', '\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF', 'Hiragino Sans GB', 'Arial Unicode MS', sans-serif;
+}
+
+#navbar{
+    border:1px solid grey; 
+    width:100%;
+    height:120px;
+    /* position:fixed;
+    z-index: 10000; */
+}
+#updiv{
+    background-color: #f4f4f4;
+}
+#updiv>div{
+    display:flex;
+    margin-right: 8%;
+    align-items: end;
+    justify-content: flex-end;
+}
+#updiv>div p{
+    margin-right: 15px;
+    font-size: 16px;
+}
+#downdiv{
+    display:flex;
+    justify-content: space-around;
+}
+#downdiv>div{
+    
+    width:30%;
+    height:40px;
+    padding:10px;
+    display:flex;
+    justify-content: space-around;
+    gap:10px;
+    
+}
+
+#logoimg{
+    width:70px;
+    height:70px;
+}
+.bold{
+    font-weight: bolder;
+    font-size: 16px;
+}
+#searchicon{
+    width:20px;
+    height:20px;
+    padding-top: 12px;
+}
+.icon{
+    width:25px;
+    height:25px;
+    padding-top: 7px;
+    margin-left:5px;
+}
+.icon:hover,svg,.bold{
+    cursor:pointer;
+}
+
+#inputdiv{
+    border:1px solid grey;
+    width:235px;
+    height:40px;
+    display: flex;
+    
+}
+#inputdiv:hover{
+    border:1px solid teal;
+}
+#inputdiv>input{
+    padding:5px;
+    font-size: 16px;
+    border:0;
+}
+#inputdiv>input:focus{
+    outline:none;
+    
+}
+.profilecont {
+display: none;
+background-color: white;
+}
+.profile {
+height: auto;
+width: 175px;
+margin-left: 75%;
+position: absolute;
+background-color: white;
+}
+
+.profile > div {
+
+width: 170px;
+margin-top: 5px;
+height: 31px;
+cursor: pointer;
+display: block;
+}
+.profile div>a:hover {
+background-color: rgb(245, 241, 241);
+color:cadetblue;
+}
+.profile div:hover {
+    background-color: rgb(245, 241, 241);
+    color:cadetblue;
+    }
+#navhover {
+border:1px solid black;
+width: 90%;
+height: 500px;
+display: none;
+position: absolute;
+
+}
+
+.none {
+display: none;
+}
+
+#small2 p {
+font-size: 10px;
+text-align: center;
+color: white;
+margin: 2px;
+}
+#small2 {
+height: 16px;
+width: 16px;
+border: 1px solid red;
+margin-left: -35px;
+background-color: red;
+
+border-radius: 8px;
+}
+#navbaby{
+    display:flex;
+   
+    justify-content: space-around;
+    padding:10px;
+
+}
+
+#navbaby a{
+color: #1b1b1b;
+text-decoration: none;
+}
+#navbaby a:hover,.bold:hover{
+    text-decoration: underline;
+}
+#navbaby>div:nth-child(5){
+    border-left: 1px solid grey;
+    padding-left:40px;
+}
+.profile div>a{
+    color:black;
+    text-decoration: none;
+} 
+

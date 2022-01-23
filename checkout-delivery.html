@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELIVERY OPTION | UNIQLO IN</title>
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="./styles/checkout-delivery.css"/>
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+</head>
+
+<body>
+    <div id="navbarContainer"></div>
+
+    <div id="main">
+        <div class="pageLinks">
+            <p> <a href="index.html">UNIQLO HOME PAGE</a>/
+            <a href="cart.html">SHOPPING CART</a>/<p id="this">DELIVERY</p>
+            </p>
+        </div>
+        <h1>CHECKOUT</h1>
+        <div id="cartDiv">
+            <div class="showCartDiv">
+                <div class="leftDiv">
+                    <div>
+                        <h1 style="margin-left:20px;">1.DELIVERY OPTION</h1>
+                        <hr>
+                        <div class="deliveryOption">
+                            <div>
+                                <table width="100%">
+                                    <tr>
+                                        <td><input type="radio" id="premiumShipping" name="deliveryOption" value="premiumShipping"></td>
+                                        <td><label for="premiumShipping">Ship To Address Shipping Rs. 100.00</label></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        
+                            <div>
+                                <table width="100%">
+                                    <tr>
+                                        <td><input type="radio" id="freeShipping" name="deliveryOption" value="freeShipping"></td>
+                                        <td><label for="freeShipping">Click & Collect <br> Shipping: FREE <br> Note - Please wait for delivery
+                                                email (about 2-10 days) before visiting store.</label></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                        <h1 style="margin-left:20px;">REGISTER A NEW ADDRESS</h1>
+                        <div id="deliveryForm">
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <h3>FIRST NAME</h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="firstName" placeholder="Please enter your first name in alphabets." />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>LAST NAME</h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="lastName" placeholder="Please enter your last name in alphabets." />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>PINCODE</h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="pincode" placeholder="Please enter your Pincode." />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>ADDRESS DETAIL 1</h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="add1" placeholder="Street & Number, P.O. Boc, C/O" />
+                                    </td>
+                                </tr>
+                               
+                                <tr>
+                                    <td>
+                                        <h3>ADDRESS DETAIL 2 </h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="add2" placeholder="Apt., Suit, Unit, Building, Floor, etc." />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>CITY</h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="city" placeholder="Please enter your City." />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>STATE</h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="state" placeholder="Please enter your State." />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>MOBILE PHONE</h3>
+                                    </td>
+                                    <td>
+                                        <input type="tel" id="mobile" placeholder="Please enter your Mobile Number." />
+                                    </td>
+                                </tr>
+                            </table>
+                            <p>You may be contacted via phone or email if we have questions about your order and delivery option.</p>
+                            <input type="checkbox" id="billing"><label for="billing">Use as billing address</label>
+                            <br><br>
+                            <button onclick="goToNextPage()">CONTINUE TO PAYMENT</button>
+                        </div>
+                    </div>
+                    <div><h3 style="margin-left:20px;">2.PAYMENT OPTION</h3></div>
+                    <div><h3 style="margin-left:20px;">3. ORDER CONFIRMATION</h3></div>
+                    <div><i class="fas fa-lock"></i> We encrypt all your sensitive information with TLS (Transport Layer Security) encryption technology.</div>
+                </div>
+                <div class="rightDiv"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footerDiv"></div>
+</body>
+
+</html>
+<script type="text/javascript" src="./scripts/checkout-delivery.js"></script>
+<script type="module">
+    import footer from './components/footer.js';
+    // let footerDiv = document.getElementById('div');
+    // footerDiv.innerHTML = footer();
+    document.getElementById('footerDiv').innerHTML = footer();
+
+</script>
+<script type="module" src="./scripts/main.js">
+
+</script>

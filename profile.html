@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbarContainer"></div>
+
+<!-- navbar end -->
+   <div id="container">
+      
+       <!-- <div id="mem_home"> <a href="index.html">UNIQLO HOME PAGE</a></div> -->
+       
+       <div id="h1">
+           <p><h1>MEMBERSHIP</h1></p>
+           <br>
+           <p><h3>Membership</h3></p>
+           <p>profile</p>
+           <p>coupons</p>
+           <p>Purchase history</p>
+           <p>Order history</p>
+           <p><h3>Profile setting</h3></p>
+           <p>Edit profile</p>
+           <p>Address boox</p>
+           <p>Change my password</p>
+           <p>My cards</p>
+           <p>Withdrawal from membership</p>
+       </div>
+    
+       <div id="mem_profile">
+           <div id="div1">
+               <h1>Profile</h1>              
+               <br>
+               <h3>EMAIL ADDRESS</h3>
+               <p id="mem_email"></p>
+               <br>               
+               <h3>PINCODE</h3>
+               <p id="mem_pin"></p>           
+               <br>
+               <hr>
+               <img src="data:image/png;base64,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" alt="">
+           <p>Please show your membership barcode at the cashier when you purchase items.</p>
+          <button id="btn"> PRINT BARCODE</button>
+        </div>
+           <div id="div2">
+               <!-- <h3>MOBILE PHONE</h3> -->
+               <br>
+               <h3>BIRTHDAY</h3>
+               <p id="mem_birthday"></p>
+               <br>
+               <h3>GENDER</h3>
+               <p id="mem_gender"></p>
+             
+   
+        </div>
+        
+       </div>
+     
+   
+   </div> 
+</body>
+<div id="footer"></div>
+</html>
+<script src="./scripts/profile.js"></script>
+<script type="module" src="./scripts/import.js"></script>
+<script type="module" src="./scripts/main.js"></script>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+
+   
+
+
+</head>
+<!-- <div id="header"></div> -->
+<body>
+     <!-- navbar -->
+     <div id="navbarContainer"></div>
+
+<!-- navbar end -->
+    <div class="container">
+        <!-- <hr> -->
+    <div class="box1">
+        <div class="box2">
+ 
+        <div class="box3">
+            <h2>LOGIN</h2>
+            <P>Require <span> *</span></P>
+        </div>
+        <div class="box4">
+            <p>Log in with your email address and password</p>
+            
+        </div>
+        <div class="box22">
+            <p >Please do not reuse a password you have used on another service or a password that is easily guessed.</p>
+        </div>
+        <form onsubmit="signin(event)">
+
+        <div class="box5">
+            <h3>EMAIL ADDRESS *</h3>
+        </div>
+            <input type="email" id="email" placeholder="xxx.@uniqulo.com" required/>
+       
+        <div class="box6">
+            <h3>PASSWORD</h3>
+        </div>
+            <input type="password" id="password" placeholder="" required/>
+            <div class="box7">
+                <p>Password must be at least 8 characters, and contain both numbers and alphabet letters.</p>
+
+            </div>
+                   
+        <div class="box8">
+            <h5>TERMS OF USE</h5>
+            <h5>PRIVECY POLICY</h5>
+        </div>
+        <div >
+            <!-- <button> <a href="index.html">LOG IN</a></button> -->
+            <input id="log" type="submit" value="LOG IN" />
+        </div>
+
+    </form> 
+        <div class="box9">
+            <h5>FORGOT YOUR PASSWORD ?</h5>
+        </div> 
+        
+        
+    </div>
+    <div class="vl"></div>
+    <div class="container1">
+        <div class="create">
+        
+            <h2>CREATE AN ACCOUNT</h2>
+        
+        
+            <p id="p">If you create an account, you can get personalized services like checking purchase history and getting discount coupons with your membership. Register today for free!</p>
+    
+        <div>
+            <button  onclick="gotoLogin()">CREATE AN ACCOUNT</button>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+
+</html>
+<script src="./scripts/login.js"></script>
+<script type="module" src="./scripts/import.js"></script>
+<script type="module" src="./scripts/main.js"></script>
+<!-- <script type="module" src="../components/navbar_full.js"></script> -->
+
+
+
+
+  

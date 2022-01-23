@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT OPTION | UNIQLO IN</title>
+    <script src="https://kit.fontawesome.com/f7879b5792.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/nav.css" />
+    <link rel="stylesheet" href="./styles/checkout-payment.css" />
+    <link rel="shortcut icon" href="https://asset.uniqlo.com/logotypes/uniqlo_roman.ico">
+    <link rel="stylesheet" href="./styles/footer.css" />
+</head>
+
+<body>
+    <div id="navbarContainer"></div>
+
+    <!-- <div id="navbar">
+        <div id="navbarContainer"></div>
+        <div class="profilecont">
+    
+        </div>
+    
+        <div id="hover">
+    
+        </div>
+    </div> -->
+    <div id="main">
+        <div class="pageLinks">
+            <p> <a href="index.html">UNIQLO HOME PAGE</a>/
+                <a href="cart.html">SHOPPING CART</a>/
+                <a href="checkout-delivery.html">DELIVERY</a>/
+            <p id="this">PAYMENT OPTION</p>
+            </p>
+        </div>
+        <h1>CHECKOUT</h1>
+        <div id="cartDiv">
+            <div class="showCartDiv">
+                <div class="leftDiv">
+                    <div>
+                        <h3 style="margin-left:20px;">1.DELIVERY OPTION</h3>
+                    </div>
+                    <div>
+                        <h1 style="margin-left:20px;">2.PAYMENT OPTION</h1>
+                        <hr>
+                        <div class="deliveryOption">
+                            <div>
+                                <table width="100%">
+                                    <tr>
+                                        <td><input type="radio" id="premiumShipping" name="deliveryOption"
+                                                value="premiumShipping"></td>
+                                        <td><label for="premiumShipping">Credit Or Debit Card</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                        <h3 style="margin-left:20px;">REGISTER NEW CARD</h3>
+                        <p style="margin-left:20px;">In case you encounter an issue with your credit/ debit card payment, please contact customer care for further support.</p>
+                        <div id="deliveryForm">
+                            <table width="100%">
+                                <tr>
+                                    <td>
+                                        <h3>CARD NUMBER</h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="cardNumber"
+                                            placeholder="Please enter 16 Digit Card Number" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>EXPIRY DATE</h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="expiryDate"
+                                            placeholder="MM/YY" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>SECURITY CODE</h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="securityCode" placeholder="3 Digit" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>FULL NAME</h3>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="fullName"/>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            <input type="checkbox" id="cardInfo"><label for="cardInfo">Update Card Information</label>
+                            <br><br>
+                            <button onclick="goToNextPage()">CONTINUE</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 style="margin-left:20px;">3. ORDER CONFIRMATION</h3>
+                    </div>
+                    <div><i class="fas fa-lock"></i> We encrypt all your sensitive information with TLS (Transport Layer
+                        Security) encryption technology.</div>
+                </div>
+                <div class="rightDiv"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footerDiv"></div>
+</body>
+
+</html>
+<script type="text/javascript" src="./scripts/checkout-payment.js"></script>
+<script type="module">
+    import footer from './components/footer.js';
+    // let footerDiv = document.getElementById('div');
+    // footerDiv.innerHTML = footer();
+    document.getElementById('footerDiv').innerHTML = footer();
+
+</script>
+<script type="module" src="./scripts/main.js">
+
+</script>

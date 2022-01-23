@@ -1,0 +1,67 @@
+*{
+    font-family: sans-serif;
+}
+#container{
+width: 80%;
+height: auto;
+margin-bottom: 50px;
+/* border: 2px solid red; */
+display: flex;   
+gap: 30px;
+margin: auto;
+}
+#h1{
+margin-top: 50px;
+/* border: 3px solid blue; */
+height: 600px;
+width: 300px;
+padding: 10px;
+
+}
+
+#mem_profile{
+    margin-top: 50px;
+border: 1px solid grey;
+width: 800px;
+height: 600px;
+display: flex;
+gap: 20px;
+padding: 10px;
+margin-bottom: 30px;
+}
+
+p:hover{
+cursor: pointer;
+text-decoration: underline;
+text-decoration-color: blue;
+}
+#mem_home{
+width: 300px;
+height: 30px;
+/* border: 2px solid grey; */
+display: flex;
+}
+#div1{
+width: 350px;
+height: 600px;
+/* border: 2px solid orange; */
+}
+#div2{
+margin-top: 70px;
+width: 350px;
+height: 350px;
+/* border: 2px solid purple; */
+}
+#btn{
+    width: 210px;
+    height: 40px;
+    background-color:white;
+    color: black;
+    border: 1px solid grey;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#btn:hover{
+    color: grey;
+}
